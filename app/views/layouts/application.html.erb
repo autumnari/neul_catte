@@ -6,9 +6,28 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <style>
+      .temporary_img {
+        display: flex;
+	      flex-direction: column;
+	      flex-wrap: nowrap;
+	      justify-content: center;
+	      align-items: stretch;
+	      align-content: stretch;
+      }
+      img {
+        margin: 0 auto;
+        margin-top: 10rem;
+      }
+    </style>
   </head>
 
   <body>
+  <div class="temporary_img">
+    <img src="/neulcatte_original.jpeg" alt="temporary_img" width="50%"/>
+  </div>
+  <h2 style = "text-align: center"> 8월 24일, 당신의 감성을 녹음해주세요. </h2>
     <%= yield %>
   </body>
 </html>
