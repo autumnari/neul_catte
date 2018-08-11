@@ -7,6 +7,9 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
+    <meta property="og:title" content="늘어진 카세트 테이프" />
+    <meta property="og:description" content="아날로그 감성을 담은 음악 추천 서비스" />
+    <meta property="og:image" content="<%= asset_path("neulcatte_original.jpg") %>" />
     <style>
       .temporary_img {
         display: flex;
@@ -25,7 +28,7 @@
 
   <body>
   <div class="temporary_img">
-    <img src="/neulcatte_original.jpeg" alt="temporary_img" width="50%"/>
+    <img src="<%= asset_path("neulcatte_original.jpg") %>" alt="temporary_img" width="50%"/>
   </div>
   <h2 style = "text-align: center"> 8월 24일, 당신의 감성을 녹음해주세요. </h2>
     <%= yield %>
