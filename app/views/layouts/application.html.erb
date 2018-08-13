@@ -38,7 +38,7 @@
 
   <body>
   <div class="temporary_img">
-    <img src="<%= asset_path("neulcatte_original.jpg") %>" alt="temporary_img" width="50%"/>
+    <%= image_tag("neulcatte_original.jpg", width: "50%", alt: "temporary_img") %>
   </div>
   <h2 style = "text-align: center"> 8월 24일, 당신의 감성을 녹음해주세요. </h2>
     <%= yield %>
