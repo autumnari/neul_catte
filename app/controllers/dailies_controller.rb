@@ -1,0 +1,2 @@
+class DailiesController < ApplicationController
+end
