@@ -1,0 +1,2 @@
+module TeasersHelper
+end
