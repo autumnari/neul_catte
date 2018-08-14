@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123746599-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-123746599-1');
+    </script>
+
     <title>NeulCatte</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <meta property="og:title" content="늘어진 카세트 테이프" />
+    <meta property="og:description" content="아날로그 감성을 담은 음악 추천 서비스" />
+    <meta property="og:image" content="<%= asset_path("neulcatte_original.jpg") %>" />
+    <style>
+      .temporary_img {
+        display: flex;
+	      flex-direction: column;
+	      flex-wrap: nowrap;
+	      justify-content: center;
+	      align-items: stretch;
+	      align-content: stretch;
+      }
+      img {
+        margin: 0 auto;
+        margin-top: 10rem;
+      }
+    </style>
   </head>
 
   <body>
+  <div class="temporary_img">
+    <%= image_tag("neulcatte_original.jpg", width: "50%", alt: "temporary_img") %>
+  </div>
+  <h2 style = "text-align: center"> 8월 24일, 당신의 감성을 녹음해주세요. </h2>
     <%= yield %>
   </body>
 </html>
