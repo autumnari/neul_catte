@@ -10,9 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180810091159) do
+ActiveRecord::Schema.define(version: 20180813131239) do
+
+  create_table "dailies", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "daily_title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "musics", force: :cascade do |t|
+    t.string "title"
+    t.string "singer"
+    t.string "fantastic_type"
+    t.integer "fantastic_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["fantastic_type", "fantastic_id"], name: "index_musics_on_fantastic_type_and_fantastic_id"
+  end
+
+  create_table "tapes", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "tape_title"
+    t.integer "m1"
+    t.integer "m2"
+    t.integer "m3"
+    t.integer "m4"
+    t.integer "m5"
+    t.integer "m6"
+    t.integer "m7"
+    t.integer "m8"
+    t.integer "m9"
+    t.integer "m10"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
