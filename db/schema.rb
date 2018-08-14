@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180814125922) do
+ActiveRecord::Schema.define(version: 20180814131548) do
 
   create_table "dailies", force: :cascade do |t|
     t.integer "user_id"
@@ -30,6 +30,13 @@ ActiveRecord::Schema.define(version: 20180814125922) do
     t.datetime "updated_at", null: false
     t.string "ts"
     t.index ["fantastic_type", "fantastic_id"], name: "index_musics_on_fantastic_type_and_fantastic_id"
+  end
+
+  create_table "records", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "music_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "tapes", force: :cascade do |t|
