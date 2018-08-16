@@ -58,13 +58,13 @@
           <nav id="main_nav">
               <ul>
                   <div class="nav_container">
-                    <li class="nav_item">테이프</li>
-                    <li class="nav_item">데일리 뮤직</li>
+                    <%= link_to '테이프', "/tapes/index", class: "nav_item" %>
+                    <%= link_to '데일리 뮤직', "/dailies/index", class: "nav_item" %>
                     <li class="nav_item">포스트</li>
-                    <li class="nav_item">마이페이지</li>
+                    <%= link_to '마이 페이지', "/my_pages/index", class: "nav_item" %>
                     <li class="nav_item">검색</li>
-                    <li class="nav_item">로그인</li>
-                    <li class="nav_item">회원가입</li>
+                    <%= link_to '로그인', "/devise/sessions/new", class: "nav_item" %>
+                    <%= link_to '회원가입', "/devise/registrations/new", class: "nav_item" %>
                   </div>
               </ul>
               <a href="#" id="trigger">메뉴</a>
