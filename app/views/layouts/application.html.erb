@@ -20,9 +20,59 @@
     <meta property="og:title" content="늘어진 카세트 테이프" />
     <meta property="og:description" content="아날로그 감성을 담은 음악 추천 서비스" />
     <meta property="og:image" content="<%= asset_path("neulcatte_original.jpg") %>" />
+
+    <script type="text/javascript" src="path/to/jQuery.js"></script>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+	<script>
+		$(function () {
+			var trigger = $('#trigger');
+			var menu = $('nav ul');
+			$(trigger).on('click', function (e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function () {
+				var w = $(window).width();
+				if (w > 320 && menu.is(':hidden')) {
+					menu.removeAttr('style');
+				}
+			});
+		});
+	</script>
+
   </head>
 
   <body>
+
+
+<!-- Navbar -->
+    <header>
+
+        <div class="blank">
+        </div>
+
+        <div class="main_nav">
+          <nav id="main_nav">
+              <ul>
+                  <div class="nav_container">
+                    <li class="nav_item">테이프</li>
+                    <li class="nav_item">데일리 뮤직</li>
+                    <li class="nav_item">포스트</li>
+                    <li class="nav_item">마이페이지</li>
+                    <li class="nav_item">검색</li>
+                    <li class="nav_item">로그인</li>
+                    <li class="nav_item">회원가입</li>
+                  </div>
+              </ul>
+              <a href="#" id="trigger">메뉴</a>
+          </nav>
+        </div>
+      </header>
+
+
     <%= yield %>
   </body>
 </html>

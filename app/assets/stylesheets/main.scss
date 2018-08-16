@@ -1,3 +1,100 @@
-// Place all the styles related to the main controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*landing page - tape*/
+
+.main{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 5vh 6vw 10vh 6vw;
+}
+
+
+/* main 01 - left */
+
+#landtape_info{
+    width: 45vw;
+    height: 75vh;
+    margin-left: 7vw;
+
+}
+
+.info_container{
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+.subject_tape{
+    width: 6vw;
+    height: 3.7vh;
+    border: 1px solid #000;
+    border-radius: 3.7vh;
+/*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+*/
+}
+
+.subject{
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: normal;
+    text-align: center;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+
+
+h1{
+    font-size: 4vw;
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+}
+
+.info{
+    font-size: 0.8vw;
+    font-weight: 500;
+    line-height: 2.0;
+}
+
+.land_button{
+    width: 80%;
+    height: 7vh;
+    margin-bottom: 5vh;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.button{
+    width: 30%;
+    border-bottom: 2px solid #000;
+}
+
+/* main 01 - right*/
+#landtape_img{
+    width: 40vw;
+    height: 75vh;
+    margin-right: 3vw;
+}
+
+.tape_container{
+    width: inherit;
+    height: inherit;
+    padding: 1vh 5vw 1vh 5vw;
+
+    display: flex;
+    align-items: stretch;
+    align-content: space-around;
+    flex-flow: column wrap;
+    column-gap: 1;
+}
+
+
+.tapeimg {
+    width: 14vw;
+    height: 12vh;
+    margin: 1vh;
+    border: 1px solid #000;
+}
