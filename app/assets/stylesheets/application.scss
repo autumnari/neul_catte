@@ -59,3 +59,74 @@ html {
 nav a#trigger{
     display: none;
 }
+
+
+
+/* MOBILE*/
+
+@media all and (max-width : 480px) {
+
+    .blank{
+        display:none;
+    }
+
+
+    .main_nav{
+        width: auto;
+        height: 4vh;
+    }
+
+    #main_nav{
+        width: auto;
+        height:inherit;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .nav_container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .nav_item{
+        display: block;
+        float: none;
+        width: 100%;
+    }
+
+    #trigger {
+        width: inherit;
+    }
+
+    nav a {
+        text-align: center;
+        float: none;
+    }
+
+
+    nav a#trigger{
+        display: block;
+        width: inherit;
+        height: 100%;
+        position: relative;
+    }
+
+    nav a#trigger:after {
+		content: "";
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+}
