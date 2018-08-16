@@ -46,7 +46,7 @@
 }
 
 
-h1{
+.no_login{
     font-size: 4vw;
     margin-top: 3vh;
     margin-bottom: 4vh;
@@ -79,7 +79,7 @@ h1{
     margin-right: 3vw;
 }
 
-.tape_container{
+.land_tape_container{
     width: inherit;
     height: inherit;
     padding: 1vh 5vw 1vh 5vw;
@@ -92,9 +92,33 @@ h1{
 }
 
 
-.tapeimg {
+.land_tape_img {
     width: 14vw;
     height: 12vh;
     margin: 1vh;
     border: 1px solid #000;
+}
+
+
+// 로그인 했을 때
+.main_container{
+  display: flex;
+}
+
+
+.main_title_container{
+  flex-grow: 1;
+}
+
+.main_title{
+
+}
+
+.main_tape_container{
+ flex-grow: 2;
+}
+
+.logo_text{
+  font-weight: bold;
+  flex-grow: 1;
 }
