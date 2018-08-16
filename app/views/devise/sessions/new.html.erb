@@ -1,6 +1,13 @@
-<h2>Log in</h2>
+<!--Login Page-->
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<div class="login_bg">
+  <div class="login_container">
+  <div class="login_title">늘어진<br>카세트<br>테이프</div>
+  <div class="login_logo">
+    <%= image_tag "logo.png", class:"login_logo"%>
+  </div>
+
+  <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="form-inputs">
     <%= f.input :email, required: false, autofocus: true %>
     <%= f.input :password, required: false %>
@@ -8,8 +15,16 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
+    <%= f.button :submit, "Login" %>
   </div>
 <% end %>
 
+<div class="register">
+  Don't have an account?
+  <%= link_to 'Register', "/devise/registrations/new", class: "login_register" %>
+</div>
+
 <%= render "devise/shared/links" %>
+
+</div>
+</div>
