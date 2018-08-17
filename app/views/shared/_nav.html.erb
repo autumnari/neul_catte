@@ -1,0 +1,75 @@
+
+
+<header>
+
+    <div class="blank">
+    </div>
+
+    <div class="main_nav">
+      <nav id="main_nav">
+          <ul>
+              <div class="nav_container">
+                <%= link_to '테이프', "/tapes/index", class: "nav_item" %>
+                <%= link_to '데일리 뮤직', "/dailies/index", class: "nav_item" %>
+
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="postbtn">
+                    포스트
+                  </button>
+                  <div id="post-dropdown" class="post-menu">
+                    <%= link_to '테이프', "/tapes/new", class: "post-menu-down" %>
+                    <%= link_to '데일리 뮤직', "/dailies/new", class: "post-menu-down" %>
+                  </div>
+                </div>
+
+                <%= link_to '마이 페이지', "/my_pages/index", class: "nav_item" %>
+                <li class="nav_item">검색</li>
+                <%= link_to '로그인', "/devise/sessions/new", class: "nav_item" %>
+                <%= link_to '회원가입', "/devise/registrations/new", class: "nav_item" %>
+              </div>
+          </ul>
+          <a href="#" id="trigger">메뉴</a>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    $(function () {
+      var trigger = $('#trigger');
+      var menu = $('nav ul');
+      $(trigger).on('click', function (e) {
+        e.preventDefault();
+        menu.slideToggle();
+      });
+      $(window).resize(function () {
+        var w = $(window).width();
+        if (w > 320 && menu.is(':hidden')) {
+          menu.removeAttr('style');
+        }
+      });
+    });
+  </script>
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+document.getElementById("post-dropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.postbtn')) {
+
+var dropdowns = document.getElementsByClassName("post-menu");
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+  var openDropdown = dropdowns[i];
+  if (openDropdown.classList.contains('show')) {
+    openDropdown.classList.remove('show');
+  }
+}
+}
+}
+</script>

@@ -1,5 +1,4 @@
 /*--초기화--*/
-
 html, body, div, dl, dt, dd, ul, ol, li, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button {
   margin:0; padding:0;
   outline:none;
@@ -49,6 +48,7 @@ body{
     height: 100%;
     margin-left: 20vw;
     margin-right: 20vw;
+    font-size: 1vw;
 }
 
 .nav_container
@@ -68,6 +68,47 @@ body{
 nav a#trigger{
     display: none;
 }
+
+.postbtn {
+  background-color: #ffffff;
+  opacity: 1;
+  border: none;
+  font-family: 'Arita-buri-SemiBold', serif;
+  font-size: 1vw;
+  cursor: pointer;;
+}
+
+.post-menu {
+    display: none;
+
+    background-color: #f1f1f1;
+    // min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.post-menu.show {
+  width: 6vw;
+  height: 8vh;
+  position: absolute;
+  padding: 0.5vh 0 0.5vh 0.3vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.post-menu-down {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1vw;
+  color: #000000;
+}
+
+.show {display: block;}
+
+
 
 
 /* MOBILE*/

@@ -23,55 +23,15 @@
 
     <script type="text/javascript" src="path/to/jQuery.js"></script>
     <script src="http://code.jquery.com/jquery.min.js"></script>
-
-
     <script src="js/jquery-2.1.3.min.js"></script>
-	<script>
-		$(function () {
-			var trigger = $('#trigger');
-			var menu = $('nav ul');
-			$(trigger).on('click', function (e) {
-				e.preventDefault();
-				menu.slideToggle();
-			});
-			$(window).resize(function () {
-				var w = $(window).width();
-				if (w > 320 && menu.is(':hidden')) {
-					menu.removeAttr('style');
-				}
-			});
-		});
-	</script>
+
 
   </head>
 
   <body>
 
-
 <!-- Navbar -->
-    <header>
-
-        <div class="blank">
-        </div>
-
-        <div class="main_nav">
-          <nav id="main_nav">
-              <ul>
-                  <div class="nav_container">
-                    <%= link_to '테이프', "/tapes/index", class: "nav_item" %>
-                    <%= link_to '데일리 뮤직', "/dailies/index", class: "nav_item" %>
-                    <li class="nav_item">포스트</li>
-                    <%= link_to '마이 페이지', "/my_pages/index", class: "nav_item" %>
-                    <li class="nav_item">검색</li>
-                    <%= link_to '로그인', "/devise/sessions/new", class: "nav_item" %>
-                    <%= link_to '회원가입', "/devise/registrations/new", class: "nav_item" %>
-                  </div>
-              </ul>
-              <a href="#" id="trigger">메뉴</a>
-          </nav>
-        </div>
-      </header>
-
+    <%= render "shared/nav" %>
 
     <%= yield %>
   </body>
