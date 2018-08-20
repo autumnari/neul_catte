@@ -10,34 +10,37 @@
   padding: 25vh 5vw 25vh 5vw;
 }
 
-h1 {
-  writing-mode: vertical-lr;
-  font-size: 2.7vh;
+.main_title {
+  margin: 6vh 4vw 4vh 4vw;
+  width: 2vw;
+  height: 25vh;
 }
 
-.main_title {
-  width: 5vw;
-  height: 20vh;
-  line-height: 10vh;
+h1 {
+  font-size: 1.7vw;
 }
+
 
 .total_tape {
   width: 60vw;
   height: 85vh;
 }
 
-.totla_intro {
+.total_intro {
   width: 50vw;
-  height: 5vh;
-  margin-top: 5vh;
-  padding-left: 6vw;
+  height: 2vh;
+  margin: 7.5vh 0 1vh 0;
+  padding-left: 7vw;
+}
+
+p .total_intro {
   font-size: 1.5vh;
 }
 
 .total_tape_container {
   width: 60vw;
   height: 70vh;
-  padding: 0 2.5vw 0 2.5vw;
+  padding: 0 2.5vw 5vh 2.5vw;
   position: absolute;
 
 display: flex;
@@ -49,13 +52,20 @@ align-content: center;
 }
 
 .tape_1 {
-  width: 15vw;
-  height: 12.5vh;
+  width: 14vw;
+  height: 13.5vh;
   border: 1px solid ;
-  margin: 1vw 1vh 1vw 1vh;
+  margin: 1.2vh 1vw 1.2vh 1vw;
 }
 
-.small_logo_03 {
+.logo_03_container {
   width: 20vw;
   height: 85vh;
+  padding: 73vh 5vw 5vh 12vw;
+}
+
+.logo_03_txt{
+  width: 3vw;
+  height: 7vh;
+  font-size: 1vw;
 }
