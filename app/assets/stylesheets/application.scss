@@ -53,13 +53,16 @@ body{
 
 #main_nav{
     height: 100%;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: 22vw;
+    margin-right: 22vw;
     font-size: 1vw;
 }
 
 .nav_container
 {
+  ul{
+    width: 58vw;
+  }
     display:flex;
     flex-direction: row;
     justify-content: space-around;
