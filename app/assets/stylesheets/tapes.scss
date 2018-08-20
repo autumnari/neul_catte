@@ -16,8 +16,9 @@ h1 {
 }
 
 .main_title {
-  width: 10vw;
-  height: 35vh;
+  width: 5vw;
+  height: 20vh;
+  line-height: 10vh;
 }
 
 .total_tape {
@@ -26,9 +27,10 @@ h1 {
 }
 
 .totla_intro {
-  width: 60vw;
+  width: 50vw;
   height: 5vh;
   margin-top: 5vh;
+  padding-left: 6vw;
   font-size: 1.5vh;
 }
 
@@ -38,16 +40,17 @@ h1 {
   padding: 0 2.5vw 0 2.5vw;
   position: absolute;
 
-  display: flex;
-  align-items: center;
-  align-content: center;
-  flex-flow: column;
-  column-count: 3;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-flow: column wrap;
+align-content: center;
+
 }
 
 .tape_1 {
-  width: 16vw;
-  height: 14vh;
+  width: 15vw;
+  height: 12.5vh;
   border: 1px solid ;
   margin: 1vw 1vh 1vw 1vh;
 }
