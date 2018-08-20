@@ -40,14 +40,27 @@
     font-size: 2.3vh;
     line-height: 4vh;
     margin-bottom: 4vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.input, input[placeholder] {
+    text-align: center;
+    background: transparent;
+    border: none;
+}
 
+::placeholder {
+  font-family: 'Arita-buri-SemiBold', serif;
+  color: #000000;
+}
 
 .form-email, .form-password{
     border-bottom: 2px solid #fffff;
     padding-top: 2vh;
-
 }
 
 
@@ -63,7 +76,7 @@
     margin: 2vh 0 2vh 0;
 }
 
-.login_btn{
+.login_btn, .signin_btn {
   font-family: 'Arita-buri-SemiBold', serif;
   color: white ;
   border: none;
@@ -71,10 +84,28 @@
   cursor: pointer;
 }
 
-.go_register{
+.form-lists{
+  width: 21.6vw;
+  height: 4.8vh;
+  border: solid 1px #000000;
+  margin-bottom: 2vh;
+}
+
+.form-lists a{
+  width: 10.2vw;
+  height: 2.3vh;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  font-size: 2vh;
+  font-weight: 700;
+}
+
+.go_register, .go_login{
   font-size: 1.7vh;
   margin-bottom: 3vh;
 }
+
 
 .forgot_password {
   text-decoration: none;
