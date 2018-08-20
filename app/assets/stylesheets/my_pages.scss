@@ -108,6 +108,49 @@ label{
  display: block;
 }
 
+
+
+
+/* 테이프 탭 */
+.user_tape{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: flex-start;
+  margin-bottom: 1vh;
+}
+
+/* 테이프 테마 */
+.upload_tape{
+  position: relative;
+}
+.blend_box{
+  position: absolute;
+  width: 15.5vw;
+  height: 17vh;
+  background-color: red;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  opacity: 0.2;
+  background-blend-mode: darken;
+}
+.user_cover{
+  position: absolute;
+  margin-top: 1vh;
+  margin-left: 1vw;
+}
+.tape_title{
+  position: absolute;
+  width: 18vw;
+  margin-top: -17.5vh;
+  text-align: center;
+  color: black;
+  font-size: 0.8rem;
+}
+
+/* 플레이리스트 탭 */
 .playlist{
   display: flex;
   flex-direction: row;
