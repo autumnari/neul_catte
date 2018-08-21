@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   resources :dailies
   resources :my_pages
 
+  get 'main/sign_up'
+
 end

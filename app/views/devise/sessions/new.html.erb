@@ -5,10 +5,7 @@
 
 
 <body>
-
 <div class="admit_bg_img">
-
-  <section class="admit_bg">
     <div class="admit_container">
     <div class="admit_title">늘어진<br>카세트<br>테이프</div>
     <div class="admit_logo">
@@ -17,6 +14,7 @@
 
     <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="form-inputs">
+      <%= f.input :nickname, label: false, required: false, autofocus: true, placeholder: "Name" %>
       <%= f.input :email, label: false, required: false, autofocus: true, placeholder: "E-mail" %>
       <%= f.input :password, label: false, required: false, placeholder: "Password" %>
       <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
@@ -35,7 +33,7 @@
   <%= render "devise/shared/links" %>
 
     </div>
-  </section>
 </div>
+
 
 </body>
