@@ -7,6 +7,7 @@
   position: relative;
   margin-top: 9vh;
   margin-left: 22.5vw;
+  width: 18vw;
 }
 .profile_article{
   position: absolute;
@@ -125,6 +126,7 @@ label{
 /* 테이프 테마 */
 .upload_tape{
   position: relative;
+  width: 17vw;
 }
 .blend_box{
   position: absolute;
@@ -134,12 +136,13 @@ label{
   margin-top: 1vh;
   margin-left: 1vw;
   opacity: 0.2;
-  background-blend-mode: darken;
 }
 .user_cover{
   position: absolute;
   margin-top: 1vh;
   margin-left: 1vw;
+  width: 15vw;
+  height: 17vh;
 }
 .tape_title{
   position: absolute;
@@ -166,4 +169,20 @@ label{
   padding: 2vh;
   margin-right: 1vw;
   margin-bottom: 2vh;
+}
+
+
+/* 모바일 */
+
+@media all and (max-width : 480px) {
+
+    .profile_img{
+      width: 30vw;
+      margin-top: 3vh;
+      margin-left: 5vw;
+    }
+    .nickname{
+      font-size: 2vw;
+    }
+
 }
