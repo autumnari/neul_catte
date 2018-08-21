@@ -30,6 +30,11 @@ html {
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff')
   format('woff'); font-weight: normal; font-style: normal; }
 
+header{
+  background-image: url('navbg.png');
+  object-fit: contain;
+}
+
 body{
   font-family: 'Arita-buri-SemiBold', serif;
 }
@@ -85,38 +90,38 @@ nav a#trigger{
   border: none;
   font-family: 'Arita-buri-SemiBold', serif;
   font-size: 1vw;
-  cursor: pointer;;
+  cursor: pointer;
 }
 
 .post-menu {
     display: none;
-
-    background-color: #f1f1f1;
-    // min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    background-image: url('navbg.png');
+// login-signup 페이지에서는 안보이게 수정 필요
 }
 
 .post-menu.show {
-  width: 6vw;
-  height: 8vh;
+  width: 100vw;
+  height: 4vh;
   position: absolute;
-  padding: 0.5vh 0 0.5vh 0.3vh;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  top: 15vh;
+  left: 0;
+  padding: 0.9vh 0 0.5vh 41vw;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-start;
 }
 
-
 .post-menu-down {
+  padding-right: 3vw;
   text-decoration: none;
   list-style: none;
   font-size: 1vw;
   color: #000000;
 }
 
-.show {display: block;}
+.show {
+  display:inline-block;
+}
 
 
 
