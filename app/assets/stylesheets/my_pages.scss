@@ -34,7 +34,7 @@
   font-size: 0.9rem;
   cursor: pointer;
 }
-button:hover { color:white; background-color: black}
+button:hover .profile_edit_btn { color:white; background-color: black}
 .post_count{
   display: flex;
   flex-direction: row;
