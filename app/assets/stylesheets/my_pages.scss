@@ -1,3 +1,169 @@
 // Place all the styles related to the my_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.profile_img{
+  position: relative;
+  margin-top: 9vh;
+  margin-left: 22.5vw;
+}
+.profile_article{
+  position: absolute;
+  margin-top: -26vh;
+  margin-left: 44vw;
+}
+.profile_top{
+  padding-bottom: 4vh;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+}
+.nickname{
+  font-size: 2rem;
+}
+.profile_edit_btn{
+  margin-left: 3vw;
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 0.4vw 1.2vw;
+  font-family: 'Arita-buri-SemiBold', serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+button:hover .profile_edit_btn { color:white; background-color: black}
+.post_count{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: stretch;
+  font-size: 1.2rem;
+  padding-bottom: 4vh;
+}
+.post_count div{
+  margin-left: -2.2vw;
+}
+.user_intro{
+  font-size: 1rem;
+}
+
+
+/* tab */
+
+.mypage_tab{
+  margin-top: 9vh
+}
+.tabs {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: center;
+  width: 55vw;
+  margin: auto;
+}
+.tabs label {
+ width:33.3%;
+ order: 1;
+ display: block;
+ padding:10px 0px;
+ text-align:center;
+ cursor: pointer;
+ background: white;
+ color: lightgray;
+}
+
+/*박스배경*/
+.tabs .tab {
+ order: 99;
+ flex-grow: 1;
+ width: 100%;
+ display: none;
+ padding: 1rem;
+ background: white;
+}
+.tabs input[type="radio"] {
+ display: none;
+}
+.tab{
+  margin-top: 3vh;
+}
+label{
+  border-top: 1px solid lightgray;
+}
+
+/*탭 눌렀을때 컬러*/
+.tabs input[type="radio"]:checked + label {
+ background: white;
+ color: black;
+ border-top: 1px solid;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+ display: block;
+}
+
+
+
+
+/* 테이프 탭 */
+.user_tape{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: flex-start;
+  margin-bottom: 1vh;
+}
+
+/* 테이프 테마 */
+.upload_tape{
+  position: relative;
+}
+.blend_box{
+  position: absolute;
+  width: 15.5vw;
+  height: 17vh;
+  background-color: red;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  opacity: 0.2;
+  background-blend-mode: darken;
+}
+.user_cover{
+  position: absolute;
+  margin-top: 1vh;
+  margin-left: 1vw;
+}
+.tape_title{
+  position: absolute;
+  width: 18vw;
+  margin-top: -17.5vh;
+  text-align: center;
+  color: black;
+  font-size: 0.8rem;
+}
+
+/* 플레이리스트 탭 */
+.playlist{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: flex-start;
+}
+.rec-music{
+  width: 48%;
+  text-align: center;
+  border: 1px solid lightgray;
+  padding: 2vh;
+  margin-right: 1vw;
+  margin-bottom: 2vh;
+}
