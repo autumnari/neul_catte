@@ -126,7 +126,7 @@
 .admit_container{
     background: rgba(255,255,255, 0.7);
     width: 74.4vw;
-    height: 63vh;
+    height: 60vh;
     text-align: center;
     margin: 22.5vh 12.8vw 15vh 12.8vw;
     padding-bottom: 5vh;
@@ -149,14 +149,16 @@
 #admit_logo{
     width: auto;
     height: 5vh;
+    margin-bottom: 2vh;
+
 }
 
 .form-inputs{
-    width: 21.6vw;
+    width: 21.6v;
     height: 12vh;
-    font-size: 2.3vh;
+    font-size: 1vh;
     line-height: 4vh;
-    margin-bottom: 4vh;
+    margin: 0 20vw 4vw 20vw;
 
     display: flex;
     flex-direction: column;
@@ -165,6 +167,7 @@
 }
 
 .input, input[placeholder] {
+    align-items: center;
     text-align: center;
     background: transparent;
     border: none;
@@ -183,7 +186,7 @@
 
 
 .form-actions{
-    width: 21.6vw;
+    width: 60vw;
     height: 5vh;
     background-color: rgba(0, 0, 0, 0.58);
     line-height: 4.6vh;
@@ -191,6 +194,10 @@
     font-size: 1.5vh;
     font-weight: lighter;
     margin: 2vh 0 2vh 0;
+}
+
+.user_remember_me {
+  border: none;
 }
 
 .login_btn, .signin_btn {
@@ -202,7 +209,7 @@
 }
 
 .form-lists{
-  width: 21.6vw;
+  width: 60vw;
   height: 4.8vh;
   border: solid 1px #000000;
   margin-bottom: 2vh;
