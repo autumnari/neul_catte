@@ -102,15 +102,44 @@ align-content: center;
   margin-top: 7vh;
   width: 50vw;
   height: 25vh;
-  border: solid 0.5px #979797;
+  border: solid 0.5px #c8c4c4;
+
+  background-image: url('navbg.png');
+  object-fit: fill;
 }
 
 #post_tape_form {
   width: 50vw;
   height: 48vh;
   margin-top: 2vh;
-  border: 0.5px solid #979797;
+  border: 0.5px solid #c8c4c4;
+
+  background-image: url('navbg.png');
+  object-fit: fill;
 }
+
+.input_title {
+  border: 1px solid #787878;
+  border-radius: 5px;
+  width: 13vw;
+  height: 3vh;
+  margin-top: 1vh;
+}
+
+.form-control::-webkit-input-placeholder {
+  font-size: 2vh;
+  text-align: left;
+  padding-left: 0.5vw;
+  color: #c8c4c4;
+}
+
+input.form-control {
+  width: 13vw;
+  height: 3vh;
+  text-align: left;
+
+}
+
 
 .tape_record {
   width: 35vw;
