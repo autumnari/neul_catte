@@ -11,8 +11,8 @@
       <%= f.error_notification %>
 
       <div class="form-inputs">
+        <%= f.input :nickname, label: false, required: false, autofocus: true, placeholder: "Name" %>
         <%= f.input :email, label: false, required: true, autofocus: true, placeholder: "E-mail" %>
-
         <%= f.input :password, label: false, required: true, placeholder:"Password", maxlength: "18" %>
         <%= f.input :password_confirmation, label: false,  placeholder:"Password Confirmation", required: true, maxlength: "18" %>
       </div>
