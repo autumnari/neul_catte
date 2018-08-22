@@ -1,36 +1,56 @@
 <div class="tape_form_container">
 
-  <%= form_for "/tapes/new" do |f| %>
+  <%= form_for "tapes" do |f| %>
 
   <div class="tape_title_container">
-    <%= f.label :제목, class: "title" %>
+    <%= f.label :제목, class: "title", for: "title" %>
     <div class="input_title">
-      <%= f.text_field :tape_title, class: "form-control", placeholder: "제목을 작성해주세요" %>
+      <%= f.text_field :tape_title, id: "title", class: "form-control", placeholder: "제목을 작성해주세요" %>
     </div>
   </div>
 
   <div class="tape_img_container">
-    <%= f.label :커버이미지, class: "tape_img" %>
+    <%= f.label :커버이미지, class: "tape_img", for: "tape_img" %>
     <br>
     <div class="input_img">
-    <%= f.file_field :img, class: 'img_up', value: "이미지를 등록해주세요" %>
+      이미지를 등록해주세요
+      <%= f.file_field :img, id: "tape_img", class: 'img_up', value: "이미지를 등록해주세요" %>
     </div>
   </div>
 
   <div class="tape_filter_container">
     필터
-    <%= f.check_box :multiply %>
     <br>
 
+    <div class="filter_box">
+      <div class="filter">
+        <%= f.label :Multiply, for: "mp" %> <span></span>
+        <%= f.check_box :multiply, id: "mp" %>
+      </div>
+
+      <div class="filter">
+        <%= f.label :Screen, for: "scr" %>
+        <%= f.check_box :screen, id: "scr" %>
+      </div>
+
+      <div class="filter">
+        <%= f.label :Overlay, for: "ovr" %>
+        <%= f.check_box :overlay, id: "ovr" %>
+      </div>
+
+      <div class="filter">
+        <%= f.label :Saturation, for: "sat" %>
+        <%= f.check_box :saturation, id: "sat" %>
+      </div>
+    </div>
   </div>
 
   <div class="tape_music_container">
-    <label for="tape_music">
+    <div class="tape_music">
       트랙
-      <br>
-    </label>
-  </div>
-  <hr>
+    </div>
+
+  <hr class="track">
 
   <div class="tape_record">
     <div class="tape_a">
@@ -62,6 +82,7 @@
       </label>
     </div>
   </div>
+</div>
 
   <button type="preview">
     미리보기
