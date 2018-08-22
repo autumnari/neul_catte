@@ -18,8 +18,10 @@
     <title>NeulCatte</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%#= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%#= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', params[:controller] if NeulCatte::Application.assets.find_asset("#{params[:controller]}.css") %>
+    <%= javascript_include_tag 'application', params[:controller] if NeulCatte::Application.assets.find_asset("#{params[:controller]}.js") %>
 
     <meta property="og:title" content="늘어진 카세트 테이프" />
     <meta property="og:description" content="아날로그 감성을 담은 음악 추천 서비스" />
