@@ -114,7 +114,7 @@
 
 
 /* 테이프 탭 */
-.user_tape{
+.user_tape_my{
   display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -125,11 +125,11 @@
 }
 
 /* 테이프 테마 */
-.upload_tape{
+.upload_tape_my{
   position: relative;
   width: 17vw;
 }
-.blend_box{
+.blend_box_my{
   position: absolute;
   width: 15vw;
   height: 9vw;
@@ -138,14 +138,14 @@
   margin-left: 1vw;
   opacity: 0.1;
 }
-.user_cover{
+.user_cover_my{
   position: absolute;
   margin-top: 0.5vw;
   margin-left: 1vw;
   width: 15vw;
   height: 9vw;
 }
-.tape_title{
+.tape_title_my{
   position: absolute;
   width: 18vw;
   margin-top: -9.8vw;
@@ -300,11 +300,11 @@
   }
 
   /* 테이프 테마 */
-  .upload_tape{
+  .upload_tape_my{
     position: relative;
     width: 45vw;
   }
-  .blend_box{
+  .blend_box_my{
     position: absolute;
     width: 41vw;
     height: 25vw;
@@ -313,14 +313,14 @@
     margin-left: 1.4vw;
     opacity: 0.1;
   }
-  .user_cover{
+  .user_cover_my{
     position: absolute;
     margin-top: 1.7vw;
     margin-left: 1.4vw;
     width: 41vw;
     height: 24vw;
   }
-  .tape_title{
+  .tape_title_my{
     position: absolute;
     width: 18vw;
     margin-top: -26.5vw;
