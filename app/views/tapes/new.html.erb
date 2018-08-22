@@ -11,7 +11,38 @@
     <div class="post_tape_section">
       <section id="post_tape_preview">
         <div class="tape_preview_box">
-          테이프 미리보기
+
+          <div id="tape_preview_div"></div>
+          <div class="tape_preview_btns">
+            <button type="button"onclick="changingBlack()">Black</button>
+            <button type="button"onclick="changingGray()">Gray</button>
+            <button type="button"onclick="changingOrange()">Orange</button>
+            <button type="button"onclick="changingPink()">Pink</button>
+            <button type="button"onclick="changingPurple()">Purple</button>
+            <button type="button"onclick="changingSky()">Sky</button>
+          </div>
+
+            <script>
+              function changingBlack() {
+                  document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_black.png')";
+              }
+              function changingGray() {
+                  document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_gray.png')";
+              }
+              function changingOrange() {
+              document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_orange.png')";
+              }
+              function changingPink() {
+              document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_pink.png')";
+              }
+              function changingPurple() {
+              document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_purple.png')";
+              }
+              function changingSky() {
+              document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_sky.png')";
+              }
+            </script>
+
         </div>
       </section>
 
