@@ -15,11 +15,11 @@
 .main_title {
   margin: 6vh 4vw 4vh;
   width: 2vw;
-  height: 25vh;
+  // height: 25vh;
 }
 
 h1 .main_title {
-  font-size: 1.7vw;
+  font-size: 2vw;
 }
 
 .post_tape_section,
@@ -104,16 +104,58 @@ h1 .main_title {
   align-items: center;
 }
 
-#post_tape_preview {
+.post_tape_preview {
   margin-top: 7vh;
   width: 50vw;
-  height: 12vw;
+  height: 19vw;
   border: solid 0.5px #c8c4c4;
   background-image: url("navbg.png");
   object-fit: fill;
+
+  display: flex;
+  justify-content: center;
+  // padding: 3vw 15vw 3vw 15vw;
 }
 
-#post_tape_form {
+
+.btn_left {
+  width: 2vw;
+  padding-top: 8vw;
+
+  img{
+    width: 2vw;
+  }
+// .previous {
+//   position: relative;
+//   width: 4vw;
+//   z-index: 1;
+// }
+}
+
+.btn_right{
+  width: 2vw;
+  padding-top: 8vw;
+  // .next{
+  //   width:4vw;
+  //   z-index: 1;
+  // }
+  img{
+    width: 2vw;
+  }
+}
+
+
+.tape_preview{
+  width: 20vw;
+  margin: 2.5vw 6vw 0 6vw;
+
+  img {
+    width: 20vw;
+  }
+}
+
+
+.post_tape_form {
   width: 50vw;
   margin-top: 1vw;
   margin-bottom: 3vw;
@@ -121,6 +163,8 @@ h1 .main_title {
   background-image: url("navbg.png");
   object-fit: fill;
 }
+
+
 
 
 //// _form

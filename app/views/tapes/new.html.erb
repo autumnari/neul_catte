@@ -9,15 +9,25 @@
     </div>
 
     <div class="post_tape_section">
-      <section id="post_tape_preview">
-        <div class="tape_preview_box">
-          테이프 미리보기
-        </div>
-      </section>
 
-      <section id="post_tape_form">
+      <div class="post_tape_preview">
+
+          <div class="btn_left">
+           <%= image_tag "arrow-left.png" %>
+          </div>
+
+        <div class="tape_preview">
+          <%= image_tag "tapeskin_black.png" %>
+        </div>
+
+        <div class="btn_right">
+        <%= image_tag "arrow-right.png"%>
+      </div>
+      </div>
+
+      <div class="post_tape_form">
         <%= render "tapes/form" %>
-      </section>
+      </div>
 
     </div>
 
