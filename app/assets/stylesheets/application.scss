@@ -6,7 +6,7 @@
 @import url("devise.scss");
 
 /*--초기화--*/
-html, body, div, dl, dt, dd, ul, ol, li, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button {
+html, body, div, dl, dt, dd, ul, ol, li, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, button, select, textarea, input {
   margin:0; padding:0;
   outline:none;
   -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; /* 박스 크기 초기화 */
@@ -15,14 +15,12 @@ html, body, div, dl, dt, dd, ul, ol, li, pre, code, form, fieldset, legend, text
 
 fieldset,img { border:0 none; }
 
-input, select, textarea, button { vertical-align:middle; }
-
-html {
-  -ms-text-size-adjust:none; /* IE에서 기기 회전시에 사용자가 확대하지 않아도 글씨 크기가 재조정되는 것을 예방. */
-  -webkit-text-size-adjust:none; /* iOS에서 기기 회전시에 사용자가 확대하지 않아도 글씨 크기가 재조정되는 것을 예방. */
-  -moz-text-size-adjust:none;
-  text-size-adjust:none;
-}
+// html {
+//   -ms-text-size-adjust:none; /* IE에서 기기 회전시에 사용자가 확대하지 않아도 글씨 크기가 재조정되는 것을 예방. */
+//   -webkit-text-size-adjust:none; /* iOS에서 기기 회전시에 사용자가 확대하지 않아도 글씨 크기가 재조정되는 것을 예방. */
+//   -moz-text-size-adjust:none;
+//   text-size-adjust:none;
+// }
 
 /*--초기화--*/
 
@@ -48,8 +46,8 @@ body{
 .main_nav{
     width:auto;
     height: 10vh;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-top: 0.5px solid #000;
+    border-bottom: 0.5px solid #000;
 }
 
 #main_nav, ul, .nav_container{
@@ -105,7 +103,8 @@ nav a#trigger{
   position: absolute;
   top: 15vh;
   left: 0;
-  padding: 0.9vh 0 0.5vh 41vw;
+  padding: 0.9vh 0 0.5vh 44.5vw;
+  font-size: 0.9vw;
   // display: flex;
   // flex-direction: column;
   // justify-content: flex-start;
