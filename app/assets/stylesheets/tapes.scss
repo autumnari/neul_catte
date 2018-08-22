@@ -107,7 +107,7 @@ h1 .main_title {
 .post_tape_preview {
   margin-top: 7vh;
   width: 50vw;
-  height: 19vw;
+  height: 15vw;
   border: solid 0.5px #c8c4c4;
   background-image: url("navbg.png");
   object-fit: fill;
@@ -335,4 +335,28 @@ input[placeholder].list_a, input[placeholder].list_b{
 
 .save_tape {
   margin: 1vw 0 1vw 0;
+}
+
+
+/// Tape Preview Box
+
+.tape_preview_box{
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+  margin-top: 1.5vw;
+}
+
+#tape_preview_div{
+  width: 17vw;
+  height: 19vh;
+  background-image: url(/assets/tapeskin_black.png);
+  background-size: 17vw;
+}
+
+.tape_preview_btns{
+  margin-top: 0.5vw;
 }
