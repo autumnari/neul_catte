@@ -126,8 +126,8 @@ h1 .main_title {
 //// _form
 
 .tape_form_container {
-  width: 40vw;
-  margin: 1.5vw 5vw 0 5vw;
+  width: 35vw;
+  margin: 1.5vw 7.5vw 0 7.5vw;
 }
 
 // TITLE
@@ -149,8 +149,8 @@ label {
 }
 
 .input_title {
-  border: 1px solid #787878;
-  border-radius: 4px;
+  border: 0.07vw solid #787878;
+  border-radius: 0.3vw;
   width: 15vw;
   margin-top: 0.3vw;
 }
@@ -181,8 +181,8 @@ input[placeholder].form-control {
 }
 
 .input_img {
-  border: 1px solid #787878;
-  border-radius: 4px;
+  border: 0.07vw solid #787878;
+  border-radius: 0.3vw;
   width: 15vw;
   margin-top: 0.3vw;
   font-size: 1vw;
@@ -199,7 +199,12 @@ input[placeholder].form-control {
 
 .tape_filter_container {
   margin-bottom: 1vw;
+
+}
+
+.filter_index{
   font-size: 1.2vw;
+  margin-bottom: 0.7vw;
 }
 
 .filter_box {
@@ -219,14 +224,21 @@ input[placeholder].form-control {
 //
 // }
 
+
  // TRACK
+
+ .tape_music_container {
+   margin-bottom: 1.5vw;
+ }
 
  .tape_music {
    font-size: 1.2vw;
    margin-bottom: 0.5vw;
  }
 
-.track{
+.track{  //hr
+  width: 35vw;
+  float: left;
   height: 0.05vw;
   border-width: 0;
   margin-top: 0;
@@ -237,6 +249,11 @@ input[placeholder].form-control {
   width: 30vw;
   display: flex;
   justify-content: space-between;
+  margin-top: 1.5vw;
+}
+
+.side_a, .side_b {
+  font-size: 1vw;
 }
 
 
@@ -247,7 +264,31 @@ input[placeholder].form-control {
   align-items: flex-start;
 }
 
-.record_a,
-.record_b {
-  margin: 0.5vh 0 0;
+.list_a,
+.list_b {
+  width: 11vw;
+  height: 1.5vw;
+}
+
+input[placeholder].list_a, input[placeholder].list_b{
+  border: 0.07vw solid #787878 !important;
+  text-align:left;
+  font-size: 1vw;
+  margin-top: 0.5vw;
+  padding-left: 0.3vw;
+  border-radius: 0.3vw;
+}
+
+.list_a::-webkit-input-placeholder, .list_b::-webkit-input-placeholder
+ {
+  color: #c8c4c4;
+}
+
+
+
+
+///
+
+.save_tape {
+  margin: 1vw 0 1vw 0;
 }
