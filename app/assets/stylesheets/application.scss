@@ -3,83 +3,118 @@
 @import url("posts.scss");
 @import url("tapes.scss");
 @import url("my_pages.scss");
-@import url("devise.scss");
+@import url("devise.scss"); /*--초기화--*/
 
-/*--초기화--*/
-html, body, div, dl, dt, dd, ul, ol, li, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, button, select, textarea, input {
-  margin:0; padding:0;
-  outline:none;
-  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; /* 박스 크기 초기화 */
-  -webkit-border-radius:0; -moz-border-radius:0; -ms-border-radius:0; border-radius:0;  /* 박스 모서리 초기화 */
+blockquote,
+body,
+button,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+html,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+td,
+textarea,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 박스 크기 초기화 */
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  /* 박스 모서리 초기화 */
 }
 
-fieldset,img { border:0 none; }
-
+fieldset,
+img {
+  border: 0 none;
+}
 // html {
 //   -ms-text-size-adjust:none; /* IE에서 기기 회전시에 사용자가 확대하지 않아도 글씨 크기가 재조정되는 것을 예방. */
 //   -webkit-text-size-adjust:none; /* iOS에서 기기 회전시에 사용자가 확대하지 않아도 글씨 크기가 재조정되는 것을 예방. */
 //   -moz-text-size-adjust:none;
 //   text-size-adjust:none;
 // }
-
 /*--초기화--*/
+@font-face {
+  font-family: 'Arita-buri-SemiBold';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-@font-face { font-family: 'Arita-buri-SemiBold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff')
-  format('woff'); font-weight: normal; font-style: normal; }
-
-header{
-  background-image: url('navbg.png');
+header {
+  background-image: url("navbg.png");
   object-fit: contain;
 }
 
-body{
+body {
   font-family: 'Arita-buri-SemiBold', serif;
 }
 
-
-.blank{
+.blank {
   width: auto;
-  height: 5vh;
+  height: 2vw;
 }
 
-.main_nav{
-    width:auto;
-    height: 10vh;
-    border-top: 0.5px solid #000;
-    border-bottom: 0.5px solid #000;
+.main_nav {
+  width: auto;
+  height: 5vw;
+  border-top: 0.5px solid #979797;
+  border-bottom: 0.5px solid #979797;
 }
 
-#main_nav, ul, .nav_container{
-    height: inherit;
+#main_nav,
+.nav_container,
+ul {
+  height: inherit;
 }
 
-#main_nav{
-    height: 100%;
-    margin-left: 22vw;
-    margin-right: 22vw;
-    font-size: 1vw;
+#main_nav {
+  width: 60vw;
+  margin-left: 22vw;
+  margin-right: 22vw;
+  font-size: 1vw;
 }
 
-.nav_container
-{
-  ul{
-    width: 58vw;
-  }
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+ul.nav_ul{
+  width: 56vw;
+  margin: 0 2vw 0 2vw;
 }
 
-.nav_item{
-    text-decoration: none;
-    list-style: none;
-    color: #000;
+.nav_container {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav a#trigger{
-    display: none;
+.nav_item {
+  text-decoration: none;
+  list-style: none;
+  color: #141212;
+}
+
+nav a#trigger {
+  display: none;
 }
 
 .postbtn {
@@ -92,26 +127,26 @@ nav a#trigger{
 }
 
 .post-menu {
-    display: none;
-    background-image: url('navbg.png');
-// login-signup 페이지에서는 안보이게 수정 필요
+  display: none;
+  background-image: url("navbg.png"); // login-signup 페이지에서는 안보이게 수정 필요
 }
 
 .post-menu.show {
-  width: 100vw;
-  height: 4vh;
+  display: inline-block;
+  width: 100%;
+  // height: 4vh;
   position: absolute;
-  top: 15vh;
+  top: 7vw;
   left: 0;
-  padding: 0.9vh 0 0.5vh 44.5vw;
-  font-size: 0.9vw;
+  padding: 0.9vh 0 0.5vh 41.7vw;
+  // font-size: 0.9vw;
   // display: flex;
   // flex-direction: column;
   // justify-content: flex-start;
 }
 
 .post-menu-down {
-  padding-right: 3vw;
+  padding-right: 2vw;
   text-decoration: none;
   list-style: none;
   font-size: 1vw;
@@ -119,77 +154,76 @@ nav a#trigger{
 }
 
 .show {
-  display:inline-block;
+  display: inline-block;
+}
+
+.nav_logo {
+  width: 1.5vw;
+  margin-right: 4.5vw;
 }
 
 
 
-
 /* MOBILE*/
-
 @media all and (max-width : 768px) {
+  .blank {
+    display: none;
+  }
 
-    .blank{
-        display:none;
-    }
+  .main_nav {
+    width: auto;
+    height: 4vh;
+  }
 
+  #main_nav {
+    width: auto;
+    height: inherit;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-    .main_nav{
-        width: auto;
-        height: 4vh;
-    }
+  nav ul {
+    display: none;
+  }
 
-    #main_nav{
-        width: auto;
-        height:inherit;
-        margin-left: 0;
-        margin-right: 0;
-    }
+  .nav_container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
 
-    nav ul{
-        display: none;
-    }
+  .nav_item {
+    display: block;
+    float: none;
+    width: 100%;
+  }
 
-    .nav_container{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        float: none;
-        width: 100%;
-        text-align: center;
-    }
+  #trigger {
+    width: inherit;
+  }
 
+  nav a {
+    text-align: center;
+    float: none;
+  }
 
-    .nav_item{
-        display: block;
-        float: none;
-        width: 100%;
-    }
+  nav a#trigger {
+    display: block;
+    width: inherit;
+    height: 100%;
+    position: relative;
+  }
 
-    #trigger {
-        width: inherit;
-    }
-
-    nav a {
-        text-align: center;
-        float: none;
-    }
-
-
-    nav a#trigger{
-        display: block;
-        width: inherit;
-        height: 100%;
-        position: relative;
-    }
-
-    nav a#trigger:after {
-		content: "";
-		width: 30px;
-		height: 30px;
-		display: inline-block;
-		position: absolute;
-		right: 15px;
-		top: 10px;
-	}
+  nav a#trigger:after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
 }
