@@ -6,7 +6,7 @@
     </div>
     <div class="main_nav">
       <nav id="main_nav">
-          <ul>
+          <ul class="nav_ul">
               <div class="nav_container">
                 <%= link_to '테이프', tapes_path, class: "nav_item" %>
                 <%= link_to '데일리 뮤직', dailies_path, class: "nav_item" %>
@@ -15,6 +15,7 @@
                   <button onclick="myFunction()" class="postbtn">
                     포스트
                   </button>
+
                   <div id="post-dropdown" class="post-menu">
                     <%= link_to '테이프', "/tapes/new", class: "post-menu-down" %>
                     <%= link_to '데일리 뮤직', "/dailies/new", class: "post-menu-down" %>
@@ -24,8 +25,9 @@
                 <%= link_to '마이 페이지', my_pages_path, class: "nav_item" %>
                 <li class="nav_item">검색</li>
                 <%= link_to '로그인', new_user_session_path, class: "nav_item" %>
-                
-            
+
+                <%= image_tag "logo.png", class: "nav_logo" %>
+
               </div>
           </ul>
           <a href="#" id="trigger">메뉴</a>

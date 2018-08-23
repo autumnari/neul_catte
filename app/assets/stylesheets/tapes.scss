@@ -8,18 +8,18 @@
 
 .main_title_container {
   width: 20vw;
-  height: 85vh;
-  padding: 25vh 5vw;
+  height: 50vw;
+  padding: 15vw 5vw;
 }
 
 .main_title {
-  margin: 6vh 4vw 4vh;
+  margin: 3vw 4vw 4vw;
   width: 2vw;
   // height: 25vh;
-}
 
-h1 .main_title {
-  font-size: 2vw;
+  h1{
+    font-size: 1.8vw;
+  }
 }
 
 .post_tape_section,
