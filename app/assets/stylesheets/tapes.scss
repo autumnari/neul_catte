@@ -43,10 +43,11 @@
   position: absolute;
 
   display: flex;
-  align-items: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-flow: column wrap;
-  align-content: center;
+  align-items: flex-end;
+  align-content: flex-start;
 }
 
 .tape_theme_main {
@@ -94,6 +95,98 @@
   height: 7vh;
   font-size: 1vw;
 }
+
+/* 팝업 */
+.black_overlay{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+.tape2_popup{
+  display: none;
+  position: absolute;
+  left: 3vw;
+  width: 100%;
+  height: 100%;
+  z-index:1002;
+  overflow: auto;
+}
+.title_paper{
+  position: absolute;
+  background-color: yellow;
+  width: 3vw;
+  height: 15.15vw;
+  margin-top: -11.5vw;
+  margin-left: 18vw;
+  border: 1px solid black;
+}
+.title_paper_p{
+  transform: rotate(90deg);
+  position: absolute;
+  margin-top: -13vw;
+  margin-left: 10.2vw;
+  text-align: center;
+}
+.cover_paper img{
+  transform: rotate(90deg);
+  margin-top: -8.5vw;
+  margin-left: 18vw;
+  border: 1px solid black;
+}
+.songlist_paper_A{
+  width: 23vw;
+  height: 15.13vw;
+  border: 1px solid black;
+  background-color: lightgray;
+  margin-top: -11.5vw;
+  margin-left: 30vw;
+
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: center;
+
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+.songlist_paper_A p{
+  display: inline;
+  font-size: 0.8vw;
+  width: 15vw;
+  margin-top: 0.7vw;
+  margin-bottom: 0.7vw;
+}
+.songlist_paper_A button{
+  display: inline;
+  margin-top: 0.7vw;
+  margin-bottom: 0.7vw
+}
+.back_btn{
+  width: 0.8vw;
+  position: absolute;
+  margin-left: -2vw;
+  margin-top: 6.2vw;
+  cursor: pointer;
+}
+.forward_btn{
+  width: 0.8vw;
+  position: absolute;
+  margin-left: 18vw;
+  margin-top: 6.2vw;
+  cursor: pointer;
+}
+
+
 // tapes/index  ****************************************************
 
 
