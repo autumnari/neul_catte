@@ -171,19 +171,70 @@
   margin-top: 0.7vw;
   margin-bottom: 0.7vw
 }
+
+#next{
+  width: 23vw;
+  height: 15.13vw;
+  border: 1px solid black;
+  background-color: lightgray;
+  margin-top: -15.1vw;
+  margin-left: 27vw;
+
+  padding-left: 3vw;
+  padding-right: 3vw;
+
+  display: none;
+  position: absolute;
+  left: 3vw;
+  z-index:1002;
+  overflow: auto;
+}
+.songlist_paper_B{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: center;
+
+  margin-top: 1.4vw;
+}
+#next p{
+  display: inline;
+  font-size: 0.8vw;
+  width: 15vw;
+  margin-top: 0.7vw;
+  margin-bottom: 0.7vw;
+}
+.songlist_paper_B button{
+  display: inline;
+  margin-top: 0.7vw;
+  margin-bottom: 0.7vw
+}
+
 .back_btn{
   width: 0.8vw;
   position: absolute;
-  margin-left: -2vw;
-  margin-top: 6.2vw;
+  margin-left: 30vw;
+  margin-top: -10vw;
   cursor: pointer;
 }
 .forward_btn{
   width: 0.8vw;
   position: absolute;
   margin-left: 18vw;
-  margin-top: 6.2vw;
+  margin-top: -5vw;
   cursor: pointer;
+}
+
+.tape2_popup_btn{
+  margin-left: 33vw;
+  margin-top: 1vw;
+}
+.tape2_popup_btn a{
+  color: black;
+  font-size: 1vw;
+  margin: 1vw;
 }
 
 

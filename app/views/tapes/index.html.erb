@@ -59,34 +59,55 @@
     <div class="cover_paper">
       <img class="user_cover_main" src="/assets/cover_test.png">
     </div>
+
     <div class="songlist_paper_A">
-      <img class="back_btn" src="/assets/arrow_left1.png">
-      <img class="forward_btn" src="/assets/arrow_right1.png">
+
       <p class="song1">레드벨벳 - 빨간맛</p>
         <button type="button" name="button" class="song1_recbtn">REC</button>
       <p class="song2">숀 - Way Back Home</p>
-        <button type="button" name="button" class="song1_recbtn">REC</button>
+        <button type="button" name="button" class="song2_recbtn">REC</button>
       <p class="song3">방탄소년단 - Leave Me</p>
-        <button type="button" name="button" class="song1_recbtn">REC</button>
+        <button type="button" name="button" class="song3_recbtn">REC</button>
       <p class="song4">아이유 - 가을아침</p>
-        <button type="button" name="button" class="song1_recbtn">REC</button>
+        <button type="button" name="button" class="song4_recbtn">REC</button>
       <p class="song5">레드벨벳 - Power Up</p>
-        <button type="button" name="button" class="song1_recbtn">REC</button>
-    </div>
-    <div class="songlist_paper_B">
-      <p class="song6"></p>
-        <button type="button" name="button" class="song1_recbtn">REC</button>
-      <p class="song7"></p>
-        <button type="button" name="button" class="song1_recbtn">REC</button>
-      <p class="song8"></p>
-        <button type="button" name="button" class="song1_recbtn">REC</button>
-      <p class="song9"></p>
-        <button type="button" name="button" class="song1_recbtn">REC</button>
-      <p class="song10"></p>
-        <button type="button" name="button" class="song1_recbtn">REC</button>
+        <button type="button" name="button" class="song5_recbtn">REC</button>
     </div>
 
-    <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('tape2_fade').style.display='none'">닫기</a>
+<!-- 화살표
+    <a href = "javascript:void(0)" onclick = "document.getElementById('next').style.display='block';document.getElementById('fade').style.display='block'">
+     <img class="forward_btn" src="/assets/arrow_right1.png">
+    </a>
+
+    <a href = "javascript:void(0)" onclick = "document.getElementById('next').style.display='none';document.getElementById('fade').style.display='none'">
+      <img class="back_btn" src="/assets/arrow_left1.png">
+    </a>
+  -->
+
+    <div id="next">
+      <div class="songlist_paper_B">
+        <p class="song6">Fight Facilities - Stranded</p>
+          <button type="button" name="button" class="song6_recbtn">REC</button>
+        <p class="song7">멜로망스 - 동화</p>
+          <button type="button" name="button" class="song7_recbtn">REC</button>
+        <p class="song8">볼빨간사춘기 - 여행</p>
+          <button type="button" name="button" class="song8_recbtn">REC</button>
+        <p class="song9">비투비 - 너 없인 안 된다</p>
+          <button type="button" name="button" class="song9_recbtn">REC</button>
+        <p class="song10">볼빨간사춘기 - 장마</p>
+          <button type="button" name="button" class="song10_recbtn">REC</button>
+      </div>
+    </div>
+
+    <div class="tape2_popup_btn">
+      <a href = "javascript:void(0)" onclick = "document.getElementById('next').style.display='none';document.getElementById('fade').style.display='none'">사이드 A
+      </a>
+
+      <a href = "javascript:void(0)" onclick = "document.getElementById('next').style.display='block';document.getElementById('fade').style.display='block'">사이드 B
+      </a>
+
+      <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('tape2_fade').style.display='none'">닫기</a>
+    </div>
 
   </div>
 
