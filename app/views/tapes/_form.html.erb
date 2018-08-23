@@ -25,6 +25,42 @@
 
     <div class="filter_box">
       <div class="filter">
+        <%= f.label :Bule, for: "mp" %>
+        <span></span>
+        <%= f.check_box :blue, id: "mp" %>
+      </div>
+
+      <div class="filter">
+        <%= f.label :Red, for: "scr" %>
+        <%= f.check_box :red, id: "scr" %>
+      </div>
+
+      <div class="filter">
+        <%= f.label :Yellow, for: "ovr" %>
+        <%= f.check_box :yellow, id: "ovr" %>
+      </div>
+
+      <div class="filter">
+        <%= f.label :Black, for: "sat" %>
+        <%= f.check_box :black, id: "sat" %>
+      </div>
+
+      <div class="filter">
+        <%= f.label :White, for: "sat" %>
+        <%= f.check_box :white, id: "sat" %>
+      </div>
+
+    </div>
+  </div>
+
+<!--
+  <div class="tape_filter_container">
+    <div class="filter_index">
+      필터
+    </div>
+
+    <div class="filter_box">
+      <div class="filter">
         <%= f.label :Multiply, for: "mp" %>
         <span></span>
         <%= f.check_box :multiply, id: "mp" %>
@@ -46,6 +82,7 @@
       </div>
     </div>
   </div>
+-->
 
   <div class="tape_music_container">
     <div class="tape_music">
