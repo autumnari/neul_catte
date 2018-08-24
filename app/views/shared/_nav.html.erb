@@ -31,9 +31,8 @@
 
                 <% else %>
                   <div class="nav_container">
-                    <%= image_tag "logo.png", class: "nav_logo" %>
-                    <p> 늘어진 카세트 테이프 </p>
-                    <p> about </p>
+                    <%= link_to image_tag("logo.png", height: '46', width: '20'), root_path, class: "nav_logo" %>
+                    <%= link_to '늘어진 카세트 테이프', main_about_path, class: "nav_logotext" %>
                     <%= link_to '로그인', new_user_session_path, class: "nav_item" %>
                   </div>
                 <% end %>
