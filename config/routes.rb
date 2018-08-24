@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   root 'main#index'
 
+  resources :musics
   resources :main, only: [:index]
   resources :posts, only: [:index]
   resources :tapes
