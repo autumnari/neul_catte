@@ -182,6 +182,12 @@ a {
   overflow: hidden;
   text-overflow: clip;
   height: 9vw;
+    font-size: 0.9vw;
+    line-height: 1.9vw;
+    margin: 0vw 1vw 0.8vw 1vw;
+    overflow: hidden;
+    text-overflow: clip;
+    height: 16vw;
 }
 
 .user_context_modal2 {
@@ -204,6 +210,21 @@ a {
   overflow: hidden;
   text-overflow: clip;
 }
+    height: 13vw;
+    font-size: 0.9vw;
+    line-height: 1.9vw;
+    margin: 1vw 1vw 0.8vw 1vw;
+    overflow: hidden;
+    text-overflow: clip;
+}
+.by_user_nick_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 1vw;
+    margin-bottom: 0.6vw;
+    margin-right: 1vw;
+    font-size: 1vw;
 
 .by_user_nick_box {
   display: flex;
