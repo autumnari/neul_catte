@@ -251,7 +251,7 @@
 .post_tape_preview {
   margin-top: 10vw;
   width: 50vw;
-  height: 19vw;
+  // height: 19vw;
   border: solid 0.5px #c8c4c4;
   background-image: url("navbg.png");
   object-fit: fill;
@@ -265,28 +265,6 @@
   margin-top: 3vw;
 }
 
-
-// <!-- 좌우 버튼 사용 X --!>
-
-// .btn_left {
-//   width: 2vw;
-//   padding-top: 8vw;
-//
-//   img{
-//     width: 2vw;
-//   }
-// }
-//
-// .btn_right{
-//   width: 2vw;
-//   padding-top: 8vw;
-//
-//   img{
-//     width: 2vw;
-//   }
-// }
-
-
 .tape_preview{
   width: 20vw;
   margin: 2.5vw 6vw 0 6vw;
@@ -295,7 +273,6 @@
     width: 20vw;
   }
 }
-
 
 .post_tape_form {
   width: 50vw;
@@ -306,10 +283,7 @@
   object-fit: fill;
 }
 
-
-
-
-//// _form
+//// _form ///////////////////////////////////////////////
 
 .tape_form_container {
   width: 35vw;
@@ -320,7 +294,8 @@
 
 .tape_title_container {
   font-size: 1.2vw;
-  margin-bottom: 1vw;
+  margin-top: 2vw;
+  margin-bottom: 2.5vw;
 }
 
 label {
@@ -349,17 +324,14 @@ input[placeholder].form-control {
   width: 15vw;
   text-align: left !important;
   padding: 0.3vw 0.5vw 0.3vw 0.5vw;
-
 }
 
 // IMAGE
 
 .tape_img_container {
   font-size: 1.2vw;
-  margin-bottom: 1vw;
+  margin-bottom: 2.5vw;
 }
-
-
 
 .input_img {
   border: 0.07vw solid #787878;
@@ -367,16 +339,17 @@ input[placeholder].form-control {
   width: 15vw;
   height: 1.8vw;
   margin-top: 0.3vw;
+  cursor: pointer;
 
-.tape_img{
+  .tape_img{
   position: absolute;
-  // display: inline-block;
   width: 13vw;
 font-size: 1vw;
 text-align: left;
 color: #c8c4c4;
 padding: 0.3vw 0.5vw 0.3vw 0.5vw;
 letter-spacing: 0.15vw;
+cursor: pointer;
   }
 }
 
@@ -388,13 +361,14 @@ letter-spacing: 0.15vw;
 // FILTER
 
 .tape_filter_container {
-  margin-bottom: 1vw;
-  height: 4vw;
+  margin: 1.5vw 0 2.5vw 0;
+
+  // height: 4vw;
 }
 
 .filter_index{
   font-size: 1.2vw;
-  margin-bottom: 0.7vw;
+  margin-bottom: 1vw;
 }
 
 .filter_box {
@@ -433,7 +407,6 @@ letter-spacing: 0.15vw;
 .checkmark {
     position: absolute;
     top: 0;
-    // left: auto;
     height: 1.2vw;
     width: 1.2vw;
     background-color: #eee 0.3; // enabled + unchecked box background color
@@ -456,10 +429,10 @@ letter-spacing: 0.15vw;
 }
 
 .container .checkmark:after {
-    left: 0.35vw;
-    top: 0;
+    left: 0.33vw;
+    top: 0.1vw;
     width: 0.4vw;
-    height: 0.8vw;
+    height: 0.7vw;
     border: 0.1vw solid #000000;
     border-width: 0 0.1vw 0.1vw 0;
     -webkit-transform: rotate(45deg);
@@ -492,15 +465,16 @@ letter-spacing: 0.15vw;
 }
 
 .tape_record {
-  width: 30vw;
+  width: 35vw;
   display: flex;
   justify-content: space-between;
-  margin-top: 1.5vw;
+  margin-top: 2vw;
+  margin-bottom: 2.5vw;
 }
 
 .side_a, .side_b {
   font-size: 1vw;
-  margin-bottom: 0.4vw;
+  margin-bottom: 0.8vw;
 }
 
 
@@ -512,7 +486,7 @@ letter-spacing: 0.15vw;
 }
 
 .a, .b{
-  width: 13vw;
+  width: 17vw;
   // display: block;
   margin: 0.3vw 0 0.3vw 0;
   vertical-align: middle;
@@ -523,8 +497,8 @@ letter-spacing: 0.15vw;
 
 .list_a,
 .list_b {
-  width: 11vw;
-  height: 1.7vw;
+  width: 15vw;
+  height: 2vw;
   margin-right: 0.5vw;
 }
 
@@ -533,7 +507,7 @@ input[placeholder].list_a, input[placeholder].list_b{
   text-align:left;
   font-size: 1vw;
   // margin-top: 0.5vw;
-  padding-left: 0.3vw;
+  padding-left: 0.5vw;
   border-radius: 0.3vw;
 }
 
@@ -568,6 +542,7 @@ input[placeholder].list_a, input[placeholder].list_b{
 #tape_preview_div{
   width: 17vw;
   height: 19vh;
+  margin-top: 3vw;
   // display: flex;
   // justify-content: center;
   background-image: url(/assets/tapeskin_black.png);
@@ -583,6 +558,7 @@ input[placeholder].list_a, input[placeholder].list_b{
   display: flex;
   justify-content: space-around;
   margin-top: 2vw;
+  margin-bottom: 2vw;
 }
 
 .tape_black_btn, .tape_gray_btn, .tape_orange_btn, .tape_pink_btn, .tape_purple_btn, .tape_sky_btn{
@@ -645,4 +621,255 @@ border-style: none;
 
 .save_tape{
   width: 3vw;
+}
+
+
+//////////////////////////////////////// MOBILE //////////////////////////////////////////
+
+@media all and (max-width : 768px) {
+  .main_title_container{
+    display: none;
+  }
+
+  .logo_03_container{
+    display:none;
+  }
+
+  .post_tape_section{
+    width: 100vw;
+  }
+
+  .post_tape_preview, .post_tape_form{
+    width: 90vw;
+    background: none;
+    border: none;
+  }
+
+  #tape_preview_div{
+    width: 70vw;
+    height: 35vw;
+  }
+
+  .tape_preview_btns{
+    width: 55vw;
+  }
+
+  .tape_black_btn, .tape_gray_btn, .tape_orange_btn, .tape_pink_btn, .tape_purple_btn, .tape_sky_btn{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    border-style: none;
+    cursor: pointer;
+  }
+
+  .post_tape_form{
+    width: 95vw;
+    margin-top: 5vw;
+        font-family: sans-serif;
+    // padding: 0 5vw 0 5vw;
+  }
+
+  .tape_form_container{
+    width: 90vw;
+    font-family: sans-serif;
+    margin: 0 2.5vw 0 2.5vw;
+  }
+
+  .tape_title_container, .tape_img_container, .filter_index {
+    color: #a7a7a7;
+    font-size: 3vw;
+  }
+
+.tape_title_container, .tape_img_container, .tape_filter_container {
+  padding-left: 4vw;
+}
+
+  .input_title {
+    border-top: none;
+    border-left: none;
+    border-right:none;
+        border-radius: 0;
+    border-bottom: 0.15vw solid #c8c4c4;
+    width: 30vw;
+    margin: 2vw 0 4vw 0;
+    height: auto;
+  }
+
+  .form-control::-webkit-input-placeholder {
+    font-size: 2.3vw;
+    color: #c8c4c4;
+    letter-spacing: 0.8vw;
+    font-family: sans-serif;
+  }
+
+  input[placeholder].form-control {
+    font-size: 2.3vw;
+    width: 50vw;
+    text-align: left !important;
+
+    // padding: 0.3vw 0.5vw 0.3vw 0.5vw;
+  }
+
+/// mobile IMAGE
+
+  .input_img{
+    border-top: none;
+    border-left: none;
+    border-right:none;
+    border-bottom: 0.15vw solid #c8c4c4;
+    border-radius: 0;
+    width: 32vw;
+    height: 4vw;
+    margin: 1.7vw 0 4vw 0;
+    // margin: 2vw 0 2vw 0;
+    // height: auto;
+
+    .tape_img{
+    position: absolute;
+    width: 50vw;
+  font-size: 2.3vw;
+  text-align: left;
+  color: #c8c4c4;
+  // padding: 1vw 1.2vw 1vw 1.2vw;
+  letter-spacing: 0.8vw;
+    }
+  }
+
+  .filter_box {
+    display: flex;
+    flex-direction: row;
+    height: 7vw;
+    justify-content: space-between;
+    margin-right: 15vw;
+    // font-size: 2.5vw;
+  }
+
+  .filter{
+    width: 10vw;
+  }
+
+  .filter_index{
+    margin-bottom: 2.5vw;
+  }
+
+  .container{
+    font-size: 2.5vw;
+    width: 12vw;
+    padding-left: 0.5vw;
+    font-weight: bold;
+  }
+
+  .checkmark{
+    margin-left: 1vw;
+    width: 3.2vw;
+    height: 3.2vw;
+
+
+  }
+
+  .container input {
+      position: absolute;
+      top: 0;
+      opacity: 0;
+      cursor: pointer;
+
+  }
+
+
+  .container .checkmark:after {
+      left: 0.8vw;
+      top: 0.3vw;
+      width: 1vw;
+      height: 2vw;
+      border: 0.7vw solid #000000;
+      border-width: 0 0.3vw 0.3vw 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+  }
+
+  .tape_music, .track{
+    display: none;
+  }
+
+  .tape_record {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side_a, .side_b {
+    position: relative;
+    width: 90vw;
+    background-image: url("navbg.png");
+    object-fit: fill;
+    font-size: 3vw;
+    padding: 1vw;
+    margin-bottom: 3vw;
+  }
+
+  .side_a{
+    margin-top: 2vw;
+  }
+
+  .a_list_container, .b_list_container{
+    width: 90vw;
+    margin-bottom: 4vw;
+    padding: 2vw 5vw 2vw 5vw;
+  }
+
+  .a, .b{
+    width: 80vw;
+    margin: 1vw 0 1vw 0;
+  }
+
+  .list_a,
+  .list_b {
+    width: 80vw;
+    height: 4vw;
+    margin-right: 1vw;
+  }
+
+  input[placeholder].list_a, input[placeholder].list_b{
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+    border-bottom: 0.15vw solid #c8c4c4 !important;
+
+    text-align:left;
+    font-size: 2.3vw;
+    padding-left: 0.5vw;
+    border-radius: 0.5vw;
+
+        letter-spacing: 0.5vw;
+  }
+
+  .list_a::-webkit-input-placeholder, .list_b::-webkit-input-placeholder
+   {
+    font-family: sans-serif;
+    font-size: 2.3vw
+
+  }
+
+  .tape_a {
+    width: 90vw;
+  }
+
+  .tape_submit{
+    width: 85vw;
+  }
+
+  .preview_custom, .save_tape{
+    font-size: 2vw;
+    font-family: sans-serif;
+  }
+
+  .preview_custom{
+    width: 10vw;
+  }
+
+  .save_tape{
+    width: 5vw
+  }
 }
