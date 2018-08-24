@@ -1,6 +1,6 @@
 <div class="tape_form_container">
 
-  <%= form_for "tapes" do |f| %>
+  <%= form_for @tape do |f| %>
 
   <div class="tape_title_container">
     <%= f.label :제목, class: "title", for: "title" %>
@@ -60,17 +60,11 @@
         </label>
       </div>
 
-      <!-- 뷰헬퍼 쓰니까 checkbox 수정이 힘들어서 일단은 그냥 html 코드로 쓸게요! -->
-      <!-- <div class="filter"> <%= f.label :Blue %> <span class="blue_check"></span> <%= f.label :"", for: "blue" %> <%= f.check_box :blue, id: "blue", class:"ue" %> </div> <div class="filter"> <%= f.label :Red, for: "red" %> <%= f.check_box :red, id:
-      "red" %> </div> <div class="filter"> <%= f.label :Yellow, for: "ylw" %> <%= f.check_box :yellow, id: "ylw" %> </div> <div class="filter"> <%= f.label :Black, for: "black" %> <%= f.check_box :black, id: "black" %> </div> <div class="filter"> <%=
-      f.label :White, for: "white" %> <%= f.check_box :white, id: "white" %> </div> -->
+
 
     </div>
   </div>
 
-  <!-- <div class="tape_filter_container"> <div class="filter_index"> 필터 </div> <div class="filter_box"> <div class="filter"> <%= f.label :Multiply, for: "mp" %> <span></span> <%= f.check_box :multiply, id: "mp" %> </div> <div class="filter"> <%=
-  f.label :Screen, for: "scr" %> <%= f.check_box :screen, id: "scr" %> </div> <div class="filter"> <%= f.label :Overlay, for: "ovr" %> <%= f.check_box :overlay, id: "ovr" %> </div> <div class="filter"> <%= f.label :Saturation, for: "sat" %> <%=
-  f.check_box :saturation, id: "sat" %> </div> </div> </div> -->
 
   <div class="tape_music_container">
     <div class="tape_music">
@@ -87,23 +81,23 @@
         </div>
         <div class="a_list_container">
           <div class="a">
-            <%= f.text_field :list, class: "list_a", placeholder: "곡을 녹음해주세요" %>
+            <%= f.text_field :m1, class: "list_a", placeholder: "곡을 녹음해주세요" %>
             <%= f.button :"", class: "record" %>
           </div>
           <div class="a">
-            <%= f.text_field :list, class: "list_a", placeholder: "곡을 녹음해주세요" %>
+            <%= f.text_field :m2, class: "list_a", placeholder: "곡을 녹음해주세요" %>
             <%= f.button :"", class: "record" %>
           </div>
           <div class="a">
-            <%= f.text_field :list, class: "list_a", placeholder: "곡을 녹음해주세요" %>
+            <%= f.text_field :m3, class: "list_a", placeholder: "곡을 녹음해주세요" %>
             <%= f.button :"", class: "record" %>
           </div>
           <div class="a">
-            <%= f.text_field :list, class: "list_a", placeholder: "곡을 녹음해주세요" %>
+            <%= f.text_field :m4, class: "list_a", placeholder: "곡을 녹음해주세요" %>
             <%= f.button :"", class: "record" %>
           </div>
           <div class="a">
-            <%= f.text_field :list, class: "list_a", placeholder: "곡을 녹음해주세요" %>
+            <%= f.text_field :m5, class: "list_a", placeholder: "곡을 녹음해주세요" %>
             <%= f.button :"", class: "record" %>
           </div>
         </div>
@@ -115,27 +109,27 @@
         </div>
         <div class="b_list_container">
           <div class="b">
-            <%= f.text_field :list, class: "list_b", placeholder: "곡을 녹음해주세요" %>
+            <%= f.text_field :m6, class: "list_b", placeholder: "곡을 녹음해주세요" %>
             <%= f.button :"", class: "record" %>
           </div>
 
           <div class="b">
-            <%= f.text_field :list, class: "list_b", placeholder: "곡을 녹음해주세요" %>
+            <%= f.text_field :m7, class: "list_b", placeholder: "곡을 녹음해주세요" %>
             <%= f.button :"", class: "record" %>
           </div>
 
           <div class="b">
-            <%= f.text_field :list, class: "list_b", placeholder: "곡을 녹음해주세요" %>
+            <%= f.text_field :m8, class: "list_b", placeholder: "곡을 녹음해주세요" %>
             <%= f.button :"", class: "record" %>
           </div>
 
           <div class="b">
-            <%= f.text_field :list, class: "list_b", placeholder: "곡을 녹음해주세요" %>
+            <%= f.text_field :m9, class: "list_b", placeholder: "곡을 녹음해주세요" %>
             <%= f.button :"", class: "record" %>
           </div>
 
           <div class="b">
-            <%= f.text_field :list, class: "list_b", placeholder: "곡을 녹음해주세요" %>
+            <%= f.text_field :m10, class: "list_b", placeholder: "곡을 녹음해주세요" %>
             <%= f.button :"", class: "record" %>
           </div>
         </div>
@@ -143,15 +137,14 @@
     </div>
   </div>
 
-
-<div class="tape_submit">
-  <button type="preview" class="preview_custom">
-    미리보기
-  </button>
-  <!-- preview (if needed) -->
-  <button type="submit" value="save" class="save_tape">
-    저장
-  </button>
+  <div class="tape_submit">
+    <button type="preview" class="preview_custom">
+      미리보기
+    </button>
+    <!-- preview (if needed) -->
+    <button type="submit" value="save" class="save_tape">
+      저장
+    </button>
   </div>
 
 <% end %>
