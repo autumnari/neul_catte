@@ -8,8 +8,6 @@ a {
   display: flex;
   flex-direction: row;
   margin-top: 1vw;
-    display: flex;
-    flex-direction: row;
 }
 
 .nav_daily {
@@ -19,9 +17,6 @@ a {
 
 .title_daily {
   margin: 6vh 4vw 4vh;
-  width: 2vw;
-  height: 25vh;
-  margin: 7vh 4vw 4vh;
   width: 2vw;
   height: 25vh;
 }
@@ -131,7 +126,6 @@ a {
 
 .daily_title_modal {
   margin: 1vw 0.4vw;
-  margin: 1vw 0.4vw;
 }
 
 .daily_img_box_modal {
@@ -150,12 +144,6 @@ a {
   border-bottom: 0.5px solid black;
   width: 22vw;
   background-image: url("daily_bgc.jpg");
-  display: flex;
-  flex-direction: column;
-  border-top: 0.5px solid black;
-  border-bottom: 0.5px solid black;
-  width: 22vw;
-  background-image: url(daily_bgc.jpg);
   display: flex;
   flex-direction: column;
 }
@@ -190,11 +178,6 @@ a {
   background-image: url("daily_bgc.jpg");
   display: flex;
   flex-direction: column;
-  border: 0.5px solid black;
-  width: 22vw;
-  background-image: url(daily_bgc.jpg);
-  display: flex;
-  flex-direction: column;
 }
 
 .daily_text2 {
@@ -204,21 +187,6 @@ a {
   overflow: hidden;
   text-overflow: clip;
 }
-    height: 13vw;
-    font-size: 0.9vw;
-    line-height: 1.9vw;
-    margin: 1vw 1vw 0.8vw 1vw;
-    overflow: hidden;
-    text-overflow: clip;
-}
-.by_user_nick_box {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-left: 1vw;
-    margin-bottom: 0.6vw;
-    margin-right: 1vw;
-    font-size: 1vw;
 
 .by_user_nick_box {
   display: flex;
@@ -231,7 +199,6 @@ a {
 }
 
 .daily_user_nick {
-  margin-left: 0.4vw;
   margin-left: 0.4vw;
 }
 /* The Close Button */
@@ -302,12 +269,6 @@ label {
   margin: 3vw 0 1vw;
   padding: 0 3vw;
   font-size: 2vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  // border: 1px solid red;
-  padding :2vw 2vw;
-  font-size: 1.8vw;
 }
 
 label.form_title {
