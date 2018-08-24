@@ -2,15 +2,16 @@
   <img class="profile_img" src="/assets/profile_img.png">
   <div class="profile_article">
     <div class="profile_top">
-      <div class="nickname">늘카테 땅비</div>
+      <div class="nickname"><%= current_user.nickname %></div>
       <button class="profile_edit_btn">프로필 수정</button>
     </div>
     <div class="post_count">
-      <p>테이프<div class="tape_count">5</div></p>
-      <p>데일리 뮤직<div class="daily_count">12</div></p>
-      <p>녹음<div class="rec_count">37</div></p>
+      <p>테이프<div class="tape_count"><%= current_user.tapes.count %></div></p>
+      <p>데일리 뮤직<div class="daily_count"><%= current_user.dailies.count %></div></p>
+      <p>녹음<div class="rec_count"><%= current_user.records.count %></div></p>
     </div>
     <div class="user_intro">늘어진 카세트 테이프에서 디자인과 프론트를 맡고 있는 땅비입니다.</div>
+    <!-- <div class="user_intro"><%= current_user.text %></div> -->
   </div>
 </section>
 
@@ -33,8 +34,17 @@
               <p class="tape_title_my">강건너 불구경</p>
             </div>
           <!-- -->
+          <% current_user.tapes.each do |t| %>
+             <div class="tape_theme_my">
+               <img class="user_cover_my" src="/assets/cover_test.png">
+               <div class="blend_box_my"></div>
+               <img class="upload_tape_my" src="/assets/tapeskin_black.png">
+               <p class="tape_title_my">
+               <%=t.tape_title %></p>
+             </div>
+           <% end%>
 
-            <div class="tape_theme_my">
+            <!-- <div class="tape_theme_my">
               <img class="user_cover_my" src="/assets/cover_test.png">
               <div class="blend_box_my"></div>
               <img class="upload_tape_my" src="/assets/tapeskin_orange.png">
@@ -67,7 +77,7 @@
               <div class="blend_box_my"></div>
               <img class="upload_tape_my" src="/assets/tapeskin_sky.png">
               <p class="tape_title_my">강건너 불구경</p>
-            </div>
+            </div> -->
 
           </div>
         </div>
@@ -101,7 +111,17 @@
                     <img class="daily_card_img_mypage" src="/assets/daily_ex.jpg"></img>
                   </div>
               </a>
-              <div class="daily_card_mypage">
+              <% current_user.dailies.each do |t| %>
+                 <div class="daily_card_mypage">
+                   <div class="daily_card_color_mypage">
+                     <p class="daily_card_title_mypage"><%= t.daily_title%></p>
+                   </div>
+                   <div class="daily_card_img_box_mypage">
+                     <img class="daily_card_img_mypage" src="/assets/daily_ex.jpg"></img>
+                   </div>
+                 </div>
+               <% end%>
+              <!-- <div class="daily_card_mypage">
                 <div class="daily_card_color_mypage"></div>
                 <div class="daily_card_img_box_mypage"></div>
               </div>
@@ -140,7 +160,7 @@
               <div class="daily_card_mypage">
                 <div class="daily_card_color_mypage"></div>
                 <div class="daily_card_img_box_mypage"></div>
-              </div>
+              </div> -->
 
             </div>
           </div>
@@ -150,6 +170,9 @@
         <label for="tabthree">플레이리스트</label>
           <div class="tab">
             <div class="playlist">
+              <!-- <% current_user.records.each do |t| %>
+                <div class="rec-music"><%#= t.title %></div>
+              <% end %> -->
               <div class="rec-music">아이유 - 첫 이별 그날 밤</div>
               <div class="rec-music">숀 - Way Back Home</div>
               <div class="rec-music">레드벨벳 - Power Up</div>

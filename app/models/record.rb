@@ -1,3 +1,4 @@
 class Record < ApplicationRecord
-  has_many: musics
+  belongs_to :user
+  has_many :musics
 end

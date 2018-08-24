@@ -5,10 +5,10 @@
   <section class="nav_daily">
     <h1 class="title_daily">데일리 뮤직</h1>
   </section>
-  
+
   <section class="body_daily">
     <p class="intro_daily">당신의 플레이리스트와 꼭 맞는 유저들의 오늘의 음악이에요.</p>
-    
+
     <div class="daily_card_container">
       <a id="card1" class="daily_card">
           <!-- <!— 사용자 데일리의 컬러 —> -->
@@ -33,6 +33,16 @@
             <img class="daily_card_img" src="/assets/daily_ex.jpg"></img>
           </div>
       </a>
+      <% current_user.dailies.each do |t| %>
+         <div class="daily_card">
+           <div class="daily_card_color">
+             <p class="daily_card_title"><%= t.daily_title%></p>
+           </div>
+           <div class="daily_card_img_box">
+             <img class="daily_card_img" src="/assets/daily_ex.jpg"></img>
+           </div>
+         </div>
+       <% end%>
       <div class="daily_card">
         <div class="daily_card_color"></div>
         <div class="daily_card_img_box"></div>
@@ -76,12 +86,12 @@
     </div>
 
   </section>
-  
+
   <section class="ad_daily">
     <p class="logo_daily">늘어진<br>카세트<br>테이프</p>
   </section>
 
- 
+
 
 </section>
 
@@ -104,26 +114,26 @@
     <div class="user_context_modal">
       <!-- <!— 사용자 데일리의 노래 제목, 가수 (모달) —> -->
       <p class="daily_song_modal">잘 가요 로맨스 - 박선주</p>
-      
+
       <input type="image" id="rec_btn" alt="rec"
            src="/assets/rec_btn_black@3x.jpg" onclick="document.getElementById('rec_btn').src='/assets/rec_btn_red@3x.jpg'">
-      
+
       <!-- <!— 사용자 데일리의 텍스트내용1 (모달) —> -->
       <!-- 공백포함 글자수163 , byte 수 285 byte-->
-      <p class="daily_text">랜덤 재생 모드로 음악을 듣다가 어느 순간 박선주의 ‘잘가요 로맨스’가 나온다. 전주 뒤에 첫 단어를 박선주가 노래하자마자 나는 도쿄의 좁디 좁은 호텔방에 누워있다. 그저 하얀 침대커버 왼쪽 모서리에 베개도 안 베고 오른쪽으로 돌아누운 채로 
-      </p> 
+      <p class="daily_text">랜덤 재생 모드로 음악을 듣다가 어느 순간 박선주의 ‘잘가요 로맨스’가 나온다. 전주 뒤에 첫 단어를 박선주가 노래하자마자 나는 도쿄의 좁디 좁은 호텔방에 누워있다. 그저 하얀 침대커버 왼쪽 모서리에 베개도 안 베고 오른쪽으로 돌아누운 채로
+      </p>
     </div>
     <div class="user_context_modal2">
       <!-- <!— 사용자 데일리의 텍스트내용1 (모달) —> -->
       <!-- 공백포함 글자수169 , byte 수 289 byte-->
       <p class="daily_text2">바로 앞에 있는 나무 합판으로 만들어진 책상을 응시하고 있다. 온도는 반팔을 입고 있기에 딱 적당한 것 같은 온도, 창문 앞에 있는 싸구려 히터가 털털털 돌아가고 있는 것 같고, 건조한 것 같은 화장실은 살짝 문이 열려있다. 그냥 그렇게 있다.</p>
-      
+
       <div class="by_user_nick_box">
         <span>by</span>
         <!-- <!— 사용자 데일리의 닉네임 (모달) —> -->
         <p class="daily_user_nick">피가로</p>
       </div>
-     
+
     </div>
 
   </div>
@@ -148,24 +158,24 @@
     <div class="user_context_modal">
       <!-- <!— 사용자 데일리의 노래 제목, 가수 (모달) —> -->
       <p class="daily_song_modal">잘 가요 로맨스 - 박선주</p>
-      
+
       <input type="image" id="rec_btn2" alt="rec"
            src="/assets/rec_btn_black.png" onclick="document.getElementById('rec_btn2').src='/assets/rec_btn_red.png'">
-      
+
       <!-- <!— 사용자 데일리의 텍스트내용1 (모달) —> -->
       <p class="daily_text">랜덤 재생 모드로 음악을 듣다가 어느 순간 박선주의 ‘잘가요 로맨스’가 나온다. 전주 뒤에 첫 단어를 박선주가 노래하자마자 나는 도쿄의 좁디 좁은 호텔방에 누워있다. 그저 하얀 침대커버 왼쪽 모서리에 베개도 안 베고 오른쪽으로 돌아누운 채로
-      </p> 
+      </p>
     </div>
     <div class="user_context_modal2">
       <!-- <!— 사용자 데일리의 텍스트내용1 (모달) —> -->
       <p class="daily_text2">바로 앞에 있는 나무 합판으로 만들어진 책상을 응시하고 있다. 온도는 반팔을 입고 있기에 딱 적당한 것 같은 온도, 창문 앞에 있는 싸구려 히터가 털털털 돌아가고 있는 것 같고, 건조한 것 같은 화장실은 살짝 문이 열려있다. 그냥 그렇게 있다. </p>
-      
+
       <div class="by_user_nick_box">
         <span>by</span>
         <!-- <!— 사용자 데일리의 닉네임 (모달) —> -->
         <p class="daily_user_nick">피가로</p>
       </div>
-     
+
     </div>
 
   </div>
@@ -191,7 +201,7 @@ var cardbtn2 = document.getElementById("card2");
 var span = document.getElementsByClassName("close")[0];
 var span2 = document.getElementsByClassName("close")[1];
 
-// When the user clicks on the button, open the modal 
+// When the user clicks on the button, open the modal
 //btn.onclick = function() {
 //   modal.style.display = "block";
 //}
@@ -218,12 +228,11 @@ span.onclick = function() {
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
-        
+
     }
     else if(event.target == modal2) {
       modal2.style.display = "none";
-    } 
+    }
 }
 
 </script>
-

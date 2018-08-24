@@ -1,0 +1,32 @@
+<!--Sign Up List page-->
+<div class="admit_bg_img">
+    <div class="admit_list_container">
+    <div class="admit_list_title">자신의 인생 명곡 10곡을 등록해주세요.</div>
+
+<!-- partial로 분리 예정 -->
+
+<%= form_for @list do |f| %>
+
+<div class="admit_list">
+  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
+  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
+  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
+  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
+  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
+  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
+  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
+  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
+  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
+  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
+</div>
+
+<!-- <button type="submit" value="save" class="admit_list_btn">
+  Sign Up
+</button> -->
+
+<%= f.submit "저장", class: "admit_list_btn" %>
+
+<% end %>
+
+  </div>
+</div>

@@ -6,4 +6,5 @@ class User < ApplicationRecord
 
   has_many :tapes
   has_many :dailies
+  has_many :records
 end
