@@ -1,3 +1,16 @@
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+<script>
+  $(function(){
+    var index = <%=raw @music_tscollection %>
+    $("#title_singer").autocomplete({
+      source: index
+    });
+  });
+</script>
+
 <div class="tape_form_container">
 
   <%= form_for @tape do |f| %>
@@ -81,24 +94,19 @@
         </div>
         <div class="a_list_container">
           <div class="a">
-            <%= f.text_field :m1, class: "list_a", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"", class: "record" %>
+            <%= f.text_field :m1, id: "title_singer", data: {autocomplete_source: musics_path}, class: "list_a", placeholder: "곡을 녹음해주세요" %>
           </div>
           <div class="a">
             <%= f.text_field :m2, class: "list_a", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"", class: "record" %>
           </div>
           <div class="a">
             <%= f.text_field :m3, class: "list_a", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"", class: "record" %>
           </div>
           <div class="a">
             <%= f.text_field :m4, class: "list_a", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"", class: "record" %>
           </div>
           <div class="a">
             <%= f.text_field :m5, class: "list_a", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"", class: "record" %>
           </div>
         </div>
       </div>
@@ -110,27 +118,22 @@
         <div class="b_list_container">
           <div class="b">
             <%= f.text_field :m6, class: "list_b", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"", class: "record" %>
           </div>
 
           <div class="b">
             <%= f.text_field :m7, class: "list_b", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"", class: "record" %>
           </div>
 
           <div class="b">
             <%= f.text_field :m8, class: "list_b", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"", class: "record" %>
           </div>
 
           <div class="b">
             <%= f.text_field :m9, class: "list_b", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"", class: "record" %>
           </div>
 
           <div class="b">
             <%= f.text_field :m10, class: "list_b", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"", class: "record" %>
           </div>
         </div>
       </div>
