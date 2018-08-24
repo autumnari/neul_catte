@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   resources :my_pages
 
   get 'main/sign_up'
+  get 'teasers/index'
 
 end
