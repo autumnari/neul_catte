@@ -183,75 +183,84 @@ nav a#trigger {
 
 /* MOBILE*/
 @media all and (max-width : 768px) {
-
+  header {
+    width: 100vw;
+    height: 50vw;
+    background-image: url("navbg.png");
+    object-fit: contain;
+    // border: 1px solid red;
+    // display:none;
+    border: 1px solid red;
+  }
+  
+  body {
+    font-family: 'Arita-buri-SemiBold', serif;
+  }
+  
   .blank {
+    width: auto;
+    height: 2vw;
     display: none;
   }
-
+  
   .main_nav {
-    width: 100vw;
-    height: 20vh;
+    position: absolute;
+    width: inherit;
+    height: 50vw;
+    border-top: 0.5px solid #979797;
+    border-bottom: 0.5px solid #979797;
+    // border: 1px solid red;
+  
   }
+  
   #main_nav,
   .nav_container,
   ul {
     height: inherit;
   }
-
+  
   #main_nav {
-    width: 100vw;
-    height: 20vh;
-    margin-left: 0vw;
-    margin-right: 0vw;
+    width: 60vw;
+    margin-left: 19.6vw;
+    margin-right: 20vw;
+    font-size: 1vw;
   }
-
+  
   ul.nav_ul{
-    width: 100vw;
-    margin: 0 0vw 0 0vw;
+    width: 56vw;
+    margin: 0 2vw 0 2vw;
   }
-
+  
   .nav_container {
+    width: inherit;
     display: flex;
     flex-direction: column;
-    height: 20vh;
-    margin-left: 25%;
-    float: none;
-    width: 50vw;
-    text-align: center;
-    border: 1px solid blue;
+    justify-content: space-between;
+    align-items: center;
   }
-
+  
+  
+  .nav_logo a{
+      width: 1.5vw;
+      margin-right: 4.5vw;
+    }
+  
+  .nav_logotext{
+    text-decoration: none;
+    color: black;
+  }
+  
   .nav_item {
-    display: block;
-    border: 1px solid red;
-    float: none;
-    width: 100%;
-    height: 5vh;
-    font-size: 3vw;
+    text-decoration: none;
+    list-style: none;
+    color: #141212;
   }
-
-  #trigger {
-    width: inherit;
-  }
-
+  
+  
   nav a#trigger {
     display: block;
-    width: inherit;
-    height: 100%;
-    // position: relative;
   }
-
-  nav a#trigger:after {
-    content: "";
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    // position: absolute;
-    right: 15px;
-    top: 10px;
-  }
-
-
+  
   .postbtn {
     background: none;
     opacity: 1;
@@ -260,12 +269,12 @@ nav a#trigger {
     font-size: 1vw;
     cursor: pointer;
   }
-
+  
   .post-menu {
     display: none;
     background-image: url("navbg.png"); // login-signup 페이지에서는 안보이게 수정 필요
   }
-
+  
   .post-menu.show {
     display: inline-block;
     width: 100vw;
@@ -273,29 +282,30 @@ nav a#trigger {
     position: absolute;
     top: 5vw;
     left: 0;
-    padding: 0.9vh 0 0.5vh 41.7vw;
+    padding: 0.9vh 0 0.5vh 55.25vw;
+  
     // font-size: 0.9vw;
     // display: flex;
     // flex-direction: column;
     // justify-content: flex-start;
   }
-
+  
   .post-menu-down {
+  
     padding-right: 2vw;
     text-decoration: none;
     list-style: none;
     font-size: 1vw;
     color: #000000;
   }
-
+  
   .show {
     display: inline-block;
   }
-
+  
   .nav_logo {
-    visibility: hidden;
     width: 1.5vw;
-    margin-right: 4.5vw;
+    //margin-right: 2.5vw;
   }
 
 }
