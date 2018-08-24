@@ -8,7 +8,7 @@ a {
 .view_container_daily {
     display: flex;
     flex-direction: row;
-    
+    margin-top: 1vw;
 }
 .nav_daily {
     width: 10vw;
@@ -32,7 +32,7 @@ a {
 .body_daily {
     width: 400vw;
 }
-    
+
 .daily_card_container {
     margin: 2vw 4vw;
     display: flex;
@@ -114,7 +114,7 @@ a {
 }
 .daily_title_modal {
     margin: 1vw 0.4vw;
-    
+
 }
 .daily_img_box_modal {
     // border: 0.5px solid  black;
@@ -131,7 +131,7 @@ a {
     border-bottom: 0.5px solid black;
     width: 22vw;
     background-image: url(daily_bgc.jpg);
-    display: flex;  
+    display: flex;
     flex-direction: column;
 }
 .daily_song_modal {
@@ -161,7 +161,7 @@ a {
     border: 0.5px solid black;
     width: 22vw;
     background-image: url(daily_bgc.jpg);
-    display: flex;  
+    display: flex;
     flex-direction: column;
 }
 .daily_text2 {
@@ -183,7 +183,7 @@ a {
 }
 .daily_user_nick {
     margin-left: 0.4vw;
-    
+
 }
 
 /* The Close Button */
@@ -254,15 +254,23 @@ label,input {
     justify-content: space-between;
     // border: 1px solid red;
     padding :2vw 2vw;
-    
-    font-size: 1.8vw; 
+
+    font-size: 1.2vw;
 }
 .form_title, .form_track {
-    margin-right: 10.6vw;
+    margin-right: 5vw;
 }
+
+.form_title, .form_track, .form_dailyimg{
+  width: 10vw;
+}
+
 .title_placeholder, .music_placeholder, .img_placeholder, .colorpicker, .textarea_box {
     margin-top: 1vw;
+}
 
+.title_placeholder, .music_placeholder, .img_placeholder{
+  width: 13vw;
 }
 
 .form_section_two {
@@ -288,5 +296,3 @@ label,input {
     height: 2vw;
     font-size: 1vw;
 }
-
-

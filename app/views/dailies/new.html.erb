@@ -3,11 +3,11 @@
   <section class="nav_daily">
     <h1 class="title_daily">데일리 뮤직</h1>
   </section>
-  
+
   <section class="body_daily_new">
-    
+
     <div class="preview_container">
-    
+
       <div class="daily_color_modal">
         <p class="daily_title_modal">우리는 지금 어디</p>
       </div>
@@ -15,76 +15,45 @@
         <img class="daily_img_modal" src="/assets/daily_ex.jpg">
       </div>
       <div class="user_context_modal">
-       
+
         <p class="daily_song_modal">잘 가요 로맨스 - 박선주</p>
-        
+
         <input type="image" id="rec_btn" alt="rec"
             src="/assets/rec_btn_black.png" onclick="document.getElementById('rec_btn').src='/assets/rec_btn_red.png'">
-        
-        
-        <p class="daily_text">랜덤 재생 모드로 음악을 듣다가 어느 순간 박선주의 ‘잘가요 로맨스’가 나온다. 전주 뒤에 첫 단어를 박선주가 노래하자마자 나는 도쿄의 좁디 좁은 호텔방에 누워있다. 그저 하얀 침대커버 왼쪽 모서리에 베개도 안 베고 오른쪽으로 돌아누운 채로 
-        </p> 
+
+
+        <p class="daily_text">랜덤 재생 모드로 음악을 듣다가 어느 순간 박선주의 ‘잘가요 로맨스’가 나온다. 전주 뒤에 첫 단어를 박선주가 노래하자마자 나는 도쿄의 좁디 좁은 호텔방에 누워있다. 그저 하얀 침대커버 왼쪽 모서리에 베개도 안 베고 오른쪽으로 돌아누운 채로
+        </p>
       </div>
       <div class="user_context_modal2">
-        
+
         <p class="daily_text2">바로 앞에 있는 나무 합판으로 만들어진 책상을 응시하고 있다. 온도는 반팔을 입고 있기에 딱 적당한 것 같은 온도, 창문 앞에 있는 싸구려 히터가 털털털 돌아가고 있는 것 같고, 건조한 것 같은 화장실은 살짝 문이 열려있다. 그냥 그렇게 있다.</p>
-        
+
         <div class="by_user_nick_box">
           <span>by</span>
           <!-- <!— 사용자 데일리의 닉네임 (모달) —> -->
           <p class="daily_user_nick">피가로</p>
         </div>
-     
+
       </div>
 
     </div>
 
     <section class="post_daily_form">
-      
+
       <form>
-        <div class="form_section_one"> 
-
-          <label for="title" class="form_title"> 제목: 
-          <input class="title_placeholder" name="input_title" type="text"></input>
-          </label>
-          
-          <label for="music" class="form_track"> 트랙:
-          <input class="music_placeholder" name="music" type="text"></input>
-          </label>
-
-          <label for="daily_img" class="form_dailyimg"> 사진: 
-          <input class="img_placeholder" type="file"></input>
-          </label><br>
-          
-        </div>
-        <div class="form_section_two"> 
-          <label for="color"> 컬러: 
-          <input class="colorpicker" type="color"></input>
-          </label><br>
-        </div>
-        
-        <div class="form_section_three">
-          <label for="contents"> 일기 <br>
-          <textarea class="textarea_box" type="text"></textarea>
-          </label><br>
-        </div>
-
-        <div class="form_section_four">
-          <!--<button type="preview"> 미리보기 </button>--> <!-- preview (if needed) -->
-          <button type="submit" value="save" id="form_submit_btn"> 저장 </button>
-        </div>
-
+        <%= render "dailies/form" %>
       </form>
 
     </section>
 
   </section>
-  
+
   <section class="ad_daily">
     <p class="logo_daily">늘어진<br>카세트<br>테이프</p>
   </section>
 
- 
+
 </section>
 
 
@@ -94,5 +63,5 @@
      <!-- 추가해야함 -->
     </section>
 
-    
+
   </div>

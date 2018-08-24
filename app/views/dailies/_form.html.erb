@@ -1,0 +1,37 @@
+  <%= form_for @dailies do |f| %>
+
+<div class="form_section_one">
+  <%= f.label :제목, class: "form_title", for: "title" %>
+  <%= f.text_field :daily_title, class: "title_placeholder", name: "input_title" %>
+
+  <%= f.label :트랙, class: "form_track", for: "music" %>
+  <%= f.text_field :daily_music, class: "music_placeholder", name: "music" %>
+
+
+  <div class="daily_img_uploader">
+    <%= f.label :사진, class: "form_dailyimg", for: "daily_img" %>
+    <div class="input_dailyimg">
+      <%= f.label :이미지를등록해주세요, class: "form_dailyimg", for: "daily_img" %>
+      <%= f.file_field :img, id: "daily_img", class: 'img_placeholder'%>
+    </div>
+  </div>
+</div>
+
+<div class="form_section_two">
+  <label for="color"> 컬러:
+  <input class="colorpicker" type="color"></input>
+  </label><br>
+</div>
+
+<div class="form_section_three">
+  <label for="contents"> 일기 <br>
+  <textarea class="textarea_box" type="text"></textarea>
+  </label><br>
+</div>
+
+<div class="form_section_four">
+  <!--<button type="preview"> 미리보기 </button>--> <!-- preview (if needed) -->
+  <button type="submit" value="save" id="form_submit_btn"> 저장 </button>
+</div>
+
+<% end %>
