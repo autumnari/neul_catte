@@ -1,65 +1,54 @@
-<!-- <form>
-  <div class="form_section_one">
-
-    <label for="title" class="form_title"> 제목:
-    <input class="title_placeholder" name="input_title" type="text"></input>
-    </label>
-
-    <label for="music" class="form_track"> 트랙:
-    <input class="music_placeholder" name="music" type="text"></input>
-    </label>
-
-    <label for="daily_img" class="form_dailyimg"> 사진:
-    <input class="img_placeholder" type="file"></input>
-    </label><br>
-
-  </div>
-  <div class="form_section_two">
-    <label for="color"> 컬러:
-    <input class="colorpicker" type="color"></input>
-    </label><br>
-  </div>
-
-  <div class="form_section_three">
-    <label for="contents"> 일기 <br>
-    <textarea class="textarea_box" type="text"></textarea>
-    </label><br>
-  </div>
-
-  <div class="form_section_four">
-    <button type="preview"> 미리보기 </button> preview (if needed)
-    <button type="submit" value="save" id="form_submit_btn"> 저장 </button>
-  </div>
-
-</form> -->
-
 <%= form_for @daily do |d| %>
+
   <div class="form_section_one">
+
     <%= d.label class: "form_title", for: "daily_title" do %>제목
-      <%= d.text_field :daily_title, class: "title_placeholder" %>
+      <%= d.text_field :daily_title, class: "title_placeholder", placeholder: "제목을 작성해주세요" %>
     <% end %>
 
-    <%= d.label class: "form_title", for: "musicN" do %>트랙
-      <%= d.text_field :musicN, class: "title_placeholder" %>
+    <%= d.label class: "form_track", for: "musicN" do %>트랙
+      <%= d.text_field :musicN, class: "music_placeholder", placeholder: "곡을 녹음해주세요" %>
     <% end %>
 
-    <%#= d.label :사진, class: "form_title", for: "img_url" do %>사진
-      <%#= d.text_field :img_url, class: "title_placeholder" %>
-    <%# end %>
+
+    <div class="tape_img_container">
+      <%= d.label :사진, class: "form_dailyimg" %>
+      <div class="input_img">
+        <%= d.label :사진을등록해주세요, class: "img_placeholder", for: "daily_img" %>
+        <%= d.file_field :img, id: "daily_img", class: 'upload_dailyimg' %>
+      </div>
+    </div>
+
   </div>
+
+
   <div class="form_section_two">
-    <%#= d.label class: "form_title", for: "color" do %>컬러
-      <%#= d.text_field :color, class: "colorpicker" %>
-    <%# end %>
-  </div>
-  <br>
+    컬러
+
+    <div class="daily_color_btns">
+      <button type="button" class="daily_black_btn" onclick="changingBlack()"></button>
+      <button type="button" class="daily_gray_btn" onclick="changingGray()"></button>
+      <button type="button" class="daily_yellow_btn"  onclick="changingYellow()"></button>
+      <button type="button" class="daily_orange_btn"  onclick="changingOrange()"></button>
+      <button type="button" class="daily_pink_btn" onclick="changingPink()"></button>
+        <button type="button" class="daily_mint_btn" onclick="changingMin()"></button>
+  <button type="button" class="daily_blue_btn" onclick="changingBlue()"></button>
+      <button type="button" class="daily_purple_btn" onclick="changingPurple()"></button>
+
+    </div>
+
+</div>
+
+
   <div class="form_section_three">
     <%= d.label class: "form_title", for: "body" do %>일기
-      <%= d.text_area :body, rows: 5, class: "textarea_box" %>
+      <%= d.text_area :body, rows: 5, class: "textarea_box", placeholder: "내용을 작성해주세요" %>
     <% end %>
   </div>
   <div class="form_section_four">
     <!-- <button type="submit" value="save" id="form_submit_btn"> 저장 </button> -->
     <%= d.submit "저장", id: "form_submit_btn" %>
   </div>
+
+
 <% end %>
