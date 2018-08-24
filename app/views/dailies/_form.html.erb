@@ -1,3 +1,5 @@
+
+
 <%= form_for @daily do |d| %>
 
   <div class="form_section_one">
@@ -31,11 +33,37 @@
       <button type="button" class="daily_yellow_btn"  onclick="changingYellow()"></button>
       <button type="button" class="daily_orange_btn"  onclick="changingOrange()"></button>
       <button type="button" class="daily_pink_btn" onclick="changingPink()"></button>
-        <button type="button" class="daily_mint_btn" onclick="changingMin()"></button>
-  <button type="button" class="daily_blue_btn" onclick="changingBlue()"></button>
+      <button type="button" class="daily_mint_btn" onclick="changingMint()"></button>
+      <button type="button" class="daily_blue_btn" onclick="changingBlue()"></button>
       <button type="button" class="daily_purple_btn" onclick="changingPurple()"></button>
-
     </div>
+
+    <script>
+      function changingBlack() {
+        document.getElementById("daily_color_modal").style.backgroundColor = "gray";
+      }
+      function changingGray() {
+        document.getElementById("daily_color_modal").style.backgroundColor = "lightgray";
+      }
+      function changingYellow() {
+        document.getElementById("daily_color_modal").style.backgroundColor = "yellow";
+      }
+      function changingOrange() {
+        document.getElementById("daily_color_modal").style.backgroundColor = "orange";
+      }
+      function changingPink() {
+        document.getElementById("daily_color_modal").style.backgroundColor = "pink";
+      }
+      function changingMint() {
+        document.getElementById("daily_color_modal").style.backgroundColor = "green";
+      }
+      function changingBlue() {
+        document.getElementById("daily_color_modal").style.backgroundColor = "blue";
+      }
+      function changingPurple() {
+        document.getElementById("daily_color_modal").style.backgroundColor = "purple";
+      }
+    </script>
 
 </div>
 
