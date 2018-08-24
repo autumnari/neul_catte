@@ -13,20 +13,16 @@
       <div class="form-inputs">
         <%= f.input :nickname, label: false, required: false, autofocus: false, placeholder: "Name" %>
         <%= f.input :email, label: false, required: true, autofocus: false, placeholder: "E-mail" %>
-        <%= f.input :password, label: false, required: true, placeholder:"Password", maxlength: "18" %>
-        <%= f.input :password_confirmation, label: false,  placeholder:"Password Confirmation", required: true, maxlength: "18" %>
+        <%= f.input :password, label: false, required: true, placeholder:"Password", maxlength: "20" %>
+        <%= f.input :password_confirmation, label: false,  placeholder:"Password Confirmation", required: true, maxlength: "20" %>
       </div>
+
 
       <div class="form-lists">
-          <%= link_to 'Go to next step →', class: "" %>
-      </div>
-
-<!--
-      <div class="form-actions">
-        <%= f.submit 'Sign in', :class => 'signin_btn' %>
+        <%= f.submit 'Go to next step →', :class => 'form-lists' %>
       </div>
     <% end %>
--->
+
     <div class="go_login">
       Already have an account?
       <%= render "devise/shared/links" %>
