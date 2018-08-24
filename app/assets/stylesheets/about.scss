@@ -29,37 +29,58 @@
     width: 400vw;
 }
 .member_pictures {
-    margin-top: 4vh;
-    // border: 1px solid blue;
+    margin-top: 3vw;
     // background-color: rgba($color: gray, $alpha: 0.2);
-
+    font-family: 'Arita-buri-SemiBold';
+    font-size: 0.8vw;
 }
 
 .member4 {
-    
     height: 30vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 1px solid red;
     margin-bottom: 6vh;    
 }
 .member3 {
     height: 30vh;
     display: flex;
     flex-direction: row;
-    border: 1px solid red;
-    justify-content: space-between;  
+    justify-content: space-between;
+    // border: 1px solid red;
+}
+#mem_formargin {
+    margin-left: 8vw;
+}
+#mem_formargin2 {
+    margin-right: 8vw;
 }
 .mem {
-    width: 12vw;
-    height: 12vw;
-    border: 1px solid blueviolet;
-
+    width: 14vw;
+    height: 14vw;
+    display: flex;
+    flex-direction: column;
+}
+.mem2 {
+    width: 14vw;
+    height: 14vw;
+    display: flex;
+    flex-direction: column;
 }
 .mem_img {
-    width: 10vw;
-    height: 10vw;
+    margin-left: 0.6vw;
+    width: 12.4vw;
+    height: 12.4vw;
+}
+.mem_name {
+    margin-top: 1vw;
+    display: block;
+    text-align: center;
+}
+.mem_job {
+    margin-top: 0.4vw;
+    display: block;
+    text-align: center;
 }
     
 .ad_daily_about {
