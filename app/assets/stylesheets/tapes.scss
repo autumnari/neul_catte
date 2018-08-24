@@ -249,7 +249,7 @@
 }
 
 .post_tape_preview {
-  margin-top: 7vh;
+  margin-top: 10vw;
   width: 50vw;
   height: 19vw;
   border: solid 0.5px #c8c4c4;
@@ -257,8 +257,12 @@
   object-fit: fill;
 
   display: flex;
-  justify-content: center;
-  // padding: 3vw 15vw 3vw 15vw;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+  margin-top: 3vw;
 }
 
 
@@ -404,22 +408,20 @@ letter-spacing: 0.15vw;
 
 .filter{
   width: 6vw;
-  display: block;
+  display: flex;
+  justify-content: flex-start;
 }
 
 //////  CHECKBOX
 
 .container {
+  width: 5vw;
     display: inline-block;
     position: absolute;
     // padding-left: 35px;
-    margin-bottom: 1vw;
     cursor: pointer;
     font-size: 1.1vw;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+
 }
 
 .container input {
@@ -431,11 +433,12 @@ letter-spacing: 0.15vw;
 .checkmark {
     position: absolute;
     top: 0;
-    left: 3vw;
-    height: 2vw;
-    width: 2vw;
+    // left: auto;
+    height: 1.2vw;
+    width: 1.2vw;
     background-color: #eee 0.3; // enabled + unchecked box background color
     border: 0.05vw solid #000000;
+    margin-left: 0.4vw;
 }
 
 .container input:checked ~ .checkmark {
@@ -453,12 +456,12 @@ letter-spacing: 0.15vw;
 }
 
 .container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid #000000;
-    border-width: 0 3px 3px 0;
+    left: 0.35vw;
+    top: 0;
+    width: 0.4vw;
+    height: 0.8vw;
+    border: 0.1vw solid #000000;
+    border-width: 0 0.1vw 0.1vw 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -497,6 +500,7 @@ letter-spacing: 0.15vw;
 
 .side_a, .side_b {
   font-size: 1vw;
+  margin-bottom: 0.4vw;
 }
 
 
@@ -508,10 +512,12 @@ letter-spacing: 0.15vw;
 }
 
 .a, .b{
-  height: 2vw;
-  display: inline-block;
-  margin: 0.1vw 0 0.1vw 0;
+  width: 13vw;
+  // display: block;
+  margin: 0.3vw 0 0.3vw 0;
   vertical-align: middle;
+  display: flex;
+  justify-content: flex-start;
 }
 
 
@@ -519,6 +525,7 @@ letter-spacing: 0.15vw;
 .list_b {
   width: 11vw;
   height: 1.7vw;
+  margin-right: 0.5vw;
 }
 
 input[placeholder].list_a, input[placeholder].list_b{
@@ -543,7 +550,7 @@ input[placeholder].list_a, input[placeholder].list_b{
   cursor: pointer;
   // background-color: rgb(161, 0, 0); // click하면
   background-color: #838383;
-  margin-top: 0.5vw
+  margin-top: 0.5vw;
 }
 
 
@@ -556,15 +563,7 @@ input[placeholder].list_a, input[placeholder].list_b{
 
 /// Tape Preview Box
 
-.post_tape_preview{
-  display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-  margin-top: 1.5vw;
-}
+
 
 #tape_preview_div{
   width: 17vw;
