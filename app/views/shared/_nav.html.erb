@@ -10,6 +10,7 @@
               <% if user_signed_in? %>
                 <div class="nav_container">
                   <%= image_tag "logo.png", class: "nav_logo" %>
+                  <%= link_to '늘카테', main_about_path, class: "nav_item" %>
                   <%= link_to '테이프', tapes_path, class: "nav_item" %>
                   <%= link_to '데일리 뮤직', dailies_path, class: "nav_item" %>
 
@@ -23,11 +24,9 @@
                       <%= link_to '데일리 뮤직', "/dailies/new", class: "post-menu-down" %>
                     </div>
                   </div>
-                  <a href="/main/about"> 늘카테 </a>
-                  <%= link_to '마이 페이지', my_pages_path, class: "nav_item" %>
-                  <li class="nav_item">검색</li>
 
-                  <%= link_to '로그아웃', destroy_user_session_path, method: 'delete' %>
+                  <%= link_to '마이 페이지', my_pages_path, class: "nav_item" %>
+                  <%= link_to '로그아웃', destroy_user_session_path, class: "nav_item", method: 'delete' %>
                 </div>
 
                 <% else %>
@@ -38,7 +37,7 @@
                     <%= link_to '로그인', new_user_session_path, class: "nav_item" %>
                   </div>
                 <% end %>
-             
+
           </ul>
           <a href="#" id="trigger">메뉴</a>
       </nav>

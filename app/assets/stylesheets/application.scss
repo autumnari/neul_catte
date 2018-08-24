@@ -163,14 +163,14 @@ nav a#trigger {
 
 .nav_logo {
   width: 1.5vw;
-  margin-right: 4.5vw;
+  //margin-right: 2.5vw;
 }
 
 
 
 /* MOBILE*/
 @media all and (max-width : 768px) {
-  
+
   .blank {
     display: none;
   }
@@ -238,7 +238,7 @@ nav a#trigger {
     top: 10px;
   }
 
-  
+
   .postbtn {
     background: none;
     opacity: 1;
@@ -247,12 +247,12 @@ nav a#trigger {
     font-size: 1vw;
     cursor: pointer;
   }
-  
+
   .post-menu {
     display: none;
     background-image: url("navbg.png"); // login-signup 페이지에서는 안보이게 수정 필요
   }
-  
+
   .post-menu.show {
     display: inline-block;
     width: 100vw;
@@ -266,7 +266,7 @@ nav a#trigger {
     // flex-direction: column;
     // justify-content: flex-start;
   }
-  
+
   .post-menu-down {
     padding-right: 2vw;
     text-decoration: none;
@@ -274,7 +274,7 @@ nav a#trigger {
     font-size: 1vw;
     color: #000000;
   }
-  
+
   .show {
     display: inline-block;
   }
