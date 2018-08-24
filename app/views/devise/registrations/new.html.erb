@@ -4,15 +4,15 @@
       <div class="admit_container">
         <div class="admit_title">늘어진<br>카세트<br>테이프</div>
         <div class="admit_logo">
-          <%= image_tag "logo.png", class:"login_logo"%>
+          <%= image_tag "logo.png", class:"admit_logo"%>
         </div>
 
     <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= f.error_notification %>
 
       <div class="form-inputs">
-        <%= f.input :nickname, label: false, required: false, autofocus: true, placeholder: "Name" %>
-        <%= f.input :email, label: false, required: true, autofocus: true, placeholder: "E-mail" %>
+        <%= f.input :nickname, label: false, required: false, autofocus: false, placeholder: "Name" %>
+        <%= f.input :email, label: false, required: true, autofocus: false, placeholder: "E-mail" %>
         <%= f.input :password, label: false, required: true, placeholder:"Password", maxlength: "18" %>
         <%= f.input :password_confirmation, label: false,  placeholder:"Password Confirmation", required: true, maxlength: "18" %>
       </div>

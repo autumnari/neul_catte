@@ -22,24 +22,22 @@
     align-items: center;
 }
 
-#admit_title{
-    font-size: 2vw;
+.admit_title{
+    font-size: 1.5vw;
 }
 
 .admit_logo{
-    margin: 2vh 0 2vh 0 ;
-}
-
-#admit_logo{
-    width: auto;
-    height: 5vh;
+    margin-top: 1vw;
+    width: 1.8vw;
+    height: 5vw;
 }
 
 .form-inputs{
     width: 21.6vw;
     height: 12vh;
-    font-size: 2.3vh;
+    font-size: 3vh;
     line-height: 4vh;
+    margin-top: 2vw;
     margin-bottom: 4vh;
 
     display: flex;
@@ -73,9 +71,14 @@
     font-size: 2.3vh;
     font-weight: lighter;
     margin: 2vh 0 2vh 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.login_btn, .signin_btn {
+.login_btn {
   font-family: 'Arita-buri-SemiBold', serif;
   color: white ;
   border: none;
@@ -133,21 +136,50 @@
 
 
 .admit_list_title {
+  margin-top: 2vw;
   font-family: 'Arita-buri-SemiBold', serif;
   font-size: 1.5vw;
 }
 
+
 .admit_list{
-  width: 60vw;
-  height: 12vh;
+  width: 21.6vw;
+  height: 40vh;
+  margin-top: 2vw;
   font-size: 2.3vh;
   line-height: 4vh;
-  //margin-bottom: 4vh;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.admit_m {
+ width: 21.6vw;
+ height: 2.4vw;
+ text-align: left !important;
+}
+
+.admit_m::-webkit-input-placeholder {
+  font-size: 1.3vw;
+opacity: 0.5;
+color: #000000;
+}
+
+input[placeholder].admit_m {
+  border-bottom: solid 1px black;
+}
+
+.admit_list_btn {
+  font-family: 'Arita-buri-SemiBold', serif;
+  color: #ffffff;
+  width: 21.6vw;
+  height: 4.8vh;
+  background-color: rgba(0, 0, 0, 0.58);
+  border: none;
+  margin-top: 5vw;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -173,18 +205,15 @@
     align-items: center;
 }
 
-#admit_title{
+.admit_title{
     font-size: 2vw;
+    margin-top: 3vw;
 }
 
 .admit_logo{
     margin: 2vh 0 2vh 0 ;
-}
-
-#admit_logo{
     width: auto;
     height: 5vh;
-    margin-bottom: 2vh;
 
 }
 
@@ -229,6 +258,8 @@
     font-size: 1.5vh;
     font-weight: lighter;
     margin: 2vh 0 2vh 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .user_remember_me {
@@ -239,6 +270,8 @@
   font-family: 'Arita-buri-SemiBold', serif;
   color: white ;
   border: none;
+  justify-content: center;
+  align-items: center;
   background: none;
   cursor: pointer;
 }
@@ -273,5 +306,51 @@
   margin-top: -6vh;
 }
 
+//Sign-Up list
 
+.admit_list_container {
+  background: rgba(255,255,255, 0.7);
+  width: 74.4vw;
+  height: 60vh;
+  text-align: center;
+  margin: 22.5vh 12.8vw 15vh 12.8vw;
+  padding-bottom: 5vh;
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.admit_list_title {
+  font-family: 'Arita-buri-SemiBold', serif;
+  font-size: 3vw;
+}
+
+#admit_list_title{
+    font-size: 2vw;
+    margin-top: 3vw;
+}
+
+.admit_list{
+  width: 60vw;
+  height: 12vh;
+  font-size: 2.3vh;
+  line-height: 4vh;
+  //margin-bottom: 4vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.admit_list_btn {
+  width: 21.6vw;
+  height: 4.8vh;
+  background-color: rgba(0, 0, 0, 0.58);
+  border: none;
+}
 }
