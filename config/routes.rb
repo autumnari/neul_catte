@@ -12,5 +12,6 @@ Rails.application.routes.draw do
 
   get 'main/sign_up'
   get 'teasers/index'
+  get 'main/about'
 
 end

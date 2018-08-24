@@ -4,7 +4,7 @@
 @import url("tapes.scss");
 @import url("my_pages.scss");
 @import url("devise.scss"); /*--초기화--*/
-
+@import url("about.scss");
 blockquote,
 body,
 button,
@@ -93,8 +93,8 @@ ul {
 
 #main_nav {
   width: 60vw;
-  margin-left: 22vw;
-  margin-right: 22vw;
+  margin-left: 19.6vw;
+  margin-right: 20vw;
   font-size: 1vw;
 }
 
@@ -170,55 +170,62 @@ nav a#trigger {
 
 /* MOBILE*/
 @media all and (max-width : 768px) {
+  
   .blank {
     display: none;
   }
 
   .main_nav {
-    width: auto;
-    height: 4vh;
+    width: 100vw;
+    height: 20vh;
+  }
+  #main_nav,
+  .nav_container,
+  ul {
+    height: inherit;
   }
 
   #main_nav {
-    width: auto;
-    height: inherit;
-    margin-left: 0;
-    margin-right: 0;
+    width: 100vw;
+    height: 20vh;
+    margin-left: 0vw;
+    margin-right: 0vw;
   }
 
-  nav ul {
-    display: none;
+  ul.nav_ul{
+    width: 100vw;
+    margin: 0 0vw 0 0vw;
   }
 
   .nav_container {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 20vh;
+    margin-left: 25%;
     float: none;
-    width: 100%;
+    width: 50vw;
     text-align: center;
+    border: 1px solid blue;
   }
 
   .nav_item {
     display: block;
+    border: 1px solid red;
     float: none;
     width: 100%;
+    height: 5vh;
+    font-size: 3vw;
   }
 
   #trigger {
     width: inherit;
   }
 
-  nav a {
-    text-align: center;
-    float: none;
-  }
-
   nav a#trigger {
     display: block;
     width: inherit;
     height: 100%;
-    position: relative;
+    // position: relative;
   }
 
   nav a#trigger:after {
@@ -226,8 +233,56 @@ nav a#trigger {
     width: 30px;
     height: 30px;
     display: inline-block;
-    position: absolute;
+    // position: absolute;
     right: 15px;
     top: 10px;
   }
+
+  
+  .postbtn {
+    background: none;
+    opacity: 1;
+    border: none;
+    font-family: 'Arita-buri-SemiBold', serif;
+    font-size: 1vw;
+    cursor: pointer;
+  }
+  
+  .post-menu {
+    display: none;
+    background-image: url("navbg.png"); // login-signup 페이지에서는 안보이게 수정 필요
+  }
+  
+  .post-menu.show {
+    display: inline-block;
+    width: 100vw;
+    height: 2vw;
+    position: absolute;
+    top: 5vw;
+    left: 0;
+    padding: 0.9vh 0 0.5vh 41.7vw;
+    // font-size: 0.9vw;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-start;
+  }
+  
+  .post-menu-down {
+    padding-right: 2vw;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1vw;
+    color: #000000;
+  }
+  
+  .show {
+    display: inline-block;
+  }
+
+  .nav_logo {
+    visibility: hidden;
+    width: 1.5vw;
+    margin-right: 4.5vw;
+  }
+
 }
