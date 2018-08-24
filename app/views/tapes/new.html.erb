@@ -14,49 +14,36 @@
 
         <div id="tape_preview_div"></div>
         <div class="tape_preview_btns">
-          <button type="button"onclick="changingBlack()">Black</button>
-          <button type="button"onclick="changingGray()">Gray</button>
-          <button type="button"onclick="changingOrange()">Orange</button>
-          <button type="button"onclick="changingPink()">Pink</button>
-          <button type="button"onclick="changingPurple()">Purple</button>
-          <button type="button"onclick="changingSky()">Sky</button>
+          <button type="button" class="tape_black_btn" onclick="changingBlack()"></button>
+          <button type="button" class="tape_gray_btn" onclick="changingGray()"></button>
+          <button type="button" class="tape_orange_btn" onclick="changingOrange()"></button>
+          <button type="button" class="tape_pink_btn" onclick="changingPink()"></button>
+          <button type="button" class="tape_purple_btn" onclick="changingPurple()"></button>
+          <button type="button" class="tape_sky_btn" onclick="changingSky()"></button>
         </div>
 
-          <script>
-            function changingBlack() {
-                document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_black.png')";
-            }
-            function changingGray() {
-                document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_gray.png')";
-            }
-            function changingOrange() {
+        <script>
+          function changingBlack() {
+            document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_black.png')";
+          }
+          function changingGray() {
+            document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_gray.png')";
+          }
+          function changingOrange() {
             document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_orange.png')";
-            }
-            function changingPink() {
+          }
+          function changingPink() {
             document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_pink.png')";
-            }
-            function changingPurple() {
+          }
+          function changingPurple() {
             document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_purple.png')";
-            }
-            function changingSky() {
+          }
+          function changingSky() {
             document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_sky.png')";
-            }
-          </script>
+          }
+        </script>
 
-
-      <!-- 화살표로 넘기는게 어려워서 버튼으로 대체했어요 흑흑
-        <div class="btn_left">
-         <%= image_tag "arrow-left.png" %>
-        </div>
-
-        <div class="tape_preview">
-          <%= image_tag "tapeskin_black.png" %>
-        </div>
-
-        <div class="btn_right">
-        <%= image_tag "arrow-right.png"%>
-        </div>
-      -->
+        <!-- 화살표로 넘기는게 어려워서 버튼으로 대체했어요 흑흑 <div class="btn_left"> <%= image_tag "arrow-left.png" %> </div> <div class="tape_preview"> <%= image_tag "tapeskin_black.png" %> </div> <div class="btn_right"> <%= image_tag "arrow-right.png"%> </div> -->
 
       </div>
 

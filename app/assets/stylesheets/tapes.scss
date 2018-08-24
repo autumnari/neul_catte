@@ -238,7 +238,7 @@
 }
 
 
-// tapes/index  ****************************************************
+// END tapes/index  ****************************************************
 
 
 // tapes/new    ****************************************************
@@ -262,31 +262,25 @@
 }
 
 
-.btn_left {
-  width: 2vw;
-  padding-top: 8vw;
+// <!-- 좌우 버튼 사용 X --!>
 
-  img{
-    width: 2vw;
-  }
-// .previous {
-//   position: relative;
-//   width: 4vw;
-//   z-index: 1;
+// .btn_left {
+//   width: 2vw;
+//   padding-top: 8vw;
+//
+//   img{
+//     width: 2vw;
+//   }
 // }
-}
-
-.btn_right{
-  width: 2vw;
-  padding-top: 8vw;
-  // .next{
-  //   width:4vw;
-  //   z-index: 1;
-  // }
-  img{
-    width: 2vw;
-  }
-}
+//
+// .btn_right{
+//   width: 2vw;
+//   padding-top: 8vw;
+//
+//   img{
+//     width: 2vw;
+//   }
+// }
 
 
 .tape_preview{
@@ -322,17 +316,13 @@
 
 .tape_title_container {
   font-size: 1.2vw;
-  margin-bottom: 2vh;
+  margin-bottom: 1vw;
 }
 
 label {
   .title {
     // font-size: 1vh;
     border-style: none !important;
-  }
-
-  .tape_img {
-    // font-size: 1vh;
   }
 }
 
@@ -341,25 +331,22 @@ label {
   border-radius: 0.3vw;
   width: 15vw;
   margin-top: 0.3vw;
+  height: auto;
 }
 
 .form-control::-webkit-input-placeholder {
   font-size: 1vw;
   color: #c8c4c4;
+    letter-spacing: 0.15vw;
 }
-
-// input.form-control {
-//   width: 15vw;
-//   text-align: left;
-// }
 
 input[placeholder].form-control {
   font-size: 1vw;
   width: 15vw;
   text-align: left !important;
   padding: 0.3vw 0.5vw 0.3vw 0.5vw;
-}
 
+}
 
 // IMAGE
 
@@ -368,18 +355,29 @@ input[placeholder].form-control {
   margin-bottom: 1vw;
 }
 
+
+
 .input_img {
   border: 0.07vw solid #787878;
   border-radius: 0.3vw;
   width: 15vw;
+  height: 1.8vw;
   margin-top: 0.3vw;
-  font-size: 1vw;
-  color: #c8c4c4;
-  padding: 0.3vw 0.5vw 0.3vw 0.5vw;
+
+.tape_img{
+  position: absolute;
+  // display: inline-block;
+  width: 13vw;
+font-size: 1vw;
+text-align: left;
+color: #c8c4c4;
+padding: 0.3vw 0.5vw 0.3vw 0.5vw;
+letter-spacing: 0.15vw;
+  }
 }
 
-.img_up {
-  width: 0;
+.img_up{
+  display:none;
 }
 
 
@@ -387,7 +385,7 @@ input[placeholder].form-control {
 
 .tape_filter_container {
   margin-bottom: 1vw;
-
+  height: 4vw;
 }
 
 .filter_index{
@@ -396,21 +394,78 @@ input[placeholder].form-control {
 }
 
 .filter_box {
+  height: 2vw;
   font-size: 1vw;
   display: flex;
   justify-content: space-between;
-  margin: 0.3vw 0 1vw 0;
-  padding-right: 3vw;
+  margin: 0.3vw 0 0.5vw 0;
+  // padding-right: 2vw;
 }
 
-// .filter{
-//
-//   input[type="checkbox"] {
-//     background-color: transparent;
-//     cursor: pointer;
-//   }
-//
-// }
+.filter{
+  width: 6vw;
+  display: block;
+}
+
+//////  CHECKBOX
+
+.container {
+    display: inline-block;
+    position: absolute;
+    // padding-left: 35px;
+    margin-bottom: 1vw;
+    cursor: pointer;
+    font-size: 1.1vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 3vw;
+    height: 2vw;
+    width: 2vw;
+    background-color: #eee 0.3; // enabled + unchecked box background color
+    border: 0.05vw solid #000000;
+}
+
+.container input:checked ~ .checkmark {
+    // background-color: #2196F3; // enabled + checked box background color
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #000000;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+///
 
 
  // TRACK
@@ -452,17 +507,25 @@ input[placeholder].form-control {
   align-items: flex-start;
 }
 
+.a, .b{
+  height: 2vw;
+  display: inline-block;
+  margin: 0.1vw 0 0.1vw 0;
+  vertical-align: middle;
+}
+
+
 .list_a,
 .list_b {
   width: 11vw;
-  height: 1.5vw;
+  height: 1.7vw;
 }
 
 input[placeholder].list_a, input[placeholder].list_b{
   border: 0.07vw solid #787878 !important;
   text-align:left;
   font-size: 1vw;
-  margin-top: 0.5vw;
+  // margin-top: 0.5vw;
   padding-left: 0.3vw;
   border-radius: 0.3vw;
 }
@@ -472,7 +535,16 @@ input[placeholder].list_a, input[placeholder].list_b{
   color: #c8c4c4;
 }
 
-
+.record{
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  border-style: none;
+  cursor: pointer;
+  // background-color: rgb(161, 0, 0); // click하면
+  background-color: #838383;
+  margin-top: 0.5vw
+}
 
 
 ///
@@ -497,10 +569,81 @@ input[placeholder].list_a, input[placeholder].list_b{
 #tape_preview_div{
   width: 17vw;
   height: 19vh;
+  // display: flex;
+  // justify-content: center;
   background-image: url(/assets/tapeskin_black.png);
-  background-size: 17vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  // object-fit: contain;
+  // margin: 1vw 0 2vw 0;
 }
 
 .tape_preview_btns{
-  margin-top: 1vw;
+  width: 15vw;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2vw;
+}
+
+.tape_black_btn, .tape_gray_btn, .tape_orange_btn, .tape_pink_btn, .tape_purple_btn, .tape_sky_btn{
+  width: 1.3vw;
+  height: 1.3vw;
+  border-radius: 50%;
+border-style: none;
+  cursor: pointer;
+}
+
+.tape_black_btn{
+  background-color: rgba( #000000, 0.5);
+}
+
+.tape_gray_btn{
+  background-color: rgba(#8c8c8c, 0.5);
+}
+
+.tape_orange_btn{
+  background-color: rgba(#ffa700, 0.5);
+}
+
+.tape_pink_btn{
+  background-color: rgba(#ff3950, 0.5);
+}
+
+.tape_purple_btn{
+    background-color: rgba(#34009e, 0.5);
+}
+
+.tape_sky_btn{
+      background-color: rgba(#2fadad, 0.5);
+}
+
+
+
+///// submit
+
+
+.tape_submit{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5vw;
+}
+
+.preview_custom, .save_tape{
+  border-radius: 2vw;
+  padding: 0 0.3vw 0 0.3vw;
+  font-family: 'Arita-buri-SemiBold', serif;
+  font-size: 1vw;
+  border-style: none;
+  background-color: rgba(255,255,255, 0);
+  cursor: pointer;
+  margin: 0.1vw 0 0.1vw 1vw;
+}
+
+.preview_custom{
+  width: 5vw;
+}
+
+.save_tape{
+  width: 3vw;
 }
