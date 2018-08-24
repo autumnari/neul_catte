@@ -26,6 +26,8 @@
 
                   <%= link_to '마이 페이지', my_pages_path, class: "nav_item" %>
                   <li class="nav_item">검색</li>
+
+                  <%= link_to '로그아웃', destroy_user_session_path, method: 'delete' %>
                 </div>
 
                 <% else %>
