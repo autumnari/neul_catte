@@ -28,6 +28,39 @@
 .body_daily_about {
     width: 400vw;
 }
+.member_pictures {
+    margin-top: 4vh;
+    // border: 1px solid blue;
+    // background-color: rgba($color: gray, $alpha: 0.2);
+
+}
+
+.member4 {
+    
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid red;
+    margin-bottom: 6vh;    
+}
+.member3 {
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+    justify-content: space-between;  
+}
+.mem {
+    width: 12vw;
+    height: 12vw;
+    border: 1px solid blueviolet;
+
+}
+.mem_img {
+    width: 10vw;
+    height: 10vw;
+}
     
 .ad_daily_about {
     width: 20vw;
