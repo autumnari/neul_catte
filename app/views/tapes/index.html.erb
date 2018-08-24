@@ -13,18 +13,171 @@
     </div>
 
 
+    <div class="total_tape_container">
+
+      <!-- 팝업 -->
+      <a class="tape2_" href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('tape2_fade').style.display='block'">
+        <div class="tape_theme_main">
+          <!-- <!— 사용자가 업로드하는 커버 이미지 —> -->
+          <img class="user_cover_main" src="/assets/cover_test.png">
+          <!-- <!— 선택 블렌딩 —> -->
+          <div class="blend_box_main"></div>
+          <!-- <!— 선택 스킨 —> -->
+          <img class="upload_tape_main" src="/assets/tapeskin_purple.png">
+          <!-- <!— 테이프 타이틀 —> -->
+          <p class="tape_title_main">강건너 불구경</p>
+        </div>
+      </a>
+
+      <div id="light" class="tape2_popup">
+
+        <div class="tape_theme_main">
+          <!-- <!— 사용자가 업로드하는 커버 이미지 —> -->
+          <img class="user_cover_main" src="/assets/cover_test.png">
+          <!-- <!— 선택 블렌딩 —> -->
+          <div class="blend_box_main"></div>
+          <!-- <!— 선택 스킨 —> -->
+          <img class="upload_tape_main" src="/assets/tapeskin_purple.png">
+          <!-- <!— 테이프 타이틀 —> -->
+          <p class="tape_title_main">강건너 불구경</p>
+        </div>
+
+        <div class="title_paper"></div>
+        <div class="title_paper_p">
+          <p class="tape_title_main">강건너 불구경</p>
+        </div>
+        <div class="cover_paper">
+          <img class="user_cover_main" src="/assets/cover_test.png">
+        </div>
+
+        <div class="songlist_paper_A">
+
+          <p class="song1">레드벨벳 - 빨간맛</p>
+          <input type="image" id="song1_rec_btn" alt="rec" src="/assets/rec_btn_black@3x.jpg" onclick="document.getElementById('song1_rec_btn').src='/assets/rec_btn_red@3x.jpg'">
+          <p class="song2">숀 - Way Back Home</p>
+          <input type="image" id="song2_rec_btn" alt="rec" src="/assets/rec_btn_black@3x.jpg" onclick="document.getElementById('song2_rec_btn').src='/assets/rec_btn_red@3x.jpg'">
+          <p class="song3">방탄소년단 - Leave Me</p>
+          <input type="image" id="song3_rec_btn" alt="rec" src="/assets/rec_btn_black@3x.jpg" onclick="document.getElementById('song3_rec_btn').src='/assets/rec_btn_red@3x.jpg'">
+          <p class="song4">아이유 - 가을아침</p>
+          <input type="image" id="song4_rec_btn" alt="rec" src="/assets/rec_btn_black@3x.jpg" onclick="document.getElementById('song4_rec_btn').src='/assets/rec_btn_red@3x.jpg'">
+          <p class="song5">레드벨벳 - Power Up</p>
+          <input type="image" id="song5_rec_btn" alt="rec" src="/assets/rec_btn_black@3x.jpg" onclick="document.getElementById('song5_rec_btn').src='/assets/rec_btn_red@3x.jpg'">
+        </div>
+
+        <!-- 화살표 <a href = "javascript:void(0)" onclick = "document.getElementById('next').style.display='block';document.getElementById('fade').style.display='block'"> <img class="forward_btn" src="/assets/arrow_right1.png"> </a> <a href =
+        "javascript:void(0)" onclick = "document.getElementById('next').style.display='none';document.getElementById('fade').style.display='none'"> <img class="back_btn" src="/assets/arrow_left1.png"> </a> -->
+
+        <div id="next">
+          <div class="songlist_paper_B">
+            <p class="song6">Fight Facilities - Stranded</p>
+            <input type="image" id="song6_rec_btn" alt="rec" src="/assets/rec_btn_black@3x.jpg" onclick="document.getElementById('song6_rec_btn').src='/assets/rec_btn_red@3x.jpg'">
+            <p class="song7">멜로망스 - 동화</p>
+            <input type="image" id="song7_rec_btn" alt="rec" src="/assets/rec_btn_black@3x.jpg" onclick="document.getElementById('song7_rec_btn').src='/assets/rec_btn_red@3x.jpg'">
+            <p class="song8">볼빨간사춘기 - 여행</p>
+            <input type="image" id="song8_rec_btn" alt="rec" src="/assets/rec_btn_black@3x.jpg" onclick="document.getElementById('song8_rec_btn').src='/assets/rec_btn_red@3x.jpg'">
+            <p class="song9">비투비 - 너 없인 안 된다</p>
+            <input type="image" id="song9_rec_btn" alt="rec" src="/assets/rec_btn_black@3x.jpg" onclick="document.getElementById('song9_rec_btn').src='/assets/rec_btn_red@3x.jpg'">
+            <p class="song10">볼빨간사춘기 - 장마</p>
+            <input type="image" id="song10_rec_btn" alt="rec" src="/assets/rec_btn_black@3x.jpg" onclick="document.getElementById('song10_rec_btn').src='/assets/rec_btn_red@3x.jpg'">
+          </div>
+        </div>
+
+        <div class="tape2_popup_btn">
+          <a href="javascript:void(0)" onclick="document.getElementById('next').style.display='none';document.getElementById('fade').style.display='none'">사이드 A
+          </a>
+
+          <a href="javascript:void(0)" onclick="document.getElementById('next').style.display='block';document.getElementById('fade').style.display='block'">사이드 B
+          </a>
+
+          <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('tape2_fade').style.display='none'">닫기</a>
+        </div>
+
+      </div>
+
+      <div id="tape2_fade" class="black_overlay"></div>
+      <!-- -->
+
+
+        <div class="tape_theme_main">
+          <img class="user_cover_main" src="/assets/cover_test.png">
+          <div class="blend_box_main"></div>
+          <img class="upload_tape_main" src="/assets/tapeskin_black.png">
+          <p class="tape_title_main">강건너 불구경</p>
+        </div>
+        <div class="tape_theme_main">
+          <img class="user_cover_main" src="/assets/cover_test.png">
+          <div class="blend_box_main"></div>
+          <img class="upload_tape_main" src="/assets/tapeskin_black.png">
+          <p class="tape_title_main">강건너 불구경</p>
+        </div>
+        <div class="tape_theme_main">
+          <img class="user_cover_main" src="/assets/cover_test.png">
+          <div class="blend_box_main"></div>
+          <img class="upload_tape_main" src="/assets/tapeskin_black.png">
+          <p class="tape_title_main">강건너 불구경</p>
+        </div>
+        <div class="ttape_theme_main">
+          <img class="user_cover_main" src="/assets/cover_test.png">
+          <div class="blend_box_main"></div>
+          <img class="upload_tape_main" src="/assets/tapeskin_black.png">
+          <p class="tape_title_main">강건너 불구경</p>
+        </div>
+        <div class="tape_theme_main">
+          <img class="user_cover_main" src="/assets/cover_test.png">
+          <div class="blend_box_main"></div>
+          <img class="upload_tape_main" src="/assets/tapeskin_black.png">
+          <p class="tape_title_main">강건너 불구경</p>
+        </div>
+        <div class="tape_theme_main">
+          <img class="user_cover_main" src="/assets/cover_test.png">
+          <div class="blend_box_main"></div>
+          <img class="upload_tape_main" src="/assets/tapeskin_black.png">
+          <p class="tape_title_main">강건너 불구경</p>
+        </div>
+        <div class="tape_theme_main">
+          <img class="user_cover_main" src="/assets/cover_test.png">
+          <div class="blend_box_main"></div>
+          <img class="upload_tape_main" src="/assets/tapeskin_black.png">
+          <p class="tape_title_main">강건너 불구경</p>
+        </div>
+        <div class="tape_theme_main">
+          <img class="user_cover_main" src="/assets/cover_test.png">
+          <div class="blend_box_main"></div>
+          <img class="upload_tape_main" src="/assets/tapeskin_black.png">
+          <p class="tape_title_main">강건너 불구경</p>
+        </div>
+        <div class="tape_theme_main">
+          <img class="user_cover_main" src="/assets/cover_test.png">
+          <div class="blend_box_main"></div>
+          <img class="upload_tape_main" src="/assets/tapeskin_black.png">
+          <p class="tape_title_main">강건너 불구경</p>
+        </div>
+        <div class="tape_theme_main">
+          <img class="user_cover_main" src="/assets/cover_test.png">
+          <div class="blend_box_main"></div>
+          <img class="upload_tape_main" src="/assets/tapeskin_black.png">
+          <p class="tape_title_main">강건너 불구경</p>
+        </div>
+        <div class="tape_theme_main">
+          <img class="user_cover_main" src="/assets/cover_test.png">
+          <div class="blend_box_main"></div>
+          <img class="upload_tape_main" src="/assets/tapeskin_black.png">
+          <p class="tape_title_main">강건너 불구경</p>
+        </div>
+
+    </div>
+
+
+<!--
     <% @tapes.each do |t| %>
       <div class="tape_theme_main">
-        <!-- <!— 사용자가 업로드하는 커버 이미지 —> -->
         <img class="user_cover_main" src="/assets/cover_test.png">
-        <!-- <!— 선택 블렌딩 —> -->
         <div class="blend_box_main"></div>
-        <!-- <!— 선택 스킨 —> -->
         <img class="upload_tape_main" src="/assets/tapeskin_black.png">
-        <!-- <!— 테이프 타이틀 —> -->
         <p class="tape_title_main"><%= t.tape_title %></p>
       </div>
     <% end%>
+  -->
   </div>
 
   <div class="logo_03_container">

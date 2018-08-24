@@ -46,7 +46,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   align-content: flex-start;
 }
 
@@ -143,9 +143,9 @@
 }
 .songlist_paper_A{
   width: 23vw;
-  height: 15.13vw;
+  height: 15.15vw;
   border: 1px solid black;
-  background-color: lightgray;
+  background-image: url(tape_bgc.jpg);
   margin-top: -11.5vw;
   margin-left: 30vw;
 
@@ -174,11 +174,11 @@
 
 #next{
   width: 23vw;
-  height: 15.13vw;
+  height: 15.14vw;
+  background-image: url(tape_bgc.jpg);
   border: 1px solid black;
-  background-color: lightgray;
-  margin-top: -15.1vw;
-  margin-left: 27vw;
+  margin-top: -15.15vw;
+  margin-left: 27.05vw;
 
   padding-left: 3vw;
   padding-right: 3vw;
@@ -235,6 +235,78 @@
   color: black;
   font-size: 1vw;
   margin: 1vw;
+}
+
+#song1_rec_btn{
+  position: absolute;
+  margin-left: 15.2vw;
+  margin-top: 2vw;
+  width: 1.2vw;
+  height: 1.2vw;
+}
+#song2_rec_btn{
+  position: absolute;
+  margin-left: 15.2vw;
+  margin-top: 4.25vw;
+  width: 1.2vw;
+  height: 1.2vw;
+}
+#song3_rec_btn{
+  position: absolute;
+  margin-left: 15.2vw;
+  margin-top: 6.6vw;
+  width: 1.2vw;
+  height: 1.2vw;
+}
+#song4_rec_btn{
+  position: absolute;
+  margin-left: 15.2vw;
+  margin-top: 9.1vw;
+  width: 1.2vw;
+  height: 1.2vw;
+}
+#song5_rec_btn{
+  position: absolute;
+  margin-left: 15.2vw;
+  margin-top: 11.4vw;
+  width: 1.2vw;
+  height: 1.2vw;
+}
+
+#song6_rec_btn{
+  position: absolute;
+  margin-left: 15.2vw;
+  margin-top: 0.6vw;
+  width: 1.2vw;
+  height: 1.2vw;
+}
+#song7_rec_btn{
+  position: absolute;
+  margin-left: 15.2vw;
+  margin-top: 2.75vw;
+  width: 1.2vw;
+  height: 1.2vw;
+}
+#song8_rec_btn{
+  position: absolute;
+  margin-left: 15.2vw;
+  margin-top: 4.9vw;
+  width: 1.2vw;
+  height: 1.2vw;
+}
+#song9_rec_btn{
+  position: absolute;
+  margin-left: 15.2vw;
+  margin-top: 7.45vw;
+  width: 1.2vw;
+  height: 1.2vw;
+}
+#song10_rec_btn{
+  position: absolute;
+  margin-left: 15.2vw;
+  margin-top: 9.8vw;
+  width: 1.2vw;
+  height: 1.2vw;
 }
 
 
