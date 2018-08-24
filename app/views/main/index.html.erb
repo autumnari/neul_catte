@@ -2,17 +2,52 @@
 
 <!-- 로그인 안했을 때  -->
         <section id="landtape_info">
-            <div class="info_container">
 
-                <div class="subject_tape">
-                    <p class="subject">추천</p>
-                </div>
+           <!-- 탭 테스트 -->
+          <div class="main_tab">
+            <div class="tabs_main">
 
-                <h1 class="no_login">카세트 테이프</h1>
-                <p class="info">사용자의 플레이리스트를 비교하여 취향이 꼭 맞는 사용자들의 테이프를 추천합니다.<br>
-                하나의 카세트 테이프에는 최대 10곡이 담겨있습니다. 마음에 드는 테이프를 꺼내 재생해 보세요.<br>
-                그 중 내 취향과 맞는 곡이 있다면, 녹음하기 버튼을 눌러 나의 재생 목록에 담아보세요. </p>
+                <input type="radio" name="tabs_main" id="tabone" checked="checked">
+                <label for="tabone">01</label>
+                  <div class="tab_main">
+                    <p class="tab-info_btn">추천</p>
+                    <h1 class="tab-info_subject">카세트 테이프</h1>
+                    <p class="tab-info_article">사용자의 플레이리스트를 비교하여 취향이 꼭 맞는 사용자들의 테이프를 추천합니다. 하나의 카세트 테이프에는 최대 10곡이 담겨있습니다. 마음에 드는 테이프를 꺼내 재생해 보세요. 그 중 내 취향과 맞는 곡이 있다면, 녹음하기 버튼을 눌러 나의 재생 목록에 담아보세요.</p>
+                    <img class="tab-info_img" src="/assets/cassettes_main.png"></img>
+                  </div>
+
+                <input type="radio" name="tabs_main" id="tabtwo">
+                <label for="tabtwo">02</label>
+                  <div class="tab_main">
+                    <p class="tab-info_btn">추천</p>
+                    <h1 class="tab-info_subject">데일리 뮤직</h1>
+                    <p class="tab-info_article">사용자의 플레이리스트를 비교하여 취향이 꼭 맞는 사용자들의 음악을 추천합니다. 데일리 뮤직 포스트는 한개의 곡과 텍스트로 이루어져 있습니다. 그 중 내 취향과 맞는 곡이 있다면, 녹음하기 버튼을 눌러 나의 재생 목록에 담아보세요.</p>
+                    <img class="tab-info_img_daily" src="/assets/dailys_main.png"></img>
+                  </div>
+
+                <input type="radio" name="tabs_main" id="tabthree">
+                <label for="tabthree">03</label>
+                  <div class="tab_main">
+                    <p class="tab-info_btn">포스트</p>
+                    <h1 class="tab-info_subject">포스팅하기</h1>
+                    <p class="tab-info_article">카세트 테이프 포스트는 공테이프에 한 곡 한 곡 녹음 하던 시절을 떠오르게 합니다. Top 100을 스트리밍하는 것이 일상이 된 우리는, 어쩌면 그 시절에 가지고 있던 음악의 소중함을 잊고 살아가는지 모릅니다. 지금, 당신에게 가장 의미있는 음악은 무엇인가요?</p>
+                    <img class="tab-info_img" src="/assets/posting_main.png"></img>
+                  </div>
+
             </div>
+          </div>
+
+        <!-- 기존
+
+        <div class="info_container">
+            <div class="subject_tape">
+                <p class="subject">추천</p>
+            </div>
+            <h1 class="no_login">카세트 테이프</h1>
+            <p class="info">사용자의 플레이리스트를 비교하여 취향이 꼭 맞는 사용자들의 테이프를 추천합니다.<br>
+            하나의 카세트 테이프에는 최대 10곡이 담겨있습니다. 마음에 드는 테이프를 꺼내 재생해 보세요.<br>
+            그 중 내 취향과 맞는 곡이 있다면, 녹음하기 버튼을 눌러 나의 재생 목록에 담아보세요. </p>
+        </div>
 
             <div class="land_button">
                 <div class="button">
@@ -25,11 +60,12 @@
                 03
                 </div>
             </div>
+          -->
         </section>
 
         <section id="landtape_img">
             <div class="land_tape_container">
-        
+
         </section>
 
 <!-- 로그인 했을 때 -->
