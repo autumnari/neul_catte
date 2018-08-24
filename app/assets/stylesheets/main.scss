@@ -12,6 +12,7 @@
 
 /* main 01 - left */
 
+/*
 #landtape_info{
     width: 45vw;
     height: 75vh;
@@ -29,13 +30,15 @@
     height: 3.7vh;
     border: 1px solid #000;
     border-radius: 3.7vh;
-/*
+
     display: flex;
     justify-content: center;
     align-items: center;
-*/
-}
 
+}
+*/
+
+/*
 .subject{
     font-size: 1vw;
     font-weight: 500;
@@ -72,7 +75,7 @@
     border-bottom: 2px solid #000;
 }
 
-/* main 01 - right*/
+/* main 01 - right
 #landtape_img{
     width: 40vw;
     height: 75vh;
@@ -98,6 +101,100 @@
     margin: 1vh;
     border: 1px solid #000;
 }
+*/
+
+/* tab */
+
+.main_tab{
+  margin-top: 35vw;
+  position: absolute;
+}
+.tabs_main {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+  width: 30vw;
+  margin-left: -9vw;
+  position: absolute;
+}
+.tabs_main label {
+ width:33.3%;
+ order: 1;
+ display: block;
+ padding:15px 0px;
+ text-align:left;
+ cursor: pointer;
+ background: white;
+ color: lightgray;
+ font-size: 1vw;
+}
+
+/*박스배경*/
+.tabs_main .tab_main {
+ order: 99;
+ flex-grow: 1;
+ width: 100%;
+ margin-top: -32vw;
+ display: none;
+ background: white;
+ position: absolute;
+}
+.tabs_main input[type="radio"] {
+ display: none;
+}
+.tab_main{
+  margin-top: 1.3vw;
+}
+.tabs_main label{
+  border-bottom: 1px solid lightgray;
+}
+
+/*탭 눌렀을때 컬러*/
+.tabs_main input[type="radio"]:checked + label {
+ background: white;
+ color: black;
+ border-bottom: 1px solid;
+}
+.tabs_main input[type="radio"]:checked + label + .tab_main {
+ display: block;
+}
+
+.tab-info_btn{
+  border: 1px solid black;
+  border-radius: 10vw;
+  display: inline;
+  padding: 0.5vw 1.5vw;
+  font-size: 0.8vw;
+  position: absolute;
+  margin-top: 4vw;
+}
+.tab-info_subject{
+  margin-top: 9vw;
+  font-size: 4vw;
+  position: absolute;
+}
+.tab-info_article{
+  margin-top: 16vw;
+  font-size: 0.9vw;
+  line-height: 1.6vw;
+  position: absolute;
+}
+.tab-info_img{
+  position: absolute;
+  margin-top: -2vw;
+  margin-left: 40vw;
+  width: 23vw;
+}
+.tab-info_img_daily{
+  position: absolute;
+  margin-top: -1vw;
+  margin-left: 40vw;
+  width: 24vw;
+}
+
 
 
 // 로그인 했을 때
