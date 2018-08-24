@@ -5,16 +5,15 @@
   <div class="tape_title_container">
     <%= f.label :제목, class: "title", for: "title" %>
     <div class="input_title">
-      <%= f.text_field :tape_title, id: "title", class: "form-control", placeholder: "제목을 작성해주세요" %>
+      <%= f.text_field :tape_title, id: "title", class: "form-control", placeholder: "제목을작성해주세요" %>
     </div>
   </div>
 
   <div class="tape_img_container">
-    <%= f.label :커버이미지, class: "tape_img", for: "tape_img" %>
-    <br>
+    <%= f.label :커버이미지, class: "tape_coverimg" %>
     <div class="input_img">
-      이미지를 등록해주세요
-      <%= f.file_field :img, id: "tape_img", class: 'img_up', value: "이미지를 등록해주세요" %>
+      <%= f.label :이미지를등록해주세요, class: "tape_img", for: "tape_img" %>
+      <%= f.file_field :img, id: "tape_img", class: 'img_up'%>
     </div>
   </div>
 
@@ -24,65 +23,54 @@
     </div>
 
     <div class="filter_box">
+
       <div class="filter">
-        <%= f.label :Bule, for: "mp" %>
-        <span></span>
-        <%= f.check_box :blue, id: "mp" %>
+
+        <label class="container">Blue
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
       </div>
 
       <div class="filter">
-        <%= f.label :Red, for: "scr" %>
-        <%= f.check_box :red, id: "scr" %>
+        <label class="container">Red
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
       </div>
 
       <div class="filter">
-        <%= f.label :Yellow, for: "ovr" %>
-        <%= f.check_box :yellow, id: "ovr" %>
+        <label class="container">Yellow
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
       </div>
 
       <div class="filter">
-        <%= f.label :Black, for: "sat" %>
-        <%= f.check_box :black, id: "sat" %>
+        <label class="container">Black
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
       </div>
 
       <div class="filter">
-        <%= f.label :White, for: "sat" %>
-        <%= f.check_box :white, id: "sat" %>
+        <label class="container">White
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
       </div>
+
+      <!-- 뷰헬퍼 쓰니까 checkbox 수정이 힘들어서 일단은 그냥 html 코드로 쓸게요! -->
+      <!-- <div class="filter"> <%= f.label :Blue %> <span class="blue_check"></span> <%= f.label :"", for: "blue" %> <%= f.check_box :blue, id: "blue", class:"ue" %> </div> <div class="filter"> <%= f.label :Red, for: "red" %> <%= f.check_box :red, id:
+      "red" %> </div> <div class="filter"> <%= f.label :Yellow, for: "ylw" %> <%= f.check_box :yellow, id: "ylw" %> </div> <div class="filter"> <%= f.label :Black, for: "black" %> <%= f.check_box :black, id: "black" %> </div> <div class="filter"> <%=
+      f.label :White, for: "white" %> <%= f.check_box :white, id: "white" %> </div> -->
 
     </div>
   </div>
 
-<!--
-  <div class="tape_filter_container">
-    <div class="filter_index">
-      필터
-    </div>
-
-    <div class="filter_box">
-      <div class="filter">
-        <%= f.label :Multiply, for: "mp" %>
-        <span></span>
-        <%= f.check_box :multiply, id: "mp" %>
-      </div>
-
-      <div class="filter">
-        <%= f.label :Screen, for: "scr" %>
-        <%= f.check_box :screen, id: "scr" %>
-      </div>
-
-      <div class="filter">
-        <%= f.label :Overlay, for: "ovr" %>
-        <%= f.check_box :overlay, id: "ovr" %>
-      </div>
-
-      <div class="filter">
-        <%= f.label :Saturation, for: "sat" %>
-        <%= f.check_box :saturation, id: "sat" %>
-      </div>
-    </div>
-  </div>
--->
+  <!-- <div class="tape_filter_container"> <div class="filter_index"> 필터 </div> <div class="filter_box"> <div class="filter"> <%= f.label :Multiply, for: "mp" %> <span></span> <%= f.check_box :multiply, id: "mp" %> </div> <div class="filter"> <%=
+  f.label :Screen, for: "scr" %> <%= f.check_box :screen, id: "scr" %> </div> <div class="filter"> <%= f.label :Overlay, for: "ovr" %> <%= f.check_box :overlay, id: "ovr" %> </div> <div class="filter"> <%= f.label :Saturation, for: "sat" %> <%=
+  f.check_box :saturation, id: "sat" %> </div> </div> </div> -->
 
   <div class="tape_music_container">
     <div class="tape_music">
@@ -100,23 +88,23 @@
         <div class="a_list_container">
           <div class="a">
             <%= f.text_field :list, class: "list_a", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"R", class: "record" %>
+            <%= f.button :"", class: "record" %>
           </div>
           <div class="a">
             <%= f.text_field :list, class: "list_a", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"R", class: "record" %>
+            <%= f.button :"", class: "record" %>
           </div>
           <div class="a">
             <%= f.text_field :list, class: "list_a", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"R", class: "record" %>
+            <%= f.button :"", class: "record" %>
           </div>
           <div class="a">
             <%= f.text_field :list, class: "list_a", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"R", class: "record" %>
+            <%= f.button :"", class: "record" %>
           </div>
           <div class="a">
             <%= f.text_field :list, class: "list_a", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"R", class: "record" %>
+            <%= f.button :"", class: "record" %>
           </div>
         </div>
       </div>
@@ -128,41 +116,43 @@
         <div class="b_list_container">
           <div class="b">
             <%= f.text_field :list, class: "list_b", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"R", class: "record" %>
+            <%= f.button :"", class: "record" %>
           </div>
 
           <div class="b">
             <%= f.text_field :list, class: "list_b", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"R", class: "record" %>
+            <%= f.button :"", class: "record" %>
           </div>
 
           <div class="b">
             <%= f.text_field :list, class: "list_b", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"R", class: "record" %>
+            <%= f.button :"", class: "record" %>
           </div>
 
           <div class="b">
             <%= f.text_field :list, class: "list_b", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"R", class: "record" %>
+            <%= f.button :"", class: "record" %>
           </div>
 
           <div class="b">
             <%= f.text_field :list, class: "list_b", placeholder: "곡을 녹음해주세요" %>
-            <%= f.button :"R", class: "record" %>
+            <%= f.button :"", class: "record" %>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <button type="preview">
+
+<div class="tape_submit">
+  <button type="preview" class="preview_custom">
     미리보기
   </button>
   <!-- preview (if needed) -->
-<br>
   <button type="submit" value="save" class="save_tape">
     저장
   </button>
+  </div>
 
 <% end %>
 
