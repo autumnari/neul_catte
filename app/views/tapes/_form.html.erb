@@ -5,7 +5,14 @@
 <script>
   $(function(){
     var index = <%=raw @music_tscollection %>
-    $("#title_singer").autocomplete({
+    $(".list_a").autocomplete({
+      source: index
+    });
+  });
+
+  $(function(){
+    var index = <%=raw @music_tscollection %>
+    $(".list_b").autocomplete({
       source: index
     });
   });
@@ -94,7 +101,7 @@
         </div>
         <div class="a_list_container">
           <div class="a">
-            <%= f.text_field :m1, id: "title_singer", data: {autocomplete_source: musics_path}, class: "list_a", placeholder: "곡을 녹음해주세요" %>
+            <%= f.text_field :m1, data: {autocomplete_source: musics_path}, class: "list_a", placeholder: "곡을 녹음해주세요" %>
           </div>
           <div class="a">
             <%= f.text_field :m2, class: "list_a", placeholder: "곡을 녹음해주세요" %>

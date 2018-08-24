@@ -111,6 +111,12 @@ ul.nav_ul{
   align-items: center;
 }
 
+
+.nav_logo a{
+    width: 1.5vw;
+    margin-right: 4.5vw;
+  }
+
 .nav_item {
   text-decoration: none;
   list-style: none;
@@ -142,7 +148,8 @@ nav a#trigger {
   position: absolute;
   top: 5vw;
   left: 0;
-  padding: 0.9vh 0 0.5vh 41.7vw;
+  padding: 0.9vh 0 0.5vh 55.25vw;
+
   // font-size: 0.9vw;
   // display: flex;
   // flex-direction: column;
@@ -150,6 +157,7 @@ nav a#trigger {
 }
 
 .post-menu-down {
+
   padding-right: 2vw;
   text-decoration: none;
   list-style: none;

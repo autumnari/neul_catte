@@ -9,7 +9,7 @@
           <ul class="nav_ul">
               <% if user_signed_in? %>
                 <div class="nav_container">
-                  <%= image_tag "logo.png", class: "nav_logo" %>
+                  <%= link_to image_tag("logo.png", height: '46', width: '20'), root_path, class: "nav_logo" %>
                   <%= link_to '늘카테', main_about_path, class: "nav_item" %>
                   <%= link_to '테이프', tapes_path, class: "nav_item" %>
                   <%= link_to '데일리 뮤직', dailies_path, class: "nav_item" %>
