@@ -50,16 +50,16 @@ a {
 .daily_card_color {
     width: 1.8vw;
     background-color: yellow;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 0.7px solid black;
+    border-left: 0.7px solid black;
+    border-bottom: 0.7px solid black;
 }
 .daily_card_title {
     margin: 0.7vw 0.4vw;
     font-size: 0.96vw;
 }
 .daily_card_img_box {
-    border: 1px solid black;
+    border: 0.7px solid black;
     width: 9.6vw;
 }
 .daily_card_img {
@@ -87,18 +87,21 @@ a {
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
+    width: 60%; /* Full width */
     height: 120%; /* Full height */
+    margin: 10vw 12vw 0vw 20vw;
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: white; /* Fallback color */
+    background-color: rgba(255,255,255,0.7); /* Black w/ opacity */
+
 }
 
 /* Modal Content/Box */
 .modal_container {
-    margin: 14vw 20.5vw; /* 15% from the top and centered */
-    width: 55vw; /* Could be more or less, depending on screen size */
-    height: 13.8vw;
+
+    // margin: 14vw 20.5vw; /* 15% from the top and centered */
+    width: 57vw; /* Could be more or less, depending on screen size */
+    height: 15vw;
     display: flex;
     font-family: 'Arita-buri-SemiBold', serif;
 }
@@ -126,7 +129,7 @@ a {
 .user_context_modal {
     border-top: 0.5px solid black;
     border-bottom: 0.5px solid black;
-    width: 21.5vw;
+    width: 22vw;
     background-image: url(daily_bgc.jpg);
     display: flex;  
     flex-direction: column;
@@ -156,7 +159,7 @@ a {
 }
 .user_context_modal2 {
     border: 0.5px solid black;
-    width: 21.5vw;
+    width: 22vw;
     background-image: url(daily_bgc.jpg);
     display: flex;  
     flex-direction: column;
@@ -211,3 +214,79 @@ a {
 //   nav {
 //     clear: both;
 //   }
+
+
+
+// dailies_new.html.erb에 적용될 css
+
+.body_daily_new {
+    width: 400vw;
+}
+
+.preview_container {
+    margin: 2vw 0vw; //* 15% from the top and centered */
+    // width: 55vw; /* Could be more or less, depending on screen size */
+    // height: 13.8vw;
+    display: flex;
+    font-family: 'Arita-buri-SemiBold', serif;
+    // border: 1px solid red;
+    justify-content: center;
+}
+
+label,input {
+    display: block;
+}
+
+.post_daily_form {
+    margin: 0vw 2.4vw;
+    width:56vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    background-image: url(dailies-new-bg.jpg);
+    background-size: cover;
+    font-family: 'Arita-buri-SemiBold', serif;
+    border: 0.5px solid  #979797;
+}
+.form_section_one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // border: 1px solid red;
+    padding :2vw 2vw;
+    
+    font-size: 1.8vw; 
+}
+.form_title, .form_track {
+    margin-right: 10.6vw;
+}
+.title_placeholder, .music_placeholder, .img_placeholder, .colorpicker, .textarea_box {
+    margin-top: 1vw;
+
+}
+
+.form_section_two {
+    padding :0vw 2vw;
+    font-size: 1.8vw;
+}
+.form_section_three {
+    padding :0vw 2vw;
+    font-size: 1.8vw;
+
+}
+.textarea_box {
+    width: 50vw;
+    // height: 4vw;
+}
+.form_section_four {
+    display: flex;
+    justify-content: center;
+
+}
+#form_submit_btn {
+    width: 10vw;
+    height: 2vw;
+    font-size: 1vw;
+}
+
+
