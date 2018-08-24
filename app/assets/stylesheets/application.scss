@@ -185,12 +185,12 @@ nav a#trigger {
 @media all and (max-width : 768px) {
   header {
     width: 100vw;
-    height: 50vw;
+    height: 6vw;
     background-image: url("navbg.png");
     object-fit: contain;
     // border: 1px solid red;
     // display:none;
-    border: 1px solid red;
+    // border: 1px solid red;
   }
   
   body {
@@ -206,7 +206,7 @@ nav a#trigger {
   .main_nav {
     position: absolute;
     width: inherit;
-    height: 50vw;
+    height: 6vw;
     border-top: 0.5px solid #979797;
     border-bottom: 0.5px solid #979797;
     // border: 1px solid red;
@@ -254,14 +254,22 @@ nav a#trigger {
     text-decoration: none;
     list-style: none;
     color: #141212;
+    display: none;
   }
   
   
   nav a#trigger {
     display: block;
+    color: black;
+    // border: 1px solid red;
+    margin-top: 2vw;
+    font-size: 4vw;
+    text-decoration: none;
+
   }
   
   .postbtn {
+    display: none;
     background: none;
     opacity: 1;
     border: none;
@@ -305,6 +313,7 @@ nav a#trigger {
   
   .nav_logo {
     width: 1.5vw;
+    order: 1;
     //margin-right: 2.5vw;
   }
 
