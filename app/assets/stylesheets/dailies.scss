@@ -5,9 +5,15 @@ a {
 }
 
 .view_container_daily {
+<<<<<<< HEAD
   display: flex;
   flex-direction: row;
   margin-top: 1vw;
+=======
+    display: flex;
+    flex-direction: row;
+
+>>>>>>> upstream/master
 }
 
 .nav_daily {
@@ -16,9 +22,15 @@ a {
 }
 
 .title_daily {
+<<<<<<< HEAD
   margin: 6vh 4vw 4vh;
   width: 2vw;
   height: 25vh;
+=======
+    margin: 7vh 4vw 4vh;
+    width: 2vw;
+    height: 25vh;
+>>>>>>> upstream/master
 }
 
 .nav_daily h1 {
@@ -125,7 +137,12 @@ a {
 }
 
 .daily_title_modal {
+<<<<<<< HEAD
   margin: 1vw 0.4vw;
+=======
+    margin: 1vw 0.4vw;
+
+>>>>>>> upstream/master
 }
 
 .daily_img_box_modal {
@@ -140,12 +157,21 @@ a {
 }
 
 .user_context_modal {
+<<<<<<< HEAD
   border-top: 0.5px solid black;
   border-bottom: 0.5px solid black;
   width: 22vw;
   background-image: url("daily_bgc.jpg");
   display: flex;
   flex-direction: column;
+=======
+    border-top: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+    width: 22vw;
+    background-image: url(daily_bgc.jpg);
+    display: flex;
+    flex-direction: column;
+>>>>>>> upstream/master
 }
 
 .daily_song_modal {
@@ -173,11 +199,19 @@ a {
 }
 
 .user_context_modal2 {
+<<<<<<< HEAD
   border: 0.5px solid black;
   width: 22vw;
   background-image: url("daily_bgc.jpg");
   display: flex;
   flex-direction: column;
+=======
+    border: 0.5px solid black;
+    width: 22vw;
+    background-image: url(daily_bgc.jpg);
+    display: flex;
+    flex-direction: column;
+>>>>>>> upstream/master
 }
 
 .daily_text2 {
@@ -199,7 +233,12 @@ a {
 }
 
 .daily_user_nick {
+<<<<<<< HEAD
   margin-left: 0.4vw;
+=======
+    margin-left: 0.4vw;
+
+>>>>>>> upstream/master
 }
 /* The Close Button */
 .close {
@@ -262,6 +301,7 @@ label {
 /// _form
 
 .form_section_one {
+<<<<<<< HEAD
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -269,6 +309,15 @@ label {
   margin: 3vw 0 1vw;
   padding: 0 3vw;
   font-size: 2vw;
+=======
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // border: 1px solid red;
+    padding :2vw 2vw;
+
+    font-size: 1.8vw;
+>>>>>>> upstream/master
 }
 
 label.form_title {
@@ -436,6 +485,7 @@ textarea[placeholder].textarea_box{
     font-size: 1.3vw;
     color: black;
 }
+<<<<<<< HEAD
 
 .textarea_box::-webkit-input-placeholder{
   color: #c8c4c4;
@@ -457,3 +507,5 @@ textarea[placeholder].textarea_box{
   cursor: pointer;
   margin-left: 43vw;
 }
+=======
+>>>>>>> upstream/master

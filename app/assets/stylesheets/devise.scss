@@ -34,7 +34,7 @@
 }
 
 .form-inputs{
-    width: 21.6vw;
+    width: 21.7vw;
     height: 18vh;
     font-size: 3vh;
     line-height: 4vh;
@@ -92,7 +92,7 @@ input.boolean.optional {
     color: #fff;
     font-size: 2.3vh;
     font-weight: lighter;
-    margin: 2vh 0 2vh 0;
+    margin: 0 0 4vh 0;
     cursor: pointer;
 
 
@@ -128,21 +128,20 @@ input.form-lists{
   cursor: pointer;
 }
 
-.form-lists a{
 
+.go_register{
+  font-size: 1vw;
 }
 
-.go_register, .go_login{
-  font-size: 1.7vh;
-  margin-bottom: 3vh;
+.go_login{
+  font-size: 1vw;
 }
-
 
 .forgot_password {
   text-decoration: none;
   color: #000000;
-  font-size: 1.7vh;
-  margin-top: -6vh;
+  font-size: 1vw;
+  //margin-top: -6vh;
 }
 
 .error_notification{
@@ -151,6 +150,7 @@ input.form-lists{
 .error {
   display: none;
 }
+
 //Sign-Up list
 
 .admit_list_container {
@@ -215,6 +215,20 @@ input[placeholder].admit_m {
   border: none;
   margin-top: 3vw;
   cursor: pointer;
+}
+
+//forgot_password
+
+input.btn{
+  border: none;
+  background-color: rgba(0,0,0,0);
+  width: 21.6vw;
+  font-family: 'Arita-buri-SemiBold', serif;
+  color: #ffffff;
+}
+
+.go_login_pw {
+  font-size: 1vw;
 }
 
 @media screen and (max-width: 768px) {
