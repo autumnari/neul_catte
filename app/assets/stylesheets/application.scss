@@ -60,6 +60,10 @@ img {
   font-style: normal;
 }
 
+.main_nav_mobile {
+  display: none;
+}
+
 header {
   width: 100vw;
   height: 7vw;
@@ -183,138 +187,71 @@ nav a#trigger {
 
 /* MOBILE*/
 @media all and (max-width : 768px) {
+
   header {
-    width: 100vw;
-    height: 6vw;
-    background-image: url("navbg.png");
-    object-fit: contain;
-    // border: 1px solid red;
-    // display:none;
-    // border: 1px solid red;
-  }
-  
-  body {
-    font-family: 'Arita-buri-SemiBold', serif;
-  }
-  
-  .blank {
-    width: auto;
-    height: 2vw;
     display: none;
   }
-  
-  .main_nav {
-    position: absolute;
-    width: inherit;
-    height: 6vw;
-    border-top: 0.5px solid #979797;
-    border-bottom: 0.5px solid #979797;
-    // border: 1px solid red;
-  
+  #header_mobile {
+    display: block;
+    background-image: url("navbg.png");
+    font-size: 3vw;
+  }
+  #main_nav_mobile {
+    display: none;
+    height: 42vw;
   }
   
-  #main_nav,
-  .nav_container,
-  ul {
-    height: inherit;
-  }
-  
-  #main_nav {
-    width: 60vw;
-    margin-left: 19.6vw;
-    margin-right: 20vw;
-    font-size: 1vw;
-  }
-  
-  ul.nav_ul{
-    width: 56vw;
-    margin: 0 2vw 0 2vw;
-  }
-  
-  .nav_container {
-    width: inherit;
+  #main_nav_mobile > ul {
+    list-style:none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  
-  .nav_logo a{
-      width: 1.5vw;
-      margin-right: 4.5vw;
-    }
-  
-  .nav_logotext{
-    text-decoration: none;
-    color: black;
-  }
-  
-  .nav_item {
-    text-decoration: none;
-    list-style: none;
-    color: #141212;
-    display: none;
-  }
-  
-  
-  nav a#trigger {
-    display: block;
-    color: black;
     // border: 1px solid red;
-    margin-top: 2vw;
-    font-size: 4vw;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 0.5px solid #979797;
+  }
+  .nav_item_mob {
     text-decoration: none;
+    color: black;
+  }
+#dropdown_mob {
+  height: 14vw;
+  width: 100vw;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; 
+  background-color: white;
+}
+.nav_dropitem_mob1 {
+  text-decoration: none;
+  margin-bottom: 2vw;
+  color: black;
+}
+.nav_dropitem_mob2 {
+  text-decoration: none;
+  margin-top: 2vw;
+  color: black;
+}
 
-  }
-  
-  .postbtn {
-    display: none;
-    background: none;
-    opacity: 1;
-    border: none;
-    font-family: 'Arita-buri-SemiBold', serif;
-    font-size: 1vw;
-    cursor: pointer;
-  }
-  
-  .post-menu {
-    display: none;
-    background-image: url("navbg.png"); // login-signup 페이지에서는 안보이게 수정 필요
-  }
-  
-  .post-menu.show {
-    display: inline-block;
-    width: 100vw;
-    height: 2vw;
-    position: absolute;
-    top: 5vw;
-    left: 0;
-    padding: 0.9vh 0 0.5vh 55.25vw;
-  
-    // font-size: 0.9vw;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: flex-start;
-  }
-  
-  .post-menu-down {
-  
-    padding-right: 2vw;
+  #trigger_mobile {
     text-decoration: none;
-    list-style: none;
-    font-size: 1vw;
-    color: #000000;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid blue;
+    background-image: url("navbg.png");
+    border-bottom: 0.5px solid #979797;
+    height: 7vw;
   }
   
-  .show {
-    display: inline-block;
+  .nav_logo_mobile {
+    height: 17vw;
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.5px solid #979797;
   }
-  
-  .nav_logo {
-    width: 1.5vw;
-    order: 1;
-    //margin-right: 2.5vw;
-  }
-
 }
