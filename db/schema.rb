@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180824142121) do
+ActiveRecord::Schema.define(version: 20180825150444) do
 
   create_table "dailies", force: :cascade do |t|
     t.integer "user_id"
@@ -34,10 +34,12 @@ ActiveRecord::Schema.define(version: 20180824142121) do
   end
 
   create_table "records", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "music_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "music_id"
+    t.integer "user_id"
+    t.index ["music_id"], name: "index_records_on_music_id"
+    t.index ["user_id"], name: "index_records_on_user_id"
   end
 
   create_table "tapes", force: :cascade do |t|
