@@ -10,16 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180825150444) do
+ActiveRecord::Schema.define(version: 20180826133020) do
+
 
   create_table "dailies", force: :cascade do |t|
-    t.integer "user_id"
     t.string "daily_title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "musicN"
     t.integer "count"
     t.text "body"
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_dailies_on_user_id"
   end
 
   create_table "musics", force: :cascade do |t|
@@ -43,7 +45,6 @@ ActiveRecord::Schema.define(version: 20180825150444) do
   end
 
   create_table "tapes", force: :cascade do |t|
-    t.integer "user_id"
     t.string "tape_title"
     t.integer "m1"
     t.integer "m2"
@@ -59,6 +60,8 @@ ActiveRecord::Schema.define(version: 20180825150444) do
     t.datetime "updated_at", null: false
     t.integer "count"
     t.text "layout"
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_tapes_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
