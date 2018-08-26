@@ -1,10 +1,31 @@
 
+<section id="header_mobile">
+  <div class="wrapper">
+    <nav id="main_nav_mobile"> 
+      <ul>
+      <%= link_to '테이프', tapes_path, class: "nav_item_mob" %>
+      <%= link_to '데일리 뮤직', dailies_path, class: "nav_item_mob" %>
+        <a href="javascript:postDisplay_menu();" class="nav_item_mob">포스트</a>
+        <div id="dropdown_mob">
+          <%= link_to '테이프', "/tapes/new", class: "nav_dropitem_mob1" %>
+          <%= link_to '데일리 뮤직', "/dailies/new", class: "nav_dropitem_mob2" %>
+        </div>
+        <%= link_to '마이 페이지', my_pages_path, class: "nav_item_mob" %>
+        <%= link_to '로그아웃', destroy_user_session_path, class: "nav_item_mob", method: 'delete' %>
+      </ul>
+    </nav>
+    <a href="javascript:menuDisplay_mob();" id="trigger_mobile">메뉴</a>
+    <%= link_to image_tag("logo.png", height: '56', width: '30'), root_path, class: "nav_logo_mobile" %>
+  </div>
+</section>
 
-<header>
+
+<header id="header_web">
 
     <div class="blank">
     </div>
-    <div class="main_nav">
+    
+    <section class="main_nav">
       <nav id="main_nav">
           <ul class="nav_ul">
               <% if user_signed_in? %>
@@ -28,9 +49,9 @@
 
                   <%= link_to '마이 페이지', my_pages_path, class: "nav_item" %>
                   <%= link_to '로그아웃', destroy_user_session_path, class: "nav_item", method: 'delete' %>
-                  <a href="#" id="trigger">메뉴</a>
+                  
                 </div>
-
+                <a href="#" id="trigger">메뉴</a>
                 <% else %>
                   <div class="nav_container">
                     <%= link_to image_tag("logo.png", height: '46', width: '20'), root_path, class: "nav_logo" %>
@@ -43,9 +64,9 @@
           </ul>
           
       </nav>
-    </div>
+    </section>
   </header>
-
+  
   <script>
     $(function () {
       var trigger = $('#trigger');
@@ -61,6 +82,7 @@
         }
       });
     });
+    
   </script>
 
 
@@ -85,4 +107,27 @@ for (i = 0; i < dropdowns.length; i++) {
 }
 }
 }
+
+function menuDisplay_mob(){
+    var nav = document.getElementById("main_nav_mobile");
+    if(nav.style.display=='none'){
+      nav.style.display = 'block';
+    }else{
+      nav.style.display = 'none';
+    }
+}
+function postDisplay_menu(){
+    var post = document.getElementById("dropdown_mob");
+    var changeheight = document.getElementById("main_nav_mobile");
+    if(post.style.display=='none'){
+      post.style.display = 'flex';
+      changeheight.style.height='60vw';
+    }else{
+      post.style.display = 'none';
+      changeheight.style.height='42vw';
+    }
+}
+
+
+
 </script>
