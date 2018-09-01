@@ -1,4 +1,4 @@
-<div class="main">
+<div id="main_web">
 
 <!-- 로그인 안했을 때  -->
         <section id="landtape_info">
@@ -85,3 +85,57 @@
   </div>
 
 </div>
+
+-->
+
+</div>
+<section id="main_container_mob">
+
+  <div id="main_mob">
+    <div class="img_mob">
+      <img id="tab-info_img_mob" src="/assets/cassettes_main_mob@3x.png"></img>
+    </div>
+
+    <div class="btn_mob">
+      <span class="dot" id="main_dot_mob1" onclick="javascript:currentSlide(1)"></span>
+      <span class="dot" id="main_dot_mob2" onclick="javascript:currentSlide(2)"></span>
+      <span class="dot" id="main_dot_mob3" onclick="javascript:currentSlide(3)"></span>
+    </div>
+    <div class="tab_info_btn_mob">추천</div>
+    <div class="tab_mob">
+      <p class="tab_subtitle_mob">아날로그 감성을 담은 음악 추천 서비스</p>
+      <p id="tab_title_mob">카세트 테이프</h1>
+      <p id="tab_article_mob">사용자의 플레이리스트를 비교하여 취향이 꼭 맞는 사용자들의 테이프를 추천합니다. 그 중 내 취향과 맞는 곡이 있다면, 녹음하기 버튼을 눌러 나의 재생 목록에 담아보세요.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  function showSlides(n) {
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    dots[slideIndex-1].className += " active";
+
+    if(n==1) {
+      //document.getElementById('tab-info_img_mob').src =
+      document.getElementById("tab_title_mob").innerHTML = "카세트 테이프";
+      document.getElementById("tab_article_mob").innerHTML = "사용자의 플레이리스트를 비교하여 취향이 꼭 맞는 사용자들의 테이프를 추천합니다. 그 중 내 취향과 맞는 곡이 있다면, 녹음하기 버튼을 눌러 나의 재생 목록에 담아보세요.";
+    }
+    else if (n==2) {
+      document.getElementById("tab_title_mob").innerHTML = "데일리 뮤직";
+      document.getElementById("tab_article_mob").innerHTML = "사용자의 플레이리스트를 비교하여 취향이 꼭 맞는 사용자들의 음악을 추천합니다. 데일리 뮤직 포스트는 한개의 곡과 텍스트로 이루어져 있습니다. 내 취향과 맞는 곡이 있다면, 녹음하기 버튼을 눌러 나의 재생 목록에 담아보세요.";
+    }
+    else {
+      document.getElementById("tab_title_mob").innerHTML = "포스팅하기";
+      document.getElementById("tab_article_mob").innerHTML = "카세트 테이프 포스트는 공테이프에 한 곡 한 곡 녹음 하던 시절을 떠오르게 합니다. Top 100을 스트리밍하는 것이 일상이 된 우리는, 어쩌면 그 시절에 가지고 있던 음악의 소중함을 잊고 살아가는지 모릅니다. 지금, 당신에게 가장 의미있는 음악은 무엇인가요?";
+    }
+   
+  }
+
+
+</script>
