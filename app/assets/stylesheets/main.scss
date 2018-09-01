@@ -1,107 +1,16 @@
 
 /*landing page - tape*/
 
-.main{
+#main_web {
     width: 100vw;
     height: 85vh;
     display: flex;
     justify-content: space-around;
     padding: 5vh 6vw 10vh 6vw;
 }
-
-
-/* main 01 - left */
-
-/*
-#landtape_info{
-    width: 45vw;
-    height: 75vh;
-    margin-left: 7vw;
-
+#main_container_mob {
+  display: none;
 }
-
-.info_container{
-    padding-top: 15vh;
-    padding-bottom: 15vh;
-}
-
-.subject_tape{
-    width: 6vw;
-    height: 3.7vh;
-    border: 1px solid #000;
-    border-radius: 3.7vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-*/
-
-/*
-.subject{
-    font-size: 1vw;
-    font-weight: 500;
-    letter-spacing: normal;
-    text-align: center;
-    margin-top: 0.5vh;
-    margin-bottom: 0.5vh;
-}
-
-
-.no_login{
-    font-size: 4vw;
-    margin-top: 3vh;
-    margin-bottom: 4vh;
-}
-
-.info{
-    font-size: 0.8vw;
-    font-weight: 500;
-    line-height: 2.0;
-}
-
-.land_button{
-    width: 80%;
-    height: 7vh;
-    margin-bottom: 5vh;
-
-    display: flex;
-    justify-content: space-around;
-}
-
-.button{
-    width: 30%;
-    border-bottom: 2px solid #000;
-}
-
-/* main 01 - right
-#landtape_img{
-    width: 40vw;
-    height: 75vh;
-    margin-right: 3vw;
-}
-
-.land_tape_container{
-    width: inherit;
-    height: inherit;
-    padding: 1vh 5vw 1vh 5vw;
-
-    display: flex;
-    align-items: stretch;
-    align-content: space-around;
-    flex-flow: column wrap;
-    column-gap: 1;
-}
-
-
-.land_tape_img {
-    width: 14vw;
-    height: 12vh;
-    margin: 1vh;
-    border: 1px solid #000;
-}
-*/
 
 /* tab */
 
@@ -130,20 +39,21 @@
  background: white;
  color: lightgray;
  font-size: 1vw;
+
 }
 
 /*박스배경*/
 .tabs_main .tab_main {
- order: 99;
- flex-grow: 1;
- width: 100%;
- margin-top: -32vw;
- display: none;
- background: white;
- position: absolute;
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  margin-top: -32vw;
+  display: none;
+  background: white;
+  position: absolute;
 }
 .tabs_main input[type="radio"] {
- display: none;
+  display: none;
 }
 .tab_main{
   margin-top: 1.3vw;
@@ -154,12 +64,12 @@
 
 /*탭 눌렀을때 컬러*/
 .tabs_main input[type="radio"]:checked + label {
- background: white;
- color: black;
- border-bottom: 1px solid;
+  // background: white;
+  color: black;
+  border-bottom: 1px solid;
 }
 .tabs_main input[type="radio"]:checked + label + .tab_main {
- display: block;
+  display: block;
 }
 
 .tab-info_btn{
@@ -218,4 +128,80 @@
 .logo_text{
   font-weight: bold;
   flex-grow: 1;
+}
+
+@media all and (max-width : 768px) {
+  #main_web {
+    display: none;
+  }
+  #main_container_mob {
+    display: block;
+  }
+  .img_mob {
+    margin: 5vw 0vw;
+    width: 100vw;
+    height: 60vw;
+    font-family: 'Arita-buri-SemiBold', serif;
+  }
+  #tab-info_img_mob {
+    margin: 0.4vw 5vw;
+    width : 90vw;
+    height: 58.23vw;
+  }
+
+  .btn_mob {
+    margin: 0vw 44vw;
+    margin-bottom: 5vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .dot {
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #bbb;
+  }
+  
+  .dot.active {
+    background-color: black;
+  }
+
+  .tab_info_btn_mob {
+    border: 1px solid black;
+    border-radius: 10vw;
+    display: inline-block;
+    padding: 2.5vw 7.5vw;
+    font-size: 4vw;
+    margin: 0vw 6.1vw 8vw 6.1vw;
+  }
+  .tab_mob {
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tab_subtitle_mob {
+    margin: 0vw 6.1vw 1.8vw 6.1vw;
+    display: block;
+  }
+  #tab_title_mob {
+    margin: 0vw 6.1vw;
+    font-size: 8vw;
+    padding-bottom: 3.6vw;
+    border-bottom: 0.5px solid #939499;
+  }
+  #tab_article_mob {
+    margin: 4vw 6.1vw;
+    font-size: 3.2vw;
+    line-height: 6vw;
+  }
+  #main_mob2 {
+    display: none;
+  }
+  #main_mob3 {
+    display: none;
+  }
 }
