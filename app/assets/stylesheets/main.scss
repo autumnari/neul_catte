@@ -143,7 +143,8 @@
     height: 60vw;
     font-family: 'Arita-buri-SemiBold', serif;
   }
-  #tab-info_img_mob {
+  .tab-info_img_mob {
+    display: none;
     margin: 0.4vw 5vw;
     width : 90vw;
     height: 58.23vw;
@@ -174,7 +175,7 @@
     border-radius: 10vw;
     display: inline-block;
     padding: 2.5vw 7.5vw;
-    font-size: 4vw;
+    font-size: 3.2vw;
     margin: 0vw 6.1vw 8vw 6.1vw;
   }
   .tab_mob {
