@@ -93,7 +93,9 @@
 
   <div id="main_mob">
     <div class="img_mob">
-      <img id="tab-info_img_mob" src="/assets/cassettes_main_mob@3x.png"></img>
+      <img class="tab-info_img_mob" src="/assets/cassettes_main_mob@3x.png"></img>
+      <img class="tab-info_img_mob" src="/assets/main_img2_mob.png"></img>
+      <img class="tab-info_img_mob" src="/assets/main_img3_mob.png"></img>
     </div>
 
     <div class="btn_mob">
@@ -111,18 +113,27 @@
 </section>
 
 <script>
+
+  var slideIndex = 1;
+  showSlides();
   function currentSlide(n) {
     showSlides(slideIndex = n);
   }
   function showSlides(n) {
+    var imgs = document.getElementsByClassName("tab-info_img_mob");
+    for (i = 0; i < imgs.length; i++) {
+      imgs[i].style.display = "none"; 
+    }
+    imgs[slideIndex-1].style.display = "block"; 
+
     var dots = document.getElementsByClassName("dot");
     for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
     }
+
     dots[slideIndex-1].className += " active";
 
     if(n==1) {
-      //document.getElementById('tab-info_img_mob').src =
       document.getElementById("tab_title_mob").innerHTML = "카세트 테이프";
       document.getElementById("tab_article_mob").innerHTML = "사용자의 플레이리스트를 비교하여 취향이 꼭 맞는 사용자들의 테이프를 추천합니다. 그 중 내 취향과 맞는 곡이 있다면, 녹음하기 버튼을 눌러 나의 재생 목록에 담아보세요.";
     }
