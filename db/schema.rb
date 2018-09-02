@@ -12,7 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20180826133020) do
 
-
   create_table "dailies", force: :cascade do |t|
     t.string "daily_title"
     t.datetime "created_at", null: false
