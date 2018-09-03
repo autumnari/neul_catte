@@ -126,6 +126,7 @@ a {
 
 .daily_title_modal {
   margin: 1vw 0.4vw;
+  font-size: 1.5vw;
 }
 
 .daily_img_box_modal {
@@ -266,9 +267,9 @@ label {
   flex-direction: row;
   justify-content: space-between;
   // border: 1px solid red;
-  margin: 3vw 0 1vw;
+  margin: 3.5vw 0 2.5vw 0;
   padding: 0 3vw;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 label.form_title {
@@ -311,7 +312,7 @@ input[placeholder].title_placeholder {
 
 .music_placeholder::-webkit-input-placeholder,
 .title_placeholder::-webkit-input-placeholder {
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   color: #c8c4c4;
   letter-spacing: 0.15vw;
   padding: 0.3vw 0.5vw;
@@ -329,12 +330,12 @@ input[placeholder].title_placeholder {
   height: 2.1vw;
   margin-top: 1vw;
   cursor: pointer;
-  font-size: 2vw;
+  font-size: 1.2vw;
 
   .img_placeholder {
     position: absolute;
     width: 15vw;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     text-align: left;
     color: #c8c4c4;
     padding: 0.3vw 0.5vw;
@@ -344,7 +345,7 @@ input[placeholder].title_placeholder {
 }
 
 .form_dailyimg {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .upload_dailyimg {
@@ -352,17 +353,18 @@ input[placeholder].title_placeholder {
 }
 //
 .form_section_two {
-  margin-bottom: 4vw;
+  margin-top: 1vw;
+  margin-bottom: 5.5vw;
   padding: 0 3vw;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .daily_color_btns {
-  margin-top: 1.5vw;
-  padding-left: 0.5vw;
+  margin-top: 2vw;
+  padding-left: 0.3vw;
   display: flex;
   justify-content: space-between;
-  width: 35vw;
+  width: 30vw;
 }
 
 .daily_black_btn,
@@ -378,6 +380,7 @@ input[placeholder].title_placeholder {
   height: 2vw; // border-radius: 50%;
   border-style: none;
   cursor: pointer;
+  opacity: 0.7;
 }
 
 .daily_black_btn {
@@ -405,7 +408,7 @@ input[placeholder].title_placeholder {
 }
 
 .daily_mint_btn {
-  background-color: rgba(#2fadad, 0.7);
+  background-color: rgba(#007728, 0.7);
 }
 
 .daily_blue_btn {
@@ -414,13 +417,14 @@ input[placeholder].title_placeholder {
 
 .form_section_three {
   padding: 0 3vw;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .textarea_box {
   margin-top: 2vw;
   margin-bottom: 0.5vw;
   width: 50vw;
+  height: 15vw;
 }
 
 textarea.textarea_box{
@@ -433,7 +437,8 @@ textarea.textarea_box{
 
 textarea[placeholder].textarea_box{
   font-family: 'Arita-buri-SemiBold', serif;
-    font-size: 1.3vw;
+    font-size: 1.15vw;
+    letter-spacing: 0.15vw;
     color: black;
 }
 
@@ -457,3 +462,19 @@ textarea[placeholder].textarea_box{
   cursor: pointer;
   margin-left: 43vw;
 }
+
+
+@media all and (max-width : 768px) {
+    .nav_daily{
+      display:none;
+    }
+
+    .ad_daily{
+      display: none;
+    }
+
+    #view_container_daily, #body_daily_new, .preview_container{
+      width: 100vw;
+    }
+
+  }
