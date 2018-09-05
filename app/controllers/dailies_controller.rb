@@ -5,6 +5,13 @@ class DailiesController < ApplicationController
 
   def new
     @daily = Daily.new
+
+    @musics = Music.all
+
+    @music_tscollection = Array.new()
+    @musics.each do |music|
+      @music_tscollection.push music.ts
+    end
   end
 
   def create

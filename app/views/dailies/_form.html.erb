@@ -1,4 +1,11 @@
-
+<script>
+  $(function(){
+    var index = <%=raw @music_tscollection %>
+    $(".music_placeholder").autocomplete({
+      source: index
+    });
+  });
+</script>
 
 <%= form_for @daily do |d| %>
 
