@@ -25,18 +25,15 @@
     <div class="tab">
       <div class="user_tape_my">
         <% current_user.tapes.each do |t| %>
-          <!-- 테이프 테마 -->
-          <div class="tape_theme_my">
-            <!-- 사용자가 업로드하는 커버 이미지 -->
-            <img class="user_cover_my" src="/assets/cover_test.png">
-            <!-- 선택 블렌딩 -->
-            <div class="blend_box_my"></div>
-            <!-- 선택 스킨 -->
-            <img class="upload_tape_my" src="/assets/tapeskin_black.png">
-            <!-- 테이프 타이틀 -->
-            <p class="tape_title_my">
-              <%=t.tape_title %></p>
-          </div>
+          <%= link_to tape_path t do %>
+            <div class="tape_theme_my">
+              <img class="user_cover_my" src="/assets/cover_test.png">
+              <div class="blend_box_my"></div>
+              <img class="upload_tape_my" src="/assets/tapeskin_black.png">
+              <p class="tape_title_my">
+                <%=t.tape_title %></p>
+            </div>
+          <% end%>
         <% end%>
 
       </div>
