@@ -1,3 +1,13 @@
+<script>
+  $(function(){
+    var index = <%=raw @music_tscollection %>
+    $(".admit_m").autocomplete({
+      source: index
+    });
+  });
+</script>
+
+
 <!--Sign Up List page-->
 <div class="admit_bg_img">
     <div class="admit_list_container">
