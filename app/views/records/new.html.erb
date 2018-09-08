@@ -18,16 +18,9 @@
 <%= form_for @list do |f| %>
 
 <div class="admit_list">
-  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
-  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
-  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
-  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
-  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
-  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
-  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
-  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
-  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
-  <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요" %>
+  <% 10.times do %>
+    <%= f.text_field :music_id, class: "admit_m", placeholder: "음악을 등록해주세요", multiple: true %>
+  <% end %>
 </div>
 
 <!-- <button type="submit" value="save" class="admit_list_btn">

@@ -1,0 +1,60 @@
+<div class="main_tape_container">
+
+  <div class="main_title_container">
+    <h1 class="main_title">카세트 테이프</h1>
+  </div>
+
+  <div class="total_tape">
+    <div class="total_intro">
+      <p>#번째 테이프</p>
+    </div>
+
+    <div class="tape_theme_main">
+      <!-- <!— 사용자가 업로드하는 커버 이미지 —> -->
+      <img class="user_cover_main" src="/assets/cover_test.png">
+      <!-- <!— 선택 블렌딩 —> -->
+      <div class="blend_box_main"></div>
+      <!-- <!— 선택 스킨 —> -->
+      <img class="upload_tape_main" src="/assets/tapeskin_purple.png">
+      <!-- <!— 테이프 타이틀 —> -->
+      <p class="tape_title_main"><%= @tape.tape_title %></p>
+    </div>
+
+    <div class="title_paper"></div>
+    <div class="title_paper_p">
+      <p class="tape_title_main"><%= @tape.tape_title %></p>
+    </div>
+    <div class="cover_paper">
+      <img class="user_cover_main" src="/assets/cover_test.png">
+    </div>
+
+    <div class="songlist_paper_A">
+      <% @list.each do |x| %>
+          <%= x.ts %><br>
+      <% end %>
+    </div>
+
+    <div id="next">
+      <div class="songlist_paper_B">
+        <%# tape.each do |song| %>
+          <p><%#= song.ts %></p>
+        <%# end %>
+      </div>
+    </div>
+
+    <div class="tape2_popup_btn">
+      <a href="#" onclick="document.getElementById('next').style.display='none';document.getElementById('fade').style.display='none'">사이드 A
+      </a>
+
+      <a href="#" onclick="document.getElementById('next').style.display='block';document.getElementById('fade').style.display='block'">사이드 B
+      </a>
+
+      <%= link_to "닫기", :back %>
+    </div>
+
+  </div>
+
+  <div class="logo_03_container">
+    <p class="logo_03_txt">늘어진<br>카세트<br>테이프</p>
+  </div>
+</div>
