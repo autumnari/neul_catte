@@ -31,16 +31,16 @@ class RecordsController < ApplicationController
     tape = Tape.new
     tape.tape_title = "인생열곡"
     tape.user_id = current_user.id
-    tape.m1 = tape_list[0].music_id
-    tape.m2 = tape_list[1].music_id
-    tape.m3 = tape_list[2].music_id
-    tape.m4 = tape_list[3].music_id
-    tape.m5 = tape_list[4].music_id
-    tape.m6 = tape_list[5].music_id
-    tape.m7 = tape_list[6].music_id
-    tape.m8 = tape_list[7].music_id
-    tape.m9 = tape_list[8].music_id
-    tape.m10 = tape_list[9].music_id
+    tape.m1 = Music.find_by(id: tape_list[0].music_id)
+    tape.m2 = Music.find_by(id: tape_list[1].music_id)
+    tape.m3 = Music.find_by(id: tape_list[2].music_id)
+    tape.m4 = Music.find_by(id: tape_list[3].music_id)
+    tape.m5 = Music.find_by(id: tape_list[4].music_id)
+    tape.m6 = Music.find_by(id: tape_list[5].music_id)
+    tape.m7 = Music.find_by(id: tape_list[6].music_id)
+    tape.m8 = Music.find_by(id: tape_list[7].music_id)
+    tape.m9 = Music.find_by(id: tape_list[8].music_id)
+    tape.m10 = Music.find_by(id: tape_list[9].music_id)
     tape.save
 
     redirect_to root_path
