@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+  <div class="post_tape_container">
+
+    <div class="main_title_container">
+      <h1 class="main_title">카세트 테이프</h1>
+    </div>
+
+    <div class="post_tape_section">
+
+      <div class="post_tape_preview">
+
+        <div id="tape_preview_div"></div>
+        <div class="tape_preview_btns">
+          <button type="button" class="tape_black_btn" onclick="changingBlack()"></button>
+          <button type="button" class="tape_gray_btn" onclick="changingGray()"></button>
+          <button type="button" class="tape_orange_btn" onclick="changingOrange()"></button>
+          <button type="button" class="tape_pink_btn" onclick="changingPink()"></button>
+          <button type="button" class="tape_purple_btn" onclick="changingPurple()"></button>
+          <button type="button" class="tape_sky_btn" onclick="changingSky()"></button>
+        </div>
+
+        <script>
+          function changingBlack() {
+            document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_black.png')";
+          }
+          function changingGray() {
+            document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_gray.png')";
+          }
+          function changingOrange() {
+            document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_orange.png')";
+          }
+          function changingPink() {
+            document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_pink.png')";
+          }
+          function changingPurple() {
+            document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_purple.png')";
+          }
+          function changingSky() {
+            document.getElementById("tape_preview_div").style.backgroundImage = "url('/assets/tapeskin_sky.png')";
+          }
+        </script>
+
+        <!-- 화살표로 넘기는게 어려워서 버튼으로 대체했어요 흑흑 <div class="btn_left"> <%= image_tag "arrow-left.png" %> </div> <div class="tape_preview"> <%= image_tag "tapeskin_black.png" %> </div> <div class="btn_right"> <%= image_tag "arrow-right.png"%> </div> -->
+
+      </div>
+
+      <div class="post_tape_form">
+        <%= render "tapes/form" %>
+      </div>
+
+    </div>
+
+    <div class="logo_03_container">
+      <p class="logo_03_txt">늘어진<br>카세트<br>테이프</p>
+    </div>
+
+  </div>

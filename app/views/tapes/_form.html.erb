@@ -100,21 +100,13 @@
           사이드 A
         </div>
         <div class="a_list_container">
-          <div class="a">
-            <%= f.text_field :m1, data: {autocomplete_source: musics_path}, class: "list_a", placeholder: "곡을 녹음해주세요" %>
-          </div>
-          <div class="a">
-            <%= f.text_field :m2, class: "list_a", placeholder: "곡을 녹음해주세요" %>
-          </div>
-          <div class="a">
-            <%= f.text_field :m3, class: "list_a", placeholder: "곡을 녹음해주세요" %>
-          </div>
-          <div class="a">
-            <%= f.text_field :m4, class: "list_a", placeholder: "곡을 녹음해주세요" %>
-          </div>
-          <div class="a">
-            <%= f.text_field :m5, class: "list_a", placeholder: "곡을 녹음해주세요" %>
-          </div>
+          <% (1..5).to_a.each do |current_music| %>
+            <div class="a">
+              <%= f.fields_for "m#{current_music}".to_sym do |m| %>
+                <%= m.text_field :ts, class: "list_a", placeholder: "곡을 녹음해주세요", value: f.object.send("m#{current_music}").try(:ts) %>
+              <% end %>
+            </div>
+          <% end %>
         </div>
       </div>
 
@@ -123,25 +115,13 @@
           사이드 B
         </div>
         <div class="b_list_container">
-          <div class="b">
-            <%= f.text_field :m6, class: "list_b", placeholder: "곡을 녹음해주세요" %>
-          </div>
-
-          <div class="b">
-            <%= f.text_field :m7, class: "list_b", placeholder: "곡을 녹음해주세요" %>
-          </div>
-
-          <div class="b">
-            <%= f.text_field :m8, class: "list_b", placeholder: "곡을 녹음해주세요" %>
-          </div>
-
-          <div class="b">
-            <%= f.text_field :m9, class: "list_b", placeholder: "곡을 녹음해주세요" %>
-          </div>
-
-          <div class="b">
-            <%= f.text_field :m10, class: "list_b", placeholder: "곡을 녹음해주세요" %>
-          </div>
+          <% (6..10).to_a.each do |current_music| %>
+            <div class="b">
+              <%= f.fields_for "m#{current_music}".to_sym do |m| %>
+                <%= m.text_field :ts, class: "list_b", placeholder: "곡을 녹음해주세요", value: f.object.send("m#{current_music}").try(:ts) %>
+              <% end %>
+            </div>
+          <% end %>          
         </div>
       </div>
     </div>

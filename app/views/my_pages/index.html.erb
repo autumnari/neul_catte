@@ -26,10 +26,10 @@
       <div class="user_tape_my">
         <% current_user.tapes.each do |t| %>
           <%= link_to tape_path t do %>
-            <div class="tape_theme_my">
-              <img class="user_cover_my" src="/assets/cover_test.png">
+            <div class="tape_theme_my">              
+              <%= image_tag "cover_test.png", class: "user_cover_my" %>
               <div class="blend_box_my"></div>
-              <img class="upload_tape_my" src="/assets/tapeskin_black.png">
+              <%= image_tag "tapeskin_black.png", class: "upload_tape_my" %>
               <p class="tape_title_my">
                 <%=t.tape_title %></p>
             </div>
