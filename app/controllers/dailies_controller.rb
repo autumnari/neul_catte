@@ -33,4 +33,8 @@ class DailiesController < ApplicationController
   def edit
     @daily = Daily.find_by.params[:daily_id]
   end
+
+  def show
+    @daily = Daily.find(params[:id])
+  end
 end

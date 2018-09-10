@@ -10,20 +10,71 @@
     <p class="intro_daily">당신의 플레이리스트와 꼭 맞는 유저들의 오늘의 음악이에요.</p>
 
     <div class="daily_card_container">
+      <a id="card1" class="daily_card">
+          <!-- <!— 사용자 데일리의 컬러 —> -->
+          <div class="daily_card_color">
+          <!-- <!— 사용자 데일리의 제목 —> -->
+            <p class="daily_card_title">우리는 지금 어디에</p>
+          </div>
+          <div class="daily_card_img_box">
+            <!-- <!— 사용자 데일리의 이미지 —> -->
+            <img class="daily_card_img" src="/assets/daily_ex.jpg"></img>
+          </div>
 
-    <% current_user.dailies.each do |t| %>
-      <%= link_to daily_path(t), class: "daily_card" do %>
-      <%#= link_to daily_path t do %>
-       <div class="daily_card">
-         <div class="daily_card_color">
-           <p class="daily_card_title"><%= t.daily_title%></p>
-         </div>
-         <div class="daily_card_img_box">
-           <img class="daily_card_img" src="/assets/daily_ex.jpg"></img>
-         </div>
-       </div>
-     <% end%>
-    <% end%>
+      </a>
+      <a id="card2" class="daily_card">
+          <!-- <!— 사용자 데일리의 컬러 —> -->
+          <div class="daily_card_color">
+          <!-- <!— 사용자 데일리의 제목 —> -->
+            <p class="daily_card_title">잔망속에서</p>
+          </div>
+          <div class="daily_card_img_box">
+            <!-- <!— 사용자 데일리의 이미지 —> -->
+            <img class="daily_card_img" src="/assets/daily_ex.jpg"></img>
+          </div>
+      </a>
+
+      <div class="daily_card">
+        <div class="daily_card_color"></div>
+        <div class="daily_card_img_box"></div>
+      </div>
+      <div class="daily_card">
+        <div class="daily_card_color"></div>
+        <div class="daily_card_img_box"></div>
+      </div>
+      <div class="daily_card">
+        <div class="daily_card_color"></div>
+        <div class="daily_card_img_box"></div>
+      </div>
+      <div class="daily_card">
+        <div class="daily_card_color"></div>
+        <div class="daily_card_img_box"></div>
+      </div>
+      <div class="daily_card">
+        <div class="daily_card_color"></div>
+        <div class="daily_card_img_box"></div>
+      </div>
+      <div class="daily_card">
+        <div class="daily_card_color"></div>
+        <div class="daily_card_img_box"></div>
+      </div>
+      <div class="daily_card">
+        <div class="daily_card_color"></div>
+        <div class="daily_card_img_box"></div>
+      </div>
+      <div class="daily_card">
+        <div class="daily_card_color"></div>
+        <div class="daily_card_img_box"></div>
+      </div>
+      <div class="daily_card">
+        <div class="daily_card_color"></div>
+        <div class="daily_card_img_box"></div>
+      </div>
+      <div class="daily_card">
+        <div class="daily_card_color"></div>
+        <div class="daily_card_img_box"></div>
+      </div>
+    </div>
 
   </section>
 
