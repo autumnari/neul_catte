@@ -30,7 +30,7 @@
 
     <div class="songlist_paper_A">
       <% @list.each do |x| %>
-          <%= x.ts %><br>
+          <p><%= x.ts %> <%= link_to "녹음녹음", add_records_path(x) %></p> <br>
       <% end %>
     </div>
 

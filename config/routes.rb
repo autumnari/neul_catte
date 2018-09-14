@@ -12,7 +12,9 @@ Rails.application.routes.draw do
   resources :tapes
   resources :dailies
   resources :my_pages
-  resources :records
+  resources :records do
+    get 'add/:id', :to => "records#add", as: 'add', on: :collection
+  end
 
   get 'teasers/index'
   get 'main/about'

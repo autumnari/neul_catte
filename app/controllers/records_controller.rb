@@ -46,6 +46,16 @@ class RecordsController < ApplicationController
     redirect_to root_path
   end
 
+  def add
+
+    record = Record.new
+    record.user_id = current_user.id
+    record.music_id = params[:id]
+    record.save
+
+    redirect_back(fallback_location: root_path)
+  end
+
   private
   def record_params
       params.require(:record).permit(:music_id => [])
