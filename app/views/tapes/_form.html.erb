@@ -29,6 +29,28 @@
     </div>
   </div>
 
+<!-- image preview script  -->
+
+<script>
+function readURL(input) {
+
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      $('#tape_img').attr('src', e.target.result);
+    }
+
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+$("#tape_img").change(function() {
+  readURL(this);
+});
+</script>
+
+
   <div class="tape_img_container">
     <%= f.label :커버이미지, class: "tape_coverimg" %>
     <div class="input_img">
@@ -121,7 +143,7 @@
                 <%= m.text_field :ts, class: "list_b", placeholder: "곡을 녹음해주세요", value: f.object.send("m#{current_music}").try(:ts) %>
               <% end %>
             </div>
-          <% end %>          
+          <% end %>
         </div>
       </div>
     </div>
